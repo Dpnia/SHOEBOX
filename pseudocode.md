@@ -1,14 +1,15 @@
 1. Temperature/Humidity control through electric fan (automatic)
 2. Temperature/Humidity control through infrared lamp (automatic)
-
-function check_temperature( ){
+(temperature in celcius and humidity in percentage)
+//Check temperature and humidity and optimize automatically
+function check_temperature(){
 	if (temperature > 25 or temperature < 10) {
 		return false
 	else
 		return true
 }
 
-function check_humidity( ){
+function check_humidity(){
 	if (humidity > 60 or humidity < 40) 
 		return false
 	else
@@ -62,7 +63,7 @@ boolean check_demand_deodorization
 
 function demand_control_deodorization(){
 	if(check_demand_deodorization == true){
-		deotoranzation_on()
+		deodorization_on()
 		check_demand_deodorization = false
 	}
 }
@@ -71,10 +72,10 @@ function demand_control_deodorization(){
 
 function auto_control_deodorization(){
 	deotoranzation_on()
-	delay(one hour)
+	delay(one hour) // one hour interval
 }
 
-7. Intensity control feature
+7. Intensity control feature (3 states of intensity)
 
 define MAX 3
 define MID 2

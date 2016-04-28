@@ -109,8 +109,36 @@ B.Management function
 
 C.	Analysis function
 (1)	 Absence of shoes analysis (Base information)
+
+int absence_time
+
+function check_absense(){
+	if (weight_sensor == 0) // 무게센서에 인풋값이 없을 경우
+		absence_timer_on()
+	else
+		absence_timer_off()
+}
+
 (2)	 Durability analysis
+
+string durability // 평균적으로 하루에 운동화를 12시간 신는다고 가정
+
+function check_durability(){
+	if absence_time < 2 weeks 
+		durability = new one
+	else if 2 weeks < absence_time < 4 weeks
+		durability = not bad
+	else if 4 weeks < absence_time < 8 weeks
+		durability = need an washing at least once
+	else if 8 weeks < absence_time < 16 weeks
+		durability = be careful
+	else
+		durability = recommend to buy new one	
+}
+
 (3)	 Life prediction analysis
+
+
 (4)	 Preference analysis (personal)
 (5)	 Preference analysis (general)
 (6)	 Frequency analysis

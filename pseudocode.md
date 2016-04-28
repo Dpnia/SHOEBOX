@@ -118,7 +118,30 @@ C.	Analysis function
 
 D.	Recommendation function 
 (1)	 Recommendation based on weather forecast 
+
+fuction weather_forcast(String Weather){ // from weather API
+	if(Weather='sunny'){
+	return 1;
+}
+else if(Weather='cloud'){
+	return 2;
+}
+else if(Weather='rain' or Weather='snow'){
+	return 3;
+}
+}
+fuction Recommend_Weatherfrecast(){
+	switch(Weather_forcast()){
+	case 1 : return shoes1 
+	case 2 : return shoes2 
+	case 3 : return shoes3  // sunny -> shoes1,2,3  cloud -> shoes2,3  rain -> shoes3 
+			break
+}
+}
+
 (2)	 Recommendation based on the use of shoes
+
+
 (3)	 Recommendation based on the color of shoes
 (4)	 Notice of recommendation rate by color
 (5)	 Notice of recommendation rate by percentage

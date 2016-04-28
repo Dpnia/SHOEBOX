@@ -1,0 +1,8 @@
+diff a/shoebox.ino b/shoebox.ino	(rejected hunks)
+@@ -1,6 +1,5 @@
+ void setup() {
+   // put your setup code here, to run once:
+-
+ //이제한번시작해볼까?!
+ }
+ 

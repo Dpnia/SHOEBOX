@@ -1,5 +1,6 @@
-1. Temperature/Humidity control through electric fan (automatic)
-2. Temperature/Humidity control through infrared lamp (automatic)
+A.OPTIMIZATION FUNCTION
+(1) Temperature/Humidity control through electric fan (automatic)
+(2) Temperature/Humidity control through infrared lamp (automatic)
 (temperature in celcius and humidity in percentage)
 //Check temperature and humidity and optimize automatically
 function check_temperature(){
@@ -27,7 +28,7 @@ function auto_control_temperature_humidity(){
 	}
 }
 
-3. Drying feature (on demand)
+(3) Drying feature (on demand)
 
 boolean check_demand_drying
 
@@ -42,7 +43,7 @@ function demand_control_temperatureHumidity(){
 	}
 }
 
-4. Sterilization function (on demand)
+(4) Sterilization function (on demand)
 
 boolean check_demand_sterilization
 
@@ -57,7 +58,7 @@ function demand_control_temperature_humidity(){
 	}
 }
 
-5. Deodorization function (on demand)
+(5) Deodorization function (on demand)
 
 boolean check_demand_deodorization
 
@@ -68,14 +69,14 @@ function demand_control_deodorization(){
 	}
 }
 
-6. Deodorization function (automatic)
+(6) Deodorization function (automatic)
 
 function auto_control_deodorization(){
 	deotoranzation_on()
 	delay(one hour) // one hour interval
 }
 
-7. Intensity control feature (3 states of intensity)
+(7) Intensity control feature (3 states of intensity)
 
 define MAX 3
 define MID 2
@@ -98,3 +99,35 @@ fucntion lamp_on(int a){
 	else
 		//LOW
 }
+
+B.Management function 
+(1)	 Shoe categorization function (bar-code scanning)
+(2)	 Shoe categorization function (user input based)
+(3)	 Shoe categorization function (captured image)
+(4)	 Shoe categorization function (3D scanning)
+(5)	 Setting the proper management tool
+
+C.	Analysis function
+(1)	 Absence of shoes analysis (Base information)
+(2)	 Durability analysis
+(3)	 Life prediction analysis
+(4)	 Preference analysis (personal)
+(5)	 Preference analysis (general)
+(6)	 Frequency analysis
+(7)	 Walking habit analysis (health care)
+
+D.	Recommendation function 
+(1)	 Recommendation based on weather forecast 
+(2)	 Recommendation based on the use of shoes
+(3)	 Recommendation based on the color of shoes
+(4)	 Notice of recommendation rate by color
+(5)	 Notice of recommendation rate by percentage
+
+E.	Notification function 
+(1)	 Recognition of contamination by sensor
+(2)	 Notification for contamination by message
+
+F.	Networking / Remote control function (UI)
+(1)	 Control function through web programming (main)
+(2)	 Control function through mobile (sub)
+(3)	 Control function through embedded system (sub)

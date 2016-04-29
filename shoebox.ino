@@ -1,10 +1,17 @@
-void setup() {
-  // put your setup code here, to run once:
+int REDpin = 13;
+//int GREENpin = 5;
 
-//이제한번시작해볼까?!
+void setup() {
+  pinMode(REDpin, OUTPUT);
+  //pinMode(GREENpin, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
-}
+  digitalWrite(REDpin, HIGH);
+  delay(5000); // 5초간!
+  digitalWrite(REDpin,LOW);
+  delay(5000);
+  //digitalWrite(GREENpin,HIGH);
+  //delay(5000);
+  //digitalWrite(GREENpin,LOW);
+  }

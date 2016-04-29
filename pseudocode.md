@@ -121,7 +121,7 @@ function check_absense(){
 
 (2)	 Durability analysis
 
-string durability // 평균적으로 하루에 운동화를 12시간 신는다고 가정
+string durability // 평균적으로 하루에 운동화를 12시간 신는다고 가정(8:00~20:00)
 
 function check_durability(){
 	if absence_time < 2 weeks 
@@ -138,14 +138,42 @@ function check_durability(){
 
 (3)	 Life prediction analysis
 
+int shoes_number // 신발에 할당된 고유번호
+int life_time
+
+function check_life_time(int shoes_number, int absence_time) {
+	life_time = original_life_time(shoes_number) - absence_time
+	return life_time
+}
 
 (4)	 Preference analysis (personal)
 (5)	 Preference analysis (general)
+
+int count_using_time = absence_time
+int preference // 서버 변수로 사용할 예정
+
+function check_preference(){
+	if count_using_time > 2 weeks {
+		count_using_time = count_using_time - 2 weeks // 1달동안 사용하면 선호도가 1증가
+		preference = preference + 1 
+	}
+}
+
 (6)	 Frequency analysis
+
+int use_date
+
+function check_frequency(){
+		return use_date / whole_date * 100
+}
+
 (7)	 Walking habit analysis (health care)
+//형 이건 그냥 빼버리죠?ㅜㅜ
 
 D.	Recommendation function 
 (1)	 Recommendation based on weather forecast 
+
+string Weather
 
 fuction weather_forcast(String Weather){ // from weather API
 	if(Weather='sunny'){
@@ -177,6 +205,11 @@ fuction Recommend_Weatherfrecast(){
 E.	Notification function 
 (1)	 Recognition of contamination by sensor
 (2)	 Notification for contamination by message
+
+function check_contamination(){
+	if weight_sensor_now > weight_sensor_average + 20 // 평소보다 약 20g정도 더 무게가 측정이 된다면
+		notification_message()
+}
 
 F.	Networking / Remote control function (UI)
 (1)	 Control function through web programming (main)

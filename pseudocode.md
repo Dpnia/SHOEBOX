@@ -173,7 +173,7 @@ function check_frequency(){
 D.	Recommendation function 
 (1)	 Recommendation based on weather forecast 
 
-string Weather
+string weather
 
 fuction weather_forcast(String Weather){ // from weather API
 	if(Weather='sunny'){
@@ -186,21 +186,54 @@ else if(Weather='rain' or Weather='snow'){
 	return 3;
 }
 }
-fuction Recommend_Weatherfrecast(){
+function recommend_weatherforcast(){
 	switch(Weather_forcast()){
 	case 1 : return shoes1 
 	case 2 : return shoes2 
 	case 3 : return shoes3  // sunny -> shoes1,2,3  cloud -> shoes2,3  rain -> shoes3 
 			break
-}
+	}
 }
 
 (2)	 Recommendation based on the use of shoes
 
+string user_purpose
+
+function recommend_user_purpose(){
+	if user_purpose == exercise
+		return shoe1
+	else if user_purpose == office
+		return shoe2
+	else if user_purpose == blarblar
+		return shoe3
+} 
 
 (3)	 Recommendation based on the color of shoes
+
+fuction recommned_color(class shoe){
+	if shoe.color == recomemmed_color
+		return true
+	else
+		return false
+}
+
 (4)	 Notice of recommendation rate by color
 (5)	 Notice of recommendation rate by percentage
+
+function notice_recommedation(class shoe) {
+	if recomedation_rate > 80
+		recommedation_color = green
+		display recommedation_rate, recommedation_color
+	else if 60 < recomedation_rate < 80
+		recommedation_color = lightgreen
+		display recommedation_rate, recommedation_color
+	else if 40 < recomedation_rate < 60
+		recommedation_color = orange
+		display recommedation_rate, recommedation_color
+	else if recomedation_rate < 40
+		recommedation_color = red
+		display recommedation_rate, recommedation_color
+}
 
 E.	Notification function 
 (1)	 Recognition of contamination by sensor

@@ -168,7 +168,7 @@ function check_frequency(){
 }
 
 (7)	 Walking habit analysis (health care)
-//형 이건 그냥 빼버리죠?ㅜㅜ
+//형 이건 그냥 빼버리죠?ㅜㅜ // document 작성하면서 생각해볼것 
 
 D.	Recommendation function 
 (1)	 Recommendation based on weather forecast 

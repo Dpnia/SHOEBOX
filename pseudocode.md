@@ -1,7 +1,6 @@
 A.OPTIMIZATION FUNCTION
 (1) Temperature/Humidity control through electric fan (automatic)
 (2) Temperature/Humidity control through ultraviolet lamp (automatic)
-// temperature in celcius and humidity in percentage
 // Check temperature and humidity and optimize automatically
 function check_temperature(){
 	if (temperature < 15) {
@@ -18,6 +17,7 @@ function check_humidity(){
 	else
 		return true
 }
+
 //실내 적정 습도가 50~60%이고 신발장은 40%이하가 적절하다고 합니다
 
 function auto_control_temperature_humidity(){
@@ -81,26 +81,16 @@ function auto_control_deodorization(){
 
 (7) Intensity control feature (3 states of intensity)
 
-define MAX 3
-define MID 2
-define MIN 1
-
 fucntion fan_on(int a){
-	if a==3
-		//STRONG
-	else if a==2
-		//NORMAL
-	else
-		//LOW
+	if a==3 // turn fan MAX
+	else if a==2 //  turn fan MID
+	else // turn fan MIN
 }
 
 fucntion lamp_on(int a){
-	if a==3
-		//STRONG
-	else if a==2
-		//NORMAL
-	else
-		//LOW
+	if a==3 // turn lamp MAX
+	else if a==2 // turn lamp MID
+	else // turn lamp MIN
 }
 
 B.Management function 

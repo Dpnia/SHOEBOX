@@ -4,17 +4,20 @@ A.OPTIMIZATION FUNCTION
 (temperature in celcius and humidity in percentage)
 //Check temperature and humidity and optimize automatically
 function check_temperature(){
-	if (temperature > 25 or temperature < 10) {
+	if (temperature < 15) {
 		return false
 	else
 		return true
 }
+//습도가 40% 이하일떄는 온도가 높울 수록 더욱 관리가 잘 된다고 합니다
 
 function check_humidity(){
-	if (humidity > 60 or humidity < 40) 
+	if (humidity > 40 ) 
 		return false
 	else
 		return true
+
+	//실내 적정 온도가 50~60 이고 신발장은 40%이하가 적절하다고 합니다
 }
 
 function auto_control_temperature_humidity(){
@@ -101,7 +104,7 @@ fucntion lamp_on(int a){
 }
 
 B.Management function 
-(1)	 Shoe categorization function (bar-code scanning)
+(1)	 Shoe categorization function (serial number scanning) // 나중에 데이터 베이스 구성할떄 제품 번호가 더욱 편할거 같아요
 (2)	 Shoe categorization function (user input based)
 (3)	 Shoe categorization function (captured image)
 (4)	 Shoe categorization function (3D scanning)

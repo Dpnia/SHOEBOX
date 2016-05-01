@@ -106,15 +106,16 @@ C.	Analysis function
 int absence_time
 
 function check_absense(){
-	if (weight_sensor == 0) // 무게센서에 인풋값이 없을 경우
+	if (weight_sensor == 0) 
 		absence_timer_on()
 	else
 		absence_timer_off()
 }
 
 (2)	 Durability analysis
-
-string durability // 평균적으로 하루에 운동화를 12시간 신는다고 가정(8:00~20:00)
+// 평균적으로 하루에 운동화를 12시간 신는다고 가정(8:00~20:00)
+// average time wearing shoes : 12 hours a day
+string durability 
 
 function check_durability(){
 	if absence_time < 2 weeks 
@@ -130,8 +131,8 @@ function check_durability(){
 }
 
 (3)	 Life prediction analysis
-
-int shoes_number // 신발에 할당된 고유번호
+// 신발에 할당된 고유번호
+int shoes_number // assigned number for each shoes 
 int life_time
 
 function check_life_time(int shoes_number, int absence_time) {
@@ -143,11 +144,12 @@ function check_life_time(int shoes_number, int absence_time) {
 (5)	 Preference analysis (general)
 
 int count_using_time = absence_time
-int preference // 서버 변수로 사용할 예정
+int preference // server variable
 
 function check_preference(){
 	if count_using_time > 2 weeks {
-		count_using_time = count_using_time - 2 weeks // 1달동안 사용하면 선호도가 1증가
+		count_using_time = count_using_time - 2 weeks 
+		// one week use : preference + 1
 		preference = preference + 1 
 	}
 }
@@ -172,10 +174,10 @@ fuction weather_forcast(String Weather){ // from weather API
 	if(Weather='sunny'){
 	return 1;
 }
-else if(Weather='cloud'){
+else if(Weather='cloudy'){
 	return 2;
 }
-else if(Weather='rain' or Weather='snow'){
+else if(Weather='rainy' or Weather='snowy'){
 	return 3;
 }
 }
@@ -183,7 +185,7 @@ function recommend_weatherforcast(){
 	switch(Weather_forcast()){
 	case 1 : return shoes1 
 	case 2 : return shoes2 
-	case 3 : return shoes3  // sunny -> shoes1,2,3  cloud -> shoes2,3  rain -> shoes3 
+	case 3 : return shoes3  // sunny -> shoes1,2,3  cloudy -> shoes2,3  rainy -> shoes3 
 			break
 	}
 }

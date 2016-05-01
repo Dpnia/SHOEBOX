@@ -1,14 +1,15 @@
 A.OPTIMIZATION FUNCTION
 (1) Temperature/Humidity control through electric fan (automatic)
-(2) Temperature/Humidity control through infrared lamp (automatic)
-(temperature in celcius and humidity in percentage)
-//Check temperature and humidity and optimize automatically
+(2) Temperature/Humidity control through ultraviolet lamp (automatic)
+// temperature in celcius and humidity in percentage
+// Check temperature and humidity and optimize automatically
 function check_temperature(){
 	if (temperature < 15) {
 		return false
 	else
 		return true
 }
+//When humidity is less than 40, it is better to have higher temperature
 //습도가 40% 이하일떄는 온도가 높울 수록 더욱 관리가 잘 된다고 합니다
 
 function check_humidity(){
@@ -16,9 +17,8 @@ function check_humidity(){
 		return false
 	else
 		return true
-
-	//실내 적정 온도가 50~60 이고 신발장은 40%이하가 적절하다고 합니다
 }
+//실내 적정 습도가 50~60%이고 신발장은 40%이하가 적절하다고 합니다
 
 function auto_control_temperature_humidity(){
 	if(check_teperature() == true and check_humidity() == true and){

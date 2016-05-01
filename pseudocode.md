@@ -197,19 +197,19 @@ string user_purpose
 function recommend_user_purpose(){
 	if user_purpose == exercise
 		return shoe1
-	else if user_purpose == office
+	else if user_purpose == office(formal)
 		return shoe2
-	else if user_purpose == blarblar
+	else if user_purpose == (informal)
 		return shoe3
 } 
 
 (3)	 Recommendation based on the color of shoes
 
 fuction recommned_color(class shoe){
-	if shoe.color == recomemmed_color
-		return true
+	if shoe.color matches clothes.color
+		return recommend
 	else
-		return false
+		return not recommended
 }
 
 (4)	 Notice of recommendation rate by color

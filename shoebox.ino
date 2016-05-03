@@ -21,10 +21,10 @@ void setup() {
    
   sendData("AT+RST\r\n",2000,DEBUG); // reset module
   sendData("AT+CIOBAUD?\r\n",2000,DEBUG); // check baudrate (redundant)
-  sendData("AT+CWMODE=3\r\n",1000,DEBUG); // configure as access point (working mode: AP+STA)
+  sendData("AT+CWMODE=1\r\n",1000,DEBUG); // configure as access point (working mode: AP+STA)
   sendData("AT+CWLAP\r\n",3000,DEBUG); // list available access points
 
-  sendData("AT+CWJAP=\"yourIP\",\"yourPasswd\"\r\n",5000,DEBUG); // join the access point
+  sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",5000,DEBUG); // join the access point
   sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); // configure for multiple connections
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80
@@ -75,32 +75,5 @@ String sendData(String command, const int timeout, boolean debug) {
     }
     return response;
 }
-
-<html>
- <head>
-  <title>ESP8266 LED Control</title>
- </head>
- <body>
- 
- <!-- in the <button> tags below the ID attribute is the value sent to the arduino -->
- 
- <button id="11" class="led">Toggle Pin 11</button> <!-- button for pin 11 -->
- <button id="12" class="led">Toggle Pin 12</button> <!-- button for pin 12 -->
- <button id="13" class="led">Toggle Pin 13</button> <!-- button for pin 13 -->
-  
- <script src="jquery.min.js"></script>
- <script type="text/javascript">
-  $(document).ready(function(){
-   $(".led").click(function(){
-    var p = $(this).attr('id'); // get id value (i.e. pin13, pin12, or pin11)
-    // send HTTP GET request to the IP address with the parameter "pin" and value "p", then execute the function
-    $.get("http://192.168.43.194:80/", {pin:p}); // execute get request (아두이노 웹서버 IP 주소로 고쳐 준다)
-   });
-  });
- </script>
- </body>
-</html>
-
-
 
 

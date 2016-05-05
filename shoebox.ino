@@ -21,7 +21,7 @@ void setup() {
    
   sendData("AT+RST\r\n",2000,DEBUG); // reset module
   sendData("AT+CIOBAUD?\r\n",2000,DEBUG); // check baudrate (redundant)
-  sendData("AT+CWMODE=1\r\n",1000,DEBUG); // configure as access point (working mode: AP+STA)
+  sendData("AT+CWMODE=3\r\n",1000,DEBUG); // configure as access point (working mode: AP+STA)
   sendData("AT+CWLAP\r\n",3000,DEBUG); // list available access points
 
   sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",5000,DEBUG); // join the access point

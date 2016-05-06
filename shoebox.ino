@@ -1,5 +1,8 @@
 #include <SoftwareSerial.h>
+#include<dht11.h>
 #define DEBUG true
+#define DHT11PIN 7
+dht11 DHT11;
  
 SoftwareSerial esp8266(2,3); // make RX Arduino line is pin 2, make TX Arduino line is pin 3.
                                         // This means that you need to connect the TX line from the esp to the Arduino's pin 2
@@ -21,13 +24,15 @@ void setup() {
    
   sendData("AT+RST\r\n",2000,DEBUG); // reset module
   sendData("AT+CIOBAUD?\r\n",2000,DEBUG); // check baudrate (redundant)
-  sendData("AT+CWMODE=1\r\n",1000,DEBUG); // configure as access point (working mode: AP+STA)
+  sendData("AT+CWMODE=3\r\n",1000,DEBUG); // configure as access point (working mode: AP+STA)
   sendData("AT+CWLAP\r\n",3000,DEBUG); // list available access points
 
   sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",5000,DEBUG); // join the access point
   sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); // configure for multiple connections
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80
+
+  Serial.println("Start");
 }
  
 void loop() {
@@ -47,7 +52,23 @@ void loop() {
       closeCommand+=connectionId; // append connection id
       closeCommand+="\r\n";
       sendData(closeCommand,1000,DEBUG); // close connection
-    }
+       }
+  Serial.println();
+  int chk=DHT11.read(DHT11PIN);
+  Serial.println("Read");
+  switch(chk){
+    case 0 : Serial.println("ok");
+              break;
+    case -1 : Serial.println("time out");
+              break;
+    case -2 : Serial.println("unknown");
+              break;
+                }
+  Serial.print("Humidity (%) : " );
+  Serial.println(DHT11.humidity);
+  Serial.print("Temperature : " );
+  Serial.println(DHT11.temperature);
+  delay(2000);
   }
 }
  

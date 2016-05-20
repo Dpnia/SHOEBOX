@@ -1,8 +1,9 @@
 #include <SoftwareSerial.h>
-#include<dht11.h>
+#include<DHT11.h>
 #define DEBUG true
-#define DHT11PIN 7
-dht11 DHT11;
+
+//int pin=7;
+//DHT11 dht11(pin);
  
 SoftwareSerial esp8266(2,3); // make RX Arduino line is pin 2, make TX Arduino line is pin 3.
                                         // This means that you need to connect the TX line from the esp to the Arduino's pin 2
@@ -11,7 +12,7 @@ SoftwareSerial esp8266(2,3); // make RX Arduino line is pin 2, make TX Arduino l
 
 void setup() {
   Serial.begin(9600);
-  esp8266.begin(9600); // your esp's baud rate might be different
+  esp8266.begin(9600); // your esp's baud rate might be differ  ent
   
   pinMode(11, OUTPUT);
   digitalWrite(11, LOW);
@@ -32,7 +33,7 @@ void setup() {
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); // configure for multiple connections
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80
 
-  Serial.println("Start");
+ // Serial.println("Start");
 }
  
 void loop() {
@@ -53,23 +54,28 @@ void loop() {
       closeCommand+="\r\n";
       sendData(closeCommand,1000,DEBUG); // close connection
        }
-  Serial.println();
-  int chk=DHT11.read(DHT11PIN);
-  Serial.println("Read");
-  switch(chk){
-    case 0 : Serial.println("ok");
-              break;
-    case -1 : Serial.println("time out");
-              break;
-    case -2 : Serial.println("unknown");
-              break;
-                }
-  Serial.print("Humidity (%) : " );
-  Serial.println(DHT11.humidity);
-  Serial.print("Temperature : " );
-  Serial.println(DHT11.temperature);
-  delay(2000);
   }
+
+  
+/**  Serial.println();
+
+  int err;
+  float temp, humi;
+  if((err=dht11.read(humi, temp))==0){
+    
+    Serial.print("temperature : ");
+    Serial.print(temp);
+    Serial.print("humidity : ");
+    Serial.print(humi);
+    Serial.println();
+  }
+  else {
+    Serial.println();
+    Serial.print("Error No : ");
+    Serial.print(err);
+    Serial.println();
+  }
+  delay(10000);*/
 }
  
 /*

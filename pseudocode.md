@@ -21,7 +21,7 @@ function check_humidity(){
 //실내 적정 습도가 50~60%이고 신발장은 40%이하가 적절하다고 합니다
 
 function auto_control_temperature_humidity(){
-	if(check_teperature() == true and check_humidity() == true and){
+	if(check_teperature() == true and check_humidity() == true){
 		fan_off()
 		lamp_off()
 	}

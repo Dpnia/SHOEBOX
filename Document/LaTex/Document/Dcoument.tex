@@ -319,28 +319,16 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Bare Demo of IEEEtran.cls\\ for IEEE Conferences}
+\title{Smart Shoebox\\ (Shoes care solution utilizing IoT concept)}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Michael Shell}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: http://www.michaelshell.org/contact.html}
-\and
-\IEEEauthorblockN{Homer Simpson}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: homer@thesimpsons.com}
-\and
-\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
-\IEEEauthorblockA{Starfleet Academy\\
-San Francisco, California 96678--2391\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
+\author{\IEEEauthorblockN{Ko Byunghee, Kwon Gyuhyeok, Kim Junghyun, Shin Minki}
+\IEEEauthorblockA{Information System Department\\College of Engineering\\
+Hanyang University\\
+Seoul, South Korea}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -379,8 +367,12 @@ Fax: (888) 555--1212}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-The abstract goes here.
+This document is about the realization of automatic remote control for shoesthrough IoT. We will make smart shoes cabinet that provides this kind of features with other different kind of functions.
 \end{abstract}
+
+
+
+
 
 % no keywords
 
@@ -401,24 +393,45 @@ The abstract goes here.
 
 \section{Introduction}
 % no \IEEEPARstart
-This demo file is intended to serve as a ``starter file''
-for IEEE conference papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8b and later.
+Many people experience difficulty managing their own shoes in a decent and pleasant form. Especially for the people living alone, keeping shoes clean and sweet smelling becomes a tough task to manage. When it rains, shoes get wet and dirty. Can you imagine the smell and feel of the shoe? Even worse the smell starts from the entrance to the place where you will go to sleep. This is when the actual management features are required.
+What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear. To realize the concepts of taking care of our shoes, we will develop a shoebox which manages shoes condition by controlling humidity and temperature automatically and periodically. 
+We are going to use Arduino to support with humidity and temperature recognition by receiving inputs through switches or sensors. Internet of Things (IoT) is also on the base of the idea. The ability to control things (especially shoes in this case) through internet is the main concept we are trying to realize. We are looking forward to create an integrated service tool such as situation awareness, automatic computing, self-growing. 
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
-I wish you the best of success.
 
-\hfill mds
- 
-\hfill August 26, 2015
-
-\subsection{Subsection Heading Here}
-Subsection text here.
+\section{Requirement}
 
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+\subsection{Optimizing environment function}
+When we wear shoes, they easily become in a state of high temperature and humidity which causes the disgusting smell, which is also the best environment for bacteria to grow. As a result, there is a need to control the condition of the cabinet keeping the shoes. To provide an optimized environment automatically and also on user?s demand is the goal. (There is a need for defining optimized temperature and humidity)
+\subsubsection{Temperature/Humidity control through electric fan (automatic)}
+The sensor receives temperature and humidity as inputs and provides an optimized environment as an output.
+\subsubsection{Temperature/Humidity control through ultraviolet lamp (automatic)}
+The sensor receives temperature and humidity as inputs and provides an optimized temperature and humidity as output.
+\subsubsection{Drying feature (on demand)}
+In case the user's shoes get wet by rain or other liquids the user can request for drying will operate (1), (2).
+\subsubsection{Sterilization function (on demand)}
+In case the user feels the need for sterilization, user can request for this function, which operates (1), (2).This function (4) differs from (3) in degrees of intensity.
+\subsubsection{Deodorization function (on demand)}
+In case the user feels the need for deodorization, user can request for this function, which triggers a deodorant to shoot out.
+\subsubsection{Deodorization function (automatic)}
+The user can set regular intervals to trigger the deodorant to shoot out.
+\subsubsection{Intensity control feature}
+The user can choose the intensity level of (1), (2). Intensity is calculated as number between 1 to 5.
 
+
+\subsection{Management function}
+Different type of shoes requires different type of proper cares. The shoe rack needs to understand and recognize the shoes type and provide a proper management for the shoes.(Modeling : changing ambiguous information into actual concept.)
+\subsubsection{Shoe categorization function (bar-code scanning)}
+Shoe categorization through capturing the barcode for the shoes.
+\subsubsection{Shoe categorization function (user input based)}
+Shoe categorization through selected category of the user.
+\subsubsection{Shoe categorization function (captured image)}
+Shoe categorization through captured images of the shoes.
+\subsubsection{Shoe categorization function (3D scanning)}
+Shoe categorization through 3D scanning of the shoes.
+\subsubsection{Setting the proper management tool}
+After Shoe categorization, based on the shoes category, the shoe rack provides the proper setting.(There is a need for defining proper setting for each category)The proper setting is different in the aspect of the intensity from Optimization environment function.
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.

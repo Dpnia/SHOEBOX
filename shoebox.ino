@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-#include<DHT11.h>
+//#include<DHT11.h>
 #define DEBUG true
 
 //int pin=7;

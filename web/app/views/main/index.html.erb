@@ -1,4 +1,12 @@
-<h1>Shoebox</h1>
-<p>Gogo</p>
+		
 
 
+
+<%= form_tag '/login' do %>
+  E-mail
+  <input type="email" name="email"><br>
+  Password
+  <input type="password" name="password"><br>
+  <input type="submit" value="로그인">
+  <a href="/main/new">회원가입</a>
+<% end %>

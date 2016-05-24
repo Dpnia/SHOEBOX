@@ -1,17 +1,26 @@
 Rails.application.routes.draw do
+  get 'seccions/new'
+
   #get '/' => 'main#index'
 
   get 'say/hello'
 
   get 'say/goodbye'
 
-  
+  resources :users  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'main#index'
+  root 'main#index'
+  get 'main/new'
+  post 'main/create'
+  post 'main/member'
+
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

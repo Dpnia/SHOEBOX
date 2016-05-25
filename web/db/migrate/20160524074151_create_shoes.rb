@@ -13,6 +13,8 @@ class CreateShoes < ActiveRecord::Migration
       t.integer :preference
       t.integer :frequency
 
+      t.integer :user_id
+
 
       t.timestamps null: false
     end

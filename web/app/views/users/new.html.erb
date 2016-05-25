@@ -1,4 +1,4 @@
-<%= form_tag ''/users" do %>
+<%= form_tag users_path do %>
   Name
   <input type="name" name="email"><br>
   E-mail
@@ -8,7 +8,7 @@
   Password_confirmation
   <input type="password" name="password_confirmation"><br>
   IP Address of Shoebox
-  <input type="" name="password_confirmation"><br>
+  <input type="text" name="ipaddress"><br>
   <input type="submit" value="Done">
   <input type="reset" value="Reset"/>
 <% end %>

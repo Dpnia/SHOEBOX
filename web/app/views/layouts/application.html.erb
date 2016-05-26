@@ -7,10 +7,37 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+
 <a href="/">Home</a>
-<a href="/say/hello">Hello</a>
-<a href="/say/goodbye">Bye</a>
+
+<% if user_signed_in? %>
+  User : <%= current_user.name %> 
+  <%= link_to 'Logout', logout_path, method: "delete" %>
+  <a href="/say/hello">Hello</a>
+  <a href="/say/goodbye">Bye</a>
+<% else %>
+  <%= link_to 'Login', login_path %>  
+<% end %>
+
 <%= yield %>
+
+
+<br><br><br><br><br><br><br><br>
+<button id="11" class="led">Toggle Pin 11</button> <!-- button for pin 11 -->
+ <button id="12" class="led">Toggle Pin 12</button> <!-- button for pin 12 -->
+ <button id="13" class="led">Toggle Pin 13</button> <!-- button for pin 13 -->
+  
+ <script src="jquery.min.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $(".led").click(function(){
+    var p = $(this).attr('id'); // get id value (i.e. pin13, pin12, or pin11)
+    // send HTTP GET request to the IP address with the parameter "pin" and value "p", then execute the function
+    $.get("http://192.168.43.194:80/", {pin:p}); // execute get request (¾ÆµÎÀÌ³ë À¥¼­¹ö IP ÁÖ¼Ò·Î °íÃÄ ÁØ´Ù)
+   });
+  });
+ </script>
 
 </body>
 </html>

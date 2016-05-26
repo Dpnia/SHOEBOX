@@ -125,9 +125,9 @@
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
-  % \usepackage[dvips]{graphicx}
+  \usepackage[dvips]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
+  \graphicspath{{eps}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
   % \DeclareGraphicsExtensions{.eps}
@@ -368,7 +368,9 @@ Seoul, South Korea}}
 % in the abstract
 \begin{abstract}
 This document is about the realization of automatic remote control for shoesthrough IoT. We will make smart shoes cabinet that provides this kind of features with other different kind of functions.
+\\
 \end{abstract}
+
 
 
 
@@ -383,22 +385,54 @@ This document is about the realization of automatic remote control for shoesthro
 % page as needed:
 % \ifCLASSOPTIONpeerreview
 % \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
+ %\fi
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
+
 \IEEEpeerreviewmaketitle
+%Keywords
+
+%shoebox; shoes care; shoes rack; IoT;
+
+
+\begin{table}[t]
+\renewcommand{\arrayrulewidth}{1pt}
+\renewcommand{\arraystretch}{3}
+\begin{tabular}
+{|p{1.7cm}|p{1.7cm}|p{.47\linewidth}|}\hline
+
+Role & Name & Task and description etc\\ \hline
+User & Kwon Gyuhyeok & Suggest the actual features for the Smart Shoebox users can feel comfortable and interesting to use\\ \hline
+Customer & Shin Minki & Suggest the actual features for the Smart Shoebox customers can feel comfortable and interesting to use\\ \hline
+Software developer & Kim Junghyun & Focusing on the Technical aspects of the Smart Shoebox while developing \\ \hline
+Development manager & Ko Byunghee & Consider the service side of the Smart Shoebox while developing the system\\ \hline
+
+\end{tabular}
+\\
+\\
+\caption{Role Assignment}
+\label{tab:template}
+\end{table}
 
 
 
+
+
+
+% 1. introduction
 \section{Introduction}
 % no \IEEEPARstart
 Many people experience difficulty managing their own shoes in a decent and pleasant form. Especially for the people living alone, keeping shoes clean and sweet smelling becomes a tough task to manage. When it rains, shoes get wet and dirty. Can you imagine the smell and feel of the shoe? Even worse the smell starts from the entrance to the place where you will go to sleep. This is when the actual management features are required.
-What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear. To realize the concepts of taking care of our shoes, we will develop a shoebox which manages shoes condition by controlling humidity and temperature automatically and periodically. 
-We are going to use Arduino to support with humidity and temperature recognition by receiving inputs through switches or sensors. Internet of Things (IoT) is also on the base of the idea. The ability to control things (especially shoes in this case) through internet is the main concept we are trying to realize. We are looking forward to create an integrated service tool such as situation awareness, automatic computing, self-growing. 
+
+What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear. To realize the concepts of taking care of our shoes, we will develop a shoebox which manages shoes condition by controlling humidity and temperature automatically and periodically. 
+
+We are going to use Arduino to support with humidity and temperature recognition by receiving inputs through switches or sensors. Internet of Things (IoT) is also on the base of the idea. The ability to control things (especially shoes in this case) through internet is the main concept we are trying to realize. We are looking forward to create an integrated service tool such as situation awareness, automatic computing, self-growing. 
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
+
+% 2. requirement
 \section{Requirement}
 
 
@@ -411,7 +445,8 @@ The sensor receives temperature and humidity as inputs and provides an optimized
 \subsubsection{Drying feature (on demand)}
 In case the user's shoes get wet by rain or other liquids the user can request for drying will operate (1), (2).
 \subsubsection{Sterilization function (on demand)}
-In case the user feels the need for sterilization, user can request for this function, which operates (1), (2).This function (4) differs from (3) in degrees of intensity.
+In case the user feels the need for sterilization, user can request for this function, which operates (1), (2).
+This function (4) differs from (3) in degrees of intensity.
 \subsubsection{Deodorization function (on demand)}
 In case the user feels the need for deodorization, user can request for this function, which triggers a deodorant to shoot out.
 \subsubsection{Deodorization function (automatic)}
@@ -421,7 +456,8 @@ The user can choose the intensity level of (1), (2). Intensity is calculated as 
 
 
 \subsection{Management function}
-Different type of shoes requires different type of proper cares. The shoe rack needs to understand and recognize the shoes type and provide a proper management for the shoes.(Modeling : changing ambiguous information into actual concept.)
+Different type of shoes requires different type of proper cares. The shoe rack needs to understand and recognize the shoes type and provide a proper management for the shoes.
+(Modeling : changing ambiguous information into actual concept.)
 \subsubsection{Shoe categorization function (bar-code scanning)}
 Shoe categorization through capturing the barcode for the shoes.
 \subsubsection{Shoe categorization function (user input based)}
@@ -431,7 +467,9 @@ Shoe categorization through captured images of the shoes.
 \subsubsection{Shoe categorization function (3D scanning)}
 Shoe categorization through 3D scanning of the shoes.
 \subsubsection{Setting the proper management tool}
-After Shoe categorization, based on the shoes category, the shoe rack provides the proper setting.(There is a need for defining proper setting for each category)The proper setting is different in the aspect of the intensity from Optimization environment function.
+After Shoe categorization, based on the shoes category, the shoe rack provides the proper setting.
+(There is a need for defining proper setting for each category)
+The proper setting is different in the aspect of the intensity from Optimization environment function.
 
 
 \subsection{Analysis function}
@@ -461,7 +499,8 @@ Recommending the shoes type which matches with the user?s activity.
 Recommending the shoes color which balances with the users clothing color.
 \subsubsection{ Notice of recommendation rate by color}
 Showing the recommendation rate by different colors. For example, if the shoes are recommended, a specific color will appear on the shoe rack or on the screen the user is looking at. 
-\subsubsection{Notice of recommendation rate by percentage}Showing the recommendation rate by percentage. If the shoes are recommended strongly, the percentage will appear on the shoe rack or on the screen the user is looking at. 
+\subsubsection{Notice of recommendation rate by percentage}
+Showing the recommendation rate by percentage. If the shoes are recommended strongly, the percentage will appear on the shoe rack or on the screen the user is looking at. 
 
 
 \subsection{Notification function}
@@ -479,7 +518,98 @@ With web based program, the user can interact with the smart shoe care software 
 \subsubsection{Control function through mobile (sub)}
 With mobile application, the user can interact with the smart shoe care software and other provided information.
 \subsubsection{Control function through embedded system (sub)}
-With embedded system, the user can interact with the smart shoe care software and other provided information.
+With embedded system, the user can interact with the smart shoe care software and other provided information.
+
+% 3. development environment
+\section{Development Environment}
+
+\subsection{Choice of software development platform}
+\subsubsection{Platform used for developing}package
+ We will use both Windows and MAC OS . Since Windows is the most popular OS used worldwide and MAC OS is the second most popular OS leaving out all the other versions of Windows. We thought MAC OS X will become more popular. We also thought using other OS besides windows will mean a lot for us to use another environment to develop a software.
+\\
+\subsubsection{Programming language used for developing}
+We are using Arduino, mySQL, Ruby and HTML. We are trying to provide a web service with arduino acting inside the Smart Shoebox. The frontend will be using html and css, while the backend will be using ruby and ruby on rails as a application framework. If we think of the server as a localhost, we might be using only ruby and ruby on rails for the server without MySQL.\\
+
+\begin{table}
+\renewcommand{\arrayrulewidth}{1pt}
+\renewcommand{\arraystretch}{3}
+\begin{tabular}
+{|p{3.5cm}|p{.5\linewidth}|}\hline
+
+Programming language & Reason\\ \hline
+Arduino(hardware) &The main hardware part of our project is based on Arduino. The Smart Shoebox has functions to work provide behavioral motions such as recognizing the temperature and humidity of the shoebox, turning on the fan or infrared lamp as a result of it and so on. \\ \hline
+MySQL(server side) & We need to have a database to save information about the shoes, users. To easily get and set and manage the information, we have decided to use a database management tool. \\ \hline
+Ruby & We first thought of php for the work between the server and web side environment, since we have all learned php in another course. Though we thought it would be much better to learn a new language for this project. Ruby on rails was the interesting programming language in the aspect that it shortens and simplifies the code much more than the php. \\ \hline
+HTML5 and CSS3(client side) & We have decided the user interface environment as a web-based structure. The functions of Smart Shoebox will be triggered and managed in the web. \\ \hline
+
+\end{tabular}
+\\
+\\
+\caption{Programming language used for developing}
+\label{tab:template}
+\end{table}
+
+\begin{table}
+\renewcommand{\arrayrulewidth}{1pt}
+\renewcommand{\arraystretch}{3}
+\begin{tabular}
+{|p{4cm}|p{.5\linewidth}|}\hline
+
+Device & Price (won)\\ \hline
+Arduino uno R3 & 7,500\\ \hline
+Bread board & 7,500\\ \hline
+Wifi module(ESP8266) & 7,500\\ \hline
+Temperature Humidity sensor & 7,500\\ \hline
+Pressure Sensor & 7,500\\ \hline
+Fan(actuator) & 7,500\\ \hline
+Board & 7,500\\ \hline
+USB cable & 7,500\\ \hline
+jump wire & 7,500\\ \hline
+M-F wire & 7,500\\ \hline
+Resistance & 7,500\\ \hline
+Small LED lamp & 7,500\\ \hline
+AA battery & 7,500\\ \hline
+transistor & 500 \\ \hline
+TOTAL & 500 \\ \hline
+
+\end{tabular}
+\\
+\\
+\caption{Programming language used for developing}
+\label{tab:template}
+\end{table}
+
+
+
+
+
+
+\subsubsection{Cost estimation (Software / Hardware)}
+
+
+\subsubsection{Development Environment}
+
+
+\subsection{Choice of software development platform}
+\subsubsection{Temperature Humidity Control system}
+\subsubsection{Recommendation System }
+\subsubsection{Classification Algorithm in datamining}
+
+
+\subsection{Task Distribution}
+
+
+% 4. specification
+\section{Specification}
+% 5. Architecture Design and Implementation
+\section{Architecture Design and Implementation}
+% 6. use cases
+\section{Use Cases}
+
+
+
+
+
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.

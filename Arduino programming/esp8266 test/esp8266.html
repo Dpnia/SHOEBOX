@@ -1,7 +1,6 @@
 <html>
  <head>
- 	<title>ESP8266</title>
- 	<style></style>> 
+  <title>ESP8266 LED Control</title>
  </head>
  <body>
  
@@ -17,10 +16,12 @@
    $(".led").click(function(){
     var p = $(this).attr('id'); // get id value (i.e. pin13, pin12, or pin11)
     // send HTTP GET request to the IP address with the parameter "pin" and value "p", then execute the function
-    $.get("http://192.168.43.194:80/", {pin:p}); // execute get request (Â¾Ã†ÂµÃÃ€ÃŒÂ³Ã« Ã€Â¥Â¼Â­Â¹Ã¶ IP ÃÃ–Â¼Ã’Â·Ã Â°Ã­ÃƒÃ„ ÃÃ˜Â´Ã™)
+    $.get("http://192.168.43.194:80/", {pin:p}); // execute get request (¾ÆµÎÀÌ³ë À¥¼­¹ö IP ÁÖ¼Ò·Î °íÃÄ ÁØ´Ù)
    });
   });
  </script>
  </body>
 </html>
+
+
 

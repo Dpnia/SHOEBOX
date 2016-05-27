@@ -1,17 +1,23 @@
 Rails.application.routes.draw do
-  #get '/' => 'main#index'
+
+  devise_for :users
+#get '/' => 'main#index'
 
   get 'say/hello'
 
   get 'say/goodbye'
 
-  
+  resources :users  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'main#index'
+  root 'users#index'
+
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  get 'logout'  => 'sessions#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,18 @@
+<h1>Shoe Information</h1>
+You can see your shoes.<br>
+<ol>
+<% current_user.shoes.each do |s| %>
+  <li><%= s.shoename %><br></li>
+  <%=form_tag '/mybox/destroy', method: 'get' do %>
+	&nbsp;&nbsp;
+	<input type="hidden" name = "id" value="<%= s.id %>">
+	Type : <%= s.shoetype %><br>&nbsp;&nbsp;
+	Color : <%= s.color %><br>&nbsp;&nbsp;
+	<button type="button"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
+	
+	<input type="submit" value="Delete" onclick="confirm('Delete?');"> 
+  <% end %>
+<% end %>
+</ol>
+<%= link_to 'Add Item', mybox_new_path %> 
+

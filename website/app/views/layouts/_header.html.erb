@@ -1,0 +1,15 @@
+
+<% if user_signed_in? %>
+	<%= current_user.email %><br>
+<% else %>
+<% end %>
+
+
+<% if user_signed_in? %>
+	<%= link_to 'MY Shoebox', mybox_information_path %><br>
+	<%= link_to 'Smart Function', smart_index_path %><br>
+	<a href="">Whether Forecasting</a><br>
+	<a href="">Recommendation</a><br>
+<%= link_to 'LOGOUT', destroy_user_session_path %>
+<% else %>
+<% end %>

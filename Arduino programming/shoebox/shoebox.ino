@@ -5,14 +5,12 @@
 //int pin=7;
 //DHT11 dht11(pin);
  
-SoftwareSerial esp8266(2,3); // make RX Arduino line is pin 2, make TX Arduino line is pin 3.
-                                        // This means that you need to connect the TX line from the esp to the Arduino's pin 2
-                                        // and the RX line from the esp to the Arduino's pin 3
+SoftwareSerial esp8266(2,3);
 
 
 void setup() {
   Serial.begin(9600);
-  esp8266.begin(9600); // your esp's baud rate might be differ  ent
+  esp8266.begin(9600); 
   
   pinMode(11, OUTPUT);
   digitalWrite(11, LOW);
@@ -23,14 +21,14 @@ void setup() {
   pinMode(13, OUTPUT);
   digitalWrite(13, LOW);
    
-  sendData("AT+RST\r\n",2000,DEBUG); // reset module
-  sendData("AT+CIOBAUD?\r\n",2000,DEBUG); // check baudrate (redundant)
-  sendData("AT+CWMODE=3\r\n",1000,DEBUG); // configure as access point (working mode: AP+STA)
-  sendData("AT+CWLAP\r\n",3000,DEBUG); // list available access points
+  sendData("AT+RST\r\n",2000,DEBUG); 
+  sendData("AT+CIOBAUD?\r\n",2000,DEBUG); 
+  sendData("AT+CWMODE=3\r\n",1000,DEBUG); 
+  sendData("AT+CWLAP\r\n",3000,DEBUG); 
 
   sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",5000,DEBUG); // join the access point
-  sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address
-  sendData("AT+CIPMUX=1\r\n",1000,DEBUG); // configure for multiple connections
+  sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address - 192.168.43.194
+  sendData("AT+CIPMUX=1\r\n",1000,DEBUG); 
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80
 
  // Serial.println("Start");

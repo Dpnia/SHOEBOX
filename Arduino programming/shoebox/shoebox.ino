@@ -1,11 +1,12 @@
 #include <SoftwareSerial.h>
-//#include<DHT11.h>
+#include<dht11.h>
 #define DEBUG true
-  
-//int pin=7;
-//DHT11 dht11(pin);
- 
-SoftwareSerial esp8266(2,3);
+#define DHT11PIN 7 // 7번핀을 통해 온습도 전달!  
+
+
+dht11 DHT11; 
+
+SoftwareSerial esp8266(2,3); // wifi 2,3 핀 사용!
 
 
 void setup() {
@@ -31,7 +32,7 @@ void setup() {
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); 
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80
 
- // Serial.println("Start");
+
 }
  
 void loop() {
@@ -55,33 +56,27 @@ void loop() {
   }
 
   
-/**  Serial.println();
+Serial.println();
 
-  int err;
-  float temp, humi;
-  if((err=dht11.read(humi, temp))==0){
+  int chk=DHT11.read(DHT11PIN);
+  
+  if(chk==0){
     
     Serial.print("temperature : ");
-    Serial.print(temp);
+    Serial.print(DHT11.temperature);
     Serial.print("humidity : ");
-    Serial.print(humi);
+    Serial.print(DHT11.huminity);
     Serial.println();
   }
   else {
     Serial.println();
-    Serial.print("Error No : ");
-    Serial.print(err);
+    Serial.print("Error");
+    
     Serial.println();
   }
-  delay(10000);*/
+  delay(2000);
 }
  
-/*
-* Name: sendData
-* Description: Function used to send data to ESP8266.
-* Params: command - the data/command to send; timeout - the time to wait for a response; debug - print to Serial window?(true = yes, false = no)
-* Returns: The response from the esp8266 (if there is a reponse)
-*/
 String sendData(String command, const int timeout, boolean debug) {
     String response = "";
     esp8266.print(command); // send the read character to the esp8266

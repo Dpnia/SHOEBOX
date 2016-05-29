@@ -1,13 +1,13 @@
 #include <SoftwareSerial.h>
-#include<dht11.h>
-#define DEBUG true
-#define DHT11PIN 7 // 7번핀을 통해 온습도 전달!  
+#include "DHT.h"
 
+#define DEBUG true 
+#define DHTPIN 7 // 7번핀을 통해 온습도 전달!
+#define DHTTYPE DHT11
 
-dht11 DHT11; 
+DHT dht(DHTPIN, DHTTYPE);
 
 SoftwareSerial esp8266(2,3); // wifi 2,3 핀 사용!
-
 
 void setup() {
   Serial.begin(9600);
@@ -29,9 +29,11 @@ void setup() {
 
   sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",5000,DEBUG); // join the access point
   sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address - 192.168.43.194
+  sendData("AT+CIPSTART=\"TCP\",\"192.168.43.194",\8080\r\n
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); 
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80
 
+  dht.begin();
 
 }
  
@@ -54,28 +56,20 @@ void loop() {
       sendData(closeCommand,1000,DEBUG); // close connection
        }
   }
-
-  
-Serial.println();
-
-  int chk=DHT11.read(DHT11PIN);
-  
-  if(chk==0){
-    
-    Serial.print("temperature : ");
-    Serial.print(DHT11.temperature);
-    Serial.print("humidity : ");
-    Serial.print(DHT11.huminity);
-    Serial.println();
-  }
-  else {
-    Serial.println();
-    Serial.print("Error");
-    
-    Serial.println();
-  }
   delay(2000);
+ float h = dht.readHumidity(); // 습도값 읽기
+
+ float t = dht.readTemperature(); // 온도값 읽기
+
+  Serial.print("Humidity : ");
+  Serial.print(h);
+  Serial.println();
+  Serial.print("Temperature : ");
+  Serial.print(t);
+  Serial.println();
+
 }
+ 
  
 String sendData(String command, const int timeout, boolean debug) {
     String response = "";
@@ -92,8 +86,11 @@ String sendData(String command, const int timeout, boolean debug) {
     
     if(debug) {
       Serial.print(response);
-    }
+    } 
     return response;
 }
+
+
+
 
 

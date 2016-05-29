@@ -1,18 +1,18 @@
 <h1>Adding Shoes</h1>
 
 <%=form_tag '/mybox/add', method: 'post' do %>
-	<input type="text" name="shoename" placeholder="Shoe Model">
-	<select name="choice">
+	<input type="text" name="shoename" placeholder="Shoe Model" class="btn-default"><br><br>
+	<select name="choice" class="btn-default">
 		<option value=""selected>Choice your shoes type</option>
 		<option value="WalkingShoes">WalkingShoes</option>
 		<option value="Highhill">Highhill</option>
-	</select>
-	<select name="color">
+	</select><br><br>
+	<select name="color" class="btn-default">
 		<option value=""selected>Chocice your shoes color</option>
 		<option value="white">White</option>
 		<option value="black">Black</option>
 		<option value="blue">Blue</option>
 		<option value="red">Red</option>
-	</select>
-	<input type="submit" value="Select">
+	</select><br><br>
+	<input type="submit" value="Select" class="btn-default">
 <% end %>

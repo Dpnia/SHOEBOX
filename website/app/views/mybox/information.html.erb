@@ -8,9 +8,8 @@ You can see your shoes.<br>
 	<input type="hidden" name = "id" value="<%= s.id %>">
 	Type : <%= s.shoetype %><br>&nbsp;&nbsp;
 	Color : <%= s.color %><br>&nbsp;&nbsp;
-	<button type="button"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
-	
-	<input type="submit" value="Delete" onclick="confirm('Delete?');"> 
+	<button type="button" class="btn-default"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
+	<input type="submit" class="btn-default" value="Delete" onclick="confirm('Delete?');"> 
   <% end %>
 <% end %>
 </ol>

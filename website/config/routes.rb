@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'weather/index'
+
   root 'home#index'
 
   get 'mybox/information'
@@ -10,7 +12,9 @@ Rails.application.routes.draw do
   get 'mybox' => 'mybox#information'
 
   get 'smart/index'
+  get 'weather/index'
 
+  get 'recommend/index'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

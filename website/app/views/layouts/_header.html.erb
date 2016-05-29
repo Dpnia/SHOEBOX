@@ -1,15 +1,26 @@
+<div class="site-wrapper">
 
-<% if user_signed_in? %>
-	<%= current_user.email %><br>
-<% else %>
-<% end %>
+      <div class="site-wrapper-inner">
 
+        <div class="cover-container">
 
-<% if user_signed_in? %>
-	<%= link_to 'MY Shoebox', mybox_information_path %><br>
-	<%= link_to 'Smart Function', smart_index_path %><br>
-	<a href="">Whether Forecasting</a><br>
-	<a href="">Recommendation</a><br>
-<%= link_to 'LOGOUT', destroy_user_session_path %>
-<% else %>
-<% end %>
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h2 class="masthead-brand">Shoebox Project</h2>
+              <nav align="center">
+				<ul class="nav nav-tabs">
+					<% if user_signed_in? %>
+						<li role="presentation"><%= link_to 'Home', root_path %></li>
+						<li role="presentation"><%= link_to 'MY Shoebox', mybox_information_path %></li>
+						<li role="presentation"><%= link_to 'Smart Function', smart_index_path %></li>
+						<li role="presentation"><%= link_to 'Weather', weather_index_path %></li>
+						<li role="presentation"><%= link_to 'Recommend', recommend_index_path %></li>
+						<li role="presentation"><%= link_to 'LOGOUT', destroy_user_session_path %></li>
+						
+					<% else %>
+					<% end %>
+				</ul>
+			  </nav>
+            </div>
+          </div>
+	

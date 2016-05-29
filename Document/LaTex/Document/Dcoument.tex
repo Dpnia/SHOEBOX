@@ -435,7 +435,7 @@ We are going to use Arduino to support with humidity and temperature recognition
 % 2. requirement
 \section{Requirement}
 
-\subsection{Optimizing environment function}
+\subsection{Optimization function}
 When we wear shoes, they easily become in a state of high temperature and humidity which causes the disgusting smell, which is also the best environment for bacteria to grow. As a result, there is a need to control the condition of the cabinet keeping the shoes. To provide an optimized environment automatically and also on user?s demand is the goal. (There is a need for defining optimized temperature and humidity)
 \subsubsection{Temperature/Humidity control through electric fan (automatic)}
 The sensor receives temperature and humidity as inputs and provides an optimized environment as an output.
@@ -620,6 +620,7 @@ TOTAL & 0 \\ \hline
 
 \subsection{Software in use}
 We have researched to find out if there is any existing software or algorithm in use doing a similar task we are trying to provide. We were really surprised to find so much information related to our project. There was a lot of algorithms and systems during the research. The most interesting and related ones were the three below.
+\\
 \subsubsection{Temperature Humidity Control system}
 As anyone can think of the air conditioner or greenhouse there were already a lot of systems and devices doing the actual part of our project to control the temperature and humidity for the given environment. (For our home, or for growing plants in the optimized temperature and humidity, and so on.) Even there were a lot of information about making the Arduino actually work as we planned to.
  %image2
@@ -695,7 +696,7 @@ Ko ByungHee&Ruby on rails\\ \hline
 % 4. specification
 \section{Specification}
 The specification is mostly in pseudocode and additionally graphs and charts will be used to specify the requirements. Particularly, mockflow will be used to wireframe the user interface. The pseudocode is a little bit close to the programming languages we have already learned during other courses while disregarding the details of the grammar.
-\subsection{Optimizing environment function}
+\subsection{Optimization function}
 \subsubsection{Temperature/Humidity control through electric fan (automatic)}
 \subsubsection{Temperature/Humidity control through ultraviolet lamp (automatic)}
 The arduino sensor receives temperature and humidity as inputs and truns on fan and ultraviolet lamp when temperature drops below 15 Celsius degree or humidity is higher than 
@@ -924,9 +925,13 @@ To realize this function we will provide a user interface through mainly web and
 \end{center}
 \end{figure}
 
+
 % 5. Architecture Design and Implementation
 \section{Architecture Design and Implementation}
 \subsection{Overall architecture} We have three modules consisting of the Smart shoebox. First part is the Arduino module, which receives the request of the user by jQuery and reacts. It also provides temperature, humidity, pressure information to the web server, which is provided by the sensor of the Arduino. The second and third part is a set of web service. One is the front end module(HTML/CSS) and the other is the back end module(SQLite). The front end is mainly reacting with the client(user) and back end is mainly reacting with the server. The user can add a new item and sign up to the Smart Shoebox service. The server will provide the detail information of the registered item and recommend. As you can see in Fig. 12 all modules interact with each other. 
+\\
+\\
+\\
 %image12
 \begin{figure}[h]
 \begin{center}
@@ -936,6 +941,7 @@ To realize this function we will provide a user interface through mainly web and
 \end{figure}
 \subsection{Directory organization}
 We have three big folders, which follows the overall system architecture. One is the arduino and another is website folder for the ruby on rails and the last one is a folder for the LaTex documentaion.
+\\
 %TABLE6
 
 \begin{table}[h]
@@ -992,7 +998,7 @@ Directory & File names & Module names in use\\ \hline
 \subsubsection{Where it is taken from} It is taken from the library list of Arduino official homepage. Arduino Playground is a wiki where all the users of Arduino can contribute and benefit from their collective research.
 
 (http://playground.arduino.cc/Main/LibraryList)
-\subsubsection{How and Why we use it}We connect all the modules, sensors, LED light bulbs, fan and infrared lamp to the Arduino Uno, the main board. Additionally, with the libraries provided, we write down the code for the the functions and compile. When the codes are uploaded to the main board, the required functions are performed.
+\subsubsection{How and Why we use it}We connect all the modules, sensors, LED light bulbs, fan and infrared lamp to the Arduino Uno, the main board. Additionally, with the libraries provided, we write down the code for the the functions and compile. When the codes are uploaded to the main board, the required functions are performed.\\
 
 \subsection{Module2:Ruby on Rails}
 %image14
@@ -1003,17 +1009,63 @@ Directory & File names & Module names in use\\ \hline
 \end{center}
 \end{figure}
 
-\subsubsection{Purpose} The purpose of using the Ruby on Rails is to provide a easily accessed user interaction environment through web service. So we have decided to use the Ruby on Rails application framework.
-\subsubsection{Functionality} 
+\subsubsection{Purpose} The purpose of using the Ruby on Rails is to provide a easily accessed user interaction environment through web service. IoT will be realized through the web service, since it will let the user to take care of their shoes anytime, anywhere. So we have decided to use the Ruby on Rails application framework.
+\subsubsection{Functionality} There are several functionalities for the Ruby on Rails module. First user is able to check the status of the Smart Shoebox. The status contains the meaning of temperature and humidity. Second, the users are able to check the weather outside so that he or she could choose the proper shoes. Third with the weather information and the shoes information saved in the database recommendation function will be realized. Fourth, using the wifi, it will control the Smart Shoebox remotely. Last but not least, with Ruby on rails, the user information will be saved and managed in the database.
 \subsubsection{Location of Source Code}/project/shoebox/website
-\subsubsection{Class component}
-\subsubsection{Where it is taken from}It is taken from the rails installer site. RailsInstaller is the quickest way to go from zero to developing Ruby on Rails applications. 
+\subsubsection{Class component} Ruby on Rails use the so called MVC model to specify the events and actions of the web service. M satnds for model, where we save and use the data of the user and shoes. (You can easily think of a database table when we develop web service.)V stands for view, which takes care of the visualization of the html. It is the factors forming the front end of the web service. (HTML, CSS, JAVASCRIPT) C stands for controller and it takes care of the actions, receiving requests from the users and look up for the data from the model and visualizae through the view.
 
+The user accesses the Smart Shoebox's URL and send request. Then the 'Controller' receives the request and look up the 'Model' and bring the data from the database. At last with the data brought from the model, 'View' visualizes so that the user can see.
+
+\subsubsection{Where it is taken from}It is taken from the rails installer site. RailsInstaller is the quickest way to go from zero to developing Ruby on Rails applications. 
+ 
 (http://railsinstaller.org/en)
-\subsubsection{How and Why we use it}
+\subsubsection{How and Why we use it} Based on the Ruby programming language and MVC model we make a web service for the users of the Smart Shoebox. It is possible to developing a web service from scratch, but it is not a good idea to do so, when it is so important and emphasized to use an open sources. Application framework for the Ruby language is already provided and we have decided to build on top of it.
 
 % 6. use cases
-%\section{Use Cases}
+\section{Use Cases}
+\subsection{Use case 1 : Setup} This case is for the users using the Smart Shoebox for the first time.   
+%image15
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.5]{usecase1}
+    \caption{Use case 1} \label{fig:label}
+\end{center}
+\end{figure}
+
+\subsection{Use case 2 : Users request for a Smart function} This case is taking care of the needs of the user to use the smart function of the Smart Shoebox. (Optimization, Drying, Sterilization, Deodorization)
+%image16
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.3]{usecase2}
+    \caption{Use case 2} \label{fig:label}
+\end{center}
+\end{figure}
+\subsection{Use case 3 : Users request for the weather forecast} This case is taking care of the needs of the user to see the weather.
+%image17
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.6]{usecase3}
+    \caption{Use case 3} \label{fig:label}
+\end{center}
+\end{figure}
+
+\subsection{Use case 4 : Users request for Recommendation} This case covers the needs of the user to receive a recommendation of the shoes.
+%image18
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.6]{usecase4}
+    \caption{Use case 4} \label{fig:label}
+\end{center}
+\end{figure}
+
+\subsection{Use case 5 : Users request for detail information about the shoes} This case covers the needs of the user to see the detail information of the shoes contained in the Smart Shoebox.
+%image19
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.6]{usecase5}
+    \caption{Use case 5} \label{fig:label}
+\end{center}
+\end{figure}
 
 
 

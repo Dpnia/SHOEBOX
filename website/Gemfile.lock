@@ -37,12 +37,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
-<<<<<<< HEAD
-    bcrypt (3.1.11)
-=======
     autoprefixer-rails (6.3.6.1)
       execjs
->>>>>>> 9d7cd504241a67887c2f868c1a3e9beee49aa315
     bcrypt (3.1.11-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)

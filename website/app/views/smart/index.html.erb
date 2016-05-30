@@ -1,5 +1,11 @@
 <h1>Smart Function</h1>
 
+ <%=form_tag '/smart/change', method: 'post' do %>
+ MY Shoebox IPaddress : <%= current_user.ipaddress %><br>
+ <input type="text" name="ipaddress" placeholder="000.000.000.000">
+ <input type="submit" value="Submit">
+ <% end %>
+ <br>
  <button id="10" class="led">건조기능 ON/OFF</button>
  <button id="11" class="led">향균기능 ON/OFF</button> <!-- button for pin 11 -->
  <button id="12" class="led">적외선살균 ON/OFF</button> <!-- button for pin 12 -->
@@ -10,7 +16,9 @@
    $(".led").click(function(){
     var p = $(this).attr('id'); // get id value (i.e. pin13, pin12, or pin11)
     // send HTTP GET request to the IP address with the parameter "pin" and value "p", then execute the function
-    $.get("http://192.168.43.194:80/", {pin:p}); // execute get request (아두이노 웹서버 IP 주소로 고쳐 준다)
+    $.get("http://<%= current_user.ipaddress %>:80/", {pin:p}); // execute get request (아두이노 웹서버 IP 주소로 고쳐 준다)
    });
   });
  </script>
+
+

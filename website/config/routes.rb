@@ -13,6 +13,9 @@ Rails.application.routes.draw do
 
   get 'smart/index'
   get 'weather/index'
+  get 'weather/seoul'
+  get 'weather/busan'
+  get 'weather/daegu'
 
   get 'recommend/index'
 

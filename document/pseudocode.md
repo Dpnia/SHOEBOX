@@ -1,7 +1,6 @@
 A.OPTIMIZATION FUNCTION
 (1) Temperature/Humidity control through electric fan (automatic)
 (2) Temperature/Humidity control through ultraviolet lamp (automatic)
-
 // Check temperature and humidity and optimize automatically
 function check_temperature(){
 	if (temperature < 15) {
@@ -10,6 +9,7 @@ function check_temperature(){
 		return true
 }
 //When humidity is less than 40, it is better to have higher temperature
+//습도가 40% 이하일떄는 온도가 높울 수록 더욱 관리가 잘 된다고 합니다
 
 function check_humidity(){
 	if (humidity > 40 ) 

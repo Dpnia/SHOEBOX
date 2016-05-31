@@ -22,9 +22,21 @@ ActiveRecord::Schema.define(version: 20160525053708) do
     t.integer  "odorsensitivity"
     t.integer  "predictedlife"
     t.integer  "weight"
+    t.integer  "warmth"
     t.integer  "usagetime",        default: 0, null: false
     t.integer  "preference"
     t.integer  "frequency",        default: 0, null: false
+    t.boolean  "jogging"
+    t.boolean  "casual"
+    t.boolean  "sports"
+    t.boolean  "trip"
+    t.boolean  "storll"
+    t.boolean  "official"
+    t.boolean  "date"
+    t.boolean  "business"
+    t.boolean  "soccer"
+    t.boolean  "basketball"
+    t.boolean  "house"
     t.integer  "user_id"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false

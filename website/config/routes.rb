@@ -13,8 +13,13 @@ Rails.application.routes.draw do
 
   get 'smart/index'
   get 'weather/index'
+  get 'weather/seoul'
+  get 'weather/busan'
+  get 'weather/daegu'
 
   get 'recommend/index'
+
+  post 'smart/change'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

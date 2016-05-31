@@ -29,8 +29,8 @@ void setup() {
 
   sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",5000,DEBUG); // join the access point
   sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address - 192.168.43.194
-  sendData("AT+CIPSTART=\"TCP\",\"192.168.43.194",\8080\r\n
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); 
+  sendData("AT+CIPSTART=\"TCP\",\"184.106.153.149\",80\r\n",1000,DEBUG);
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80
 
   dht.begin();
@@ -38,25 +38,7 @@ void setup() {
 }
  
 void loop() {
-  if(esp8266.available()) { // check if the esp is sending a message
-    if(esp8266.find("+IPD,")) {
-      delay(1000); // wait for the serial buffer to fill up (read all the serial data)
-      // get the connection id so that we can then disconnect
-      int connectionId = esp8266.read()-48; // subtract 48 because the read() function returns 
-                                           // the ASCII decimal value and 0 (the first decimal number) starts at 48
-      esp8266.find("pin="); // advance cursor to "pin="
-      int pinNumber = (esp8266.read()-48)*10; // get first number i.e. if the pin 13 then the 1st number is 1, then multiply to get 10
-      pinNumber += (esp8266.read()-48); // get second number, i.e. if the pin number is 13 then the 2nd number is 3, then add to the first number
-      digitalWrite(pinNumber, !digitalRead(pinNumber)); // toggle pin    
-     
-      // make close command
-      String closeCommand = "AT+CIPCLOSE="; 
-      closeCommand+=connectionId; // append connection id
-      closeCommand+="\r\n";
-      sendData(closeCommand,1000,DEBUG); // close connection
-       }
-  }
-  delay(2000);
+ delay(2000);
  float h = dht.readHumidity(); // 습도값 읽기
 
  float t = dht.readTemperature(); // 온도값 읽기
@@ -67,6 +49,31 @@ void loop() {
   Serial.print("Temperature : ");
   Serial.print(t);
   Serial.println();
+
+  sendData("AT+CIPSEND=4,43\r\n",1000,DEBUG);
+  sendData("GET /update?key=5GYVWZQH0VFZRAT6&field1=t",1000,DEBUG);
+  sendData("GET /update?key=5GYVWZQH0VFZRAT6&field2=h",1000,DEBUG);
+  
+  if(esp8266.available()) { // check if the esp is sending a message
+    if(esp8266.find("+IPD,")) {
+      delay(1000); // wait for the serial buffer to fill up (read all the serial data)
+      // get the connection id so that we can then disconnect
+      int connectionId = esp8266.read()-48; // subtract 48 because the read() function returns 
+                                           // the ASCII decimal value and 0 (the first decimal number) starts at 48
+      esp8266.find("pin="); // advance cursor to "pin="
+      int pinNumber = (esp8266.read()-48)*10; // get first number i.e. if the pin 13 then the 1st number is 1, then multiply to get 10
+      pinNumber += (esp8266.read()-48); // get second number, i.e. if the pin number is 13 then the 2nd number is 3, then add to the first number
+      digitalWrite(pinNumber, !digitalRead(pinNumber)); // toggle pin    
+
+     
+      // make close command
+      String closeCommand = "AT+CIPCLOSE="; 
+      closeCommand+=connectionId; // append connection id
+      closeCommand+="\r\n";
+      sendData(closeCommand,1000,DEBUG); // close connection
+       }
+  }
+
 
 }
  

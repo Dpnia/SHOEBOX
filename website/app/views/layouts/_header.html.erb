@@ -14,10 +14,11 @@
 				<ul class="nav nav-tabs">
 					<% if user_signed_in? %>
 						<li role="presentation"><%= link_to 'Home', root_path %></li>
+						<li role="presentation"><%= link_to 'About', about_index_path %></li>
 						<li role="presentation"><%= link_to 'My Shoebox', mybox_information_path %></li>
 						<li role="presentation"><%= link_to 'Smart Function', smart_index_path %></li>
 						<li role="presentation"><%= link_to 'Weather', weather_index_path %></li>
-						<li role="presentation"><%= link_to 'Recommend', recommend_index_path %></li>
+						<li role="presentation"><%= link_to 'Recommendation', recommend_index_path %></li>
 						<li role="presentation"><%= link_to 'Logout', destroy_user_session_path %></li>
 						
 					<% else %>

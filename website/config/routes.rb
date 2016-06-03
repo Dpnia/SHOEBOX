@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'about/index'
+
   get 'mybox/information'
   get 'mybox/new'
   post 'mybox/add'

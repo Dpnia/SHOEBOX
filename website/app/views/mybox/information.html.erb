@@ -1,21 +1,4 @@
 <br>
-<div class="jumbotron">
-<h2>My Smart Shoebox Information</h2>
-Here you can see your shoes information<br>
-</div>
-<% current_user.shoes.each do |s| %>
-  <div class="jumbotron">
-  <h3><%= s.shoename %></h3>
-  <%=form_tag '/mybox/destroy', method: 'get' do %>
-	<input type="hidden" name = "id" value="<%= s.id %>">
-	Type : <%= s.shoetype %><br>
-	Color : <%= s.color %><br>
-	<button type="button" class="btn-default"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
-	<input type="submit" class="btn-default" value="Delete" onclick="confirm('Delete?');"></div>
-  <% end %>
-<% end %>
-<br>
-<h4><%= link_to 'Add Item', mybox_new_path %></h4> 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -27,15 +10,17 @@ Here you can see your shoes information<br>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_men.jpg" alt="...">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/select/deericky/img_deericky_banner02.jpg" alt="...">
       <div class="carousel-caption">
-        <h1>My Smart Shoebox</h1>
+        <h1>My Smart Shoebox Information</h1>
+        <h3>Here you can add and see your shoes information</h3>
       </div>
     </div>
     <div class="item">
-      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_kids.jpg" alt="...">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/select/swash/img_swash_banner06.jpg" alt="...">
       <div class="carousel-caption">
-        <h1>My Smart Shoebox</h1>
+        <h1>My Smart Shoebox Information</h1>
+        <h3>Here you can add and see your shoes information</h3>
       </div>    
     </div>
 
@@ -51,3 +36,17 @@ Here you can see your shoes information<br>
     <span class="sr-only">Next</span>
   </a>
 </div>
+<br>
+<% current_user.shoes.each do |s| %>
+  <div class="jumbotron">
+  <h3><%= s.shoename %></h3>
+  <%=form_tag '/mybox/destroy', method: 'get' do %>
+	<input type="hidden" name = "id" value="<%= s.id %>">
+	Type : <%= s.shoetype %><br>
+	Color : <%= s.color %><br>
+	<button type="button" class="btn-default"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
+	<input type="submit" class="btn-default" value="Delete" onclick="confirm('Delete?');"></div>
+  <% end %>
+<% end %>
+<br>
+<h4><%= link_to 'Add Item', mybox_new_path %></h4> 

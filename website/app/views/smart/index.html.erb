@@ -1,29 +1,4 @@
 <br>
-<div class="jumbotron">
-<h2>Smart Function</h2>
-</div>
-<div class="jumbotron">
- <%=form_tag '/smart/change', method: 'post' do %>
- MY Shoebox IPaddress : <%= current_user.ipaddress %><br>
- <input type="text" name="ipaddress" placeholder="000.000.000.000">
- <input type="submit" value="Submit">
- <% end %>
- <br>
- <button id="10" class="led">Drying Function ON/OFF</button><br><br>
- <button id="11" class="led">Deodorization Function ON/OFF</button><br><br> <!-- button for pin 11 -->
- <button id="12" class="led">Sterilization Function ON/OFF</button><br><br> <!-- button for pin 12 -->
- <button id="13" class="led">보온기능 ON/OFF</button><br><br> <!-- button for pin 13 -->
- 
- <script>
-  $(document).ready(function(){
-   $(".led").click(function(){
-    var p = $(this).attr('id'); // get id value (i.e. pin13, pin12, or pin11)
-    // send HTTP GET request to the IP address with the parameter "pin" and value "p", then execute the function
-    $.get("http://<%= current_user.ipaddress %>:80/", {pin:p}); // execute get request (아두이노 웹서버 IP 주소로 고쳐 준다)
-   });
-  });
- </script>
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -35,15 +10,17 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_men.jpg" alt="...">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_kids.jpg" alt="...">
       <div class="carousel-caption">
-        <h1>My Smart Shoebox</h1>
+        <h1>Smart Function</h1>
+        <h3>smart shoes care solution will provide Drying/Deodorization/Sterilization</h3>
       </div>
     </div>
     <div class="item">
-      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_kids.jpg" alt="...">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_men.jpg" alt="...">
       <div class="carousel-caption">
-        <h1>My Smart Shoebox</h1>
+        <h1>Smart Function</h1>
+        <h3>smart shoes care solution will provide Drying/Deodorization/Sterilization</h3>
       </div>    
     </div>
 
@@ -59,4 +36,25 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-</div>
+<br>
+ <%=form_tag '/smart/change', method: 'post' do %>
+ <h2>Please type your Smart Shoebox IP address below</h2> <%= current_user.ipaddress %><br>
+ <input type="text" name="ipaddress" placeholder="000.000.000.000">
+ <input type="submit" value="Submit">
+ <% end %>
+ <br>
+ <button id="10" class="led">Drying Function ON/OFF</button><br><br>
+ <button id="11" class="led">Deodorization Function ON/OFF</button><br><br> <!-- button for pin 11 -->
+ <button id="12" class="led">Sterilization Function ON/OFF</button><br><br> <!-- button for pin 12 -->
+ <button id="13" class="led">Function ON/OFF</button><br><br> <!-- button for pin 13 -->
+ 
+ <script>
+  $(document).ready(function(){
+   $(".led").click(function(){
+    var p = $(this).attr('id'); // get id value (i.e. pin13, pin12, or pin11)
+    // send HTTP GET request to the IP address with the parameter "pin" and value "p", then execute the function
+    $.get("http://<%= current_user.ipaddress %>:80/", {pin:p}); // execute get request (아두이노 웹서버 IP 주소로 고쳐 준다)
+   });
+  });
+ </script>
+

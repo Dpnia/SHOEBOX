@@ -37,6 +37,7 @@
   </a>
 </div>
 <br>
+ <div class="jumbotron">
  <%=form_tag '/smart/change', method: 'post' do %>
  <h2>Please type your Smart Shoebox IP address below</h2> <%= current_user.ipaddress %><br>
  <input type="text" name="ipaddress" placeholder="000.000.000.000">
@@ -57,4 +58,5 @@
    });
   });
  </script>
+ </div>
 

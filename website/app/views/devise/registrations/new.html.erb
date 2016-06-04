@@ -1,4 +1,43 @@
-<h3>Sign up</h3>
+<br>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://image.nike.co.kr/display/corner/1420/p1_160504_WLP_bg.png" alt="...">
+      <div class="carousel-caption">
+        <h1>WELCOME TO YOUR</h1>
+        <h1>Smart Shoebox</h1>
+        <p>What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://image.nike.co.kr/display/corner/1920/160527_fb_speed_room_bg_main.png" alt="...">
+      <div class="carousel-caption">
+         <h1>WELCOME TO YOUR</h1>
+         <h1>Smart Shoebox</h1>
+         <p>What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear.</p>
+      </div>    
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><h3>Sign up</h3>
 <br>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>

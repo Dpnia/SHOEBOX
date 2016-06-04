@@ -37,7 +37,10 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div><h3>Sign up</h3>
+</div>
+<br>
+<div class="jumbotron">
+<h3>Sign up</h3>
 <br>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -60,11 +63,14 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+  <br>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
+<br>
 
 <%= render "devise/shared/links" %>
+</div>
 

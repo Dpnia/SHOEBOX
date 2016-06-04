@@ -40,10 +40,12 @@
 <% current_user.shoes.each do |s| %>
   <div class="jumbotron">
   <h3><%= s.shoename %></h3>
+  <%= image_tag("8", height: '150', width: '250') %>
   <%=form_tag '/mybox/destroy', method: 'get' do %>
 	<input type="hidden" name = "id" value="<%= s.id %>">
 	Type : <%= s.shoetype %><br>
 	Color : <%= s.color %><br>
+  <br>
 	<button class="btn btn-default" type="submit"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
 	<input type="submit" class="btn btn-default" value="Delete" onclick="confirm('Delete?');"></div>
   <% end %>

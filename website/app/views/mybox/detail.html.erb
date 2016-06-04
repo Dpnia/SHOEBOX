@@ -1,6 +1,10 @@
-<h1>Detail Information</h1>
+<br>
+<div class="jumbotron">
+<h2>Detail Information</h2>
 
 	<h3><%= @shoe.shoename %></h3>
+	<%= image_tag("8", height: '150', width: '250') %>
+	<br>
 	Type : <%= @shoe.shoetype %><br>
 	Color : <%= @shoe.color %><br>
 	Watersensitivity : <%= @shoe.watersensitivity %>%<br>
@@ -10,4 +14,8 @@
 	Preference : <%= @shoe.preference %>%<br>
 	UsageTime : <%= @shoe.usagetime %> days<br>
 	Usable Time : <%= @shoe.predictedlife - @shoe.usagetime %> days<br>
-	Frequnecy : <%= @shoe.frequency %>%
+	Frequnecy : <%= @shoe.frequency %>%<br>
+	<br>
+	<button class="btn btn-default" type="submit"><%= link_to 'My Shoebox', mybox_information_path %></button>
+
+</div>

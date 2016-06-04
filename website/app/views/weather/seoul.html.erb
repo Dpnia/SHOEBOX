@@ -40,9 +40,9 @@
 <div class="jumbotron">
 <h2>Which city are you staying?</h2>
 <br>
-<button type="button" class="btn-default"><a href="/weather/seoul">Seoul</a></button>
-<button type="button" class="btn-default"><a href="/weather/busan">Busan</a></button>
-<button type="button" class="btn-default"><a href="/weather/daegu">Deagu</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/seoul">Seoul</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/busan">Busan</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/daegu">Deagu</a></button>
 <script> 
  	jQuery(document).ready(function($) { 
  	  $.ajax({ 
@@ -51,12 +51,12 @@
  	  dataType : "jsonp", 
  	  success : function(parsed_json) { 
  	  	 // location 
- 	  	 var location = parsed_json.location; 
- 	  	 var location_s = "<p>국가명(country_name):  "+location.country_name+"</p>"; 
- 	  	 location_s+= "<p>도시명(city_name):  "+location.city+"</p>"; 
+ 	  	 //var location = parsed_json.location; 
+ 	  	 //var location_s = "<p>국가명(country_name):  "+location.country_name+"</p>"; 
+ 	  	 //location_s+= "<p>도시명(city_name):  "+location.city+"</p>"; 
  	  	 //location_s+= "<p>경도(lat):  "+location.lat+"</p>"; 
  	  	 //location_s+= "<p>위도(lon):  "+location.lon+"</p>"; 
- 		 $("#locationinfo").append(location_s); 
+ 		 //$("#locationinfo").append(location_s); 
  	  	 // 관측지에 대한 정보 
  	  	 var observ = parsed_json.current_observation; 
  	  	 var observ_s = "<p>관측지 주소 전체 : "+observ.display_location.full+"</p>"; 
@@ -102,7 +102,7 @@
  	</div><!-- /content --> 
 </div>
 <br>
-<button type="button" class="btn-default"><a href="/weather/seoul">Seoul</a></button>
-<button type="button" class="btn-default"><a href="/weather/busan">Busan</a></button>
-<button type="button" class="btn-default"><a href="/weather/daegu">Deagu</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/seoul">Seoul</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/busan">Busan</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/daegu">Deagu</a></button>
 </div>

@@ -44,9 +44,9 @@
 	<input type="hidden" name = "id" value="<%= s.id %>">
 	Type : <%= s.shoetype %><br>
 	Color : <%= s.color %><br>
-	<button type="button" class="btn-default"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
-	<input type="submit" class="btn-default" value="Delete" onclick="confirm('Delete?');"></div>
+	<button class="btn btn-default" type="submit"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
+	<input type="submit" class="btn btn-default" value="Delete" onclick="confirm('Delete?');"></div>
   <% end %>
 <% end %>
 <br>
-<h4><%= link_to 'Add Item', mybox_new_path %></h4> 
+<button class="btn btn-default" type="submit"><h4><%= link_to 'Add Item', mybox_new_path %></h4> </button>

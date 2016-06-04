@@ -4,12 +4,12 @@
 html,
 body {
   height: 100%;
-  background-color: #D7AA48;
+  background-color: white;
 }
 body {
   color: #000;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  
 }
 
 .site-wrapper {
@@ -17,16 +17,4 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
 }

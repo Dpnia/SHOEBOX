@@ -1,4 +1,48 @@
+<br>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_men.jpg" alt="...">
+      <div class="carousel-caption">
+        <h1>Check the Weather outside</h1>
+        <h3>Before you go outside, check out the weather!</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_women.jpg" alt="...">
+      <div class="carousel-caption">
+        <h1>Check the Weather outside</h1>
+        <h3>Before you go outside, check out the weather!</h3>
+      </div>    
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<div class="jumbotron">
+<h2>Which city are you staying?</h2>
+<br>
+<button type="button" class="btn btn-default"><a href="/weather/seoul">Seoul</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/busan">Busan</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/daegu">Deagu</a></button>
 <script> 
  	jQuery(document).ready(function($) { 
  	  $.ajax({ 
@@ -7,16 +51,16 @@
  	  dataType : "jsonp", 
  	  success : function(parsed_json) { 
  	  	 // location 
- 	  	 var location = parsed_json.location; 
- 	  	 var location_s = "<p>국가명(country_name):  "+location.country_name+"</p>"; 
- 	  	 location_s+= "<p>도시명(city_name):  "+location.city+"</p>"; 
- 	  	 location_s+= "<p>경도(lat):  "+location.lat+"</p>"; 
- 	  	 location_s+= "<p>위도(lon):  "+location.lon+"</p>"; 
- 		 $("#locationinfo").append(location_s); 
+ 	  	 //var location = parsed_json.location; 
+ 	  	 //var location_s = "<p>국가명(country_name):  "+location.country_name+"</p>"; 
+ 	  	 //location_s+= "<p>도시명(city_name):  "+location.city+"</p>"; 
+ 	  	 //location_s+= "<p>경도(lat):  "+location.lat+"</p>"; 
+ 	  	 //location_s+= "<p>위도(lon):  "+location.lon+"</p>"; 
+ 		 //$("#locationinfo").append(location_s); 
  	  	 // 관측지에 대한 정보 
  	  	 var observ = parsed_json.current_observation; 
  	  	 var observ_s = "<p>관측지 주소 전체 : "+observ.display_location.full+"</p>"; 
- 	  	 observ_s += "<p>관측지 주소 국가 : "+observ.display_location.state_name+"</p>"; 
+ 	  	 //observ_s += "<p>관측지 주소 국가 : "+observ.display_location.state_name+"</p>"; 
  	  	 observ_s += "<p>관측지 주소 도시 : "+observ.display_location.city+"</p>"; 
  	  	 // observ_s += "<p>관측지 경도(latitude) : "+observ.display_location.latitude+"</p>"; 
  		 // observ_s += "<p>관측지 위도(longitude) : "+observ.display_location.longitude+"</p>"; 
@@ -29,10 +73,10 @@
  		// weather_s +="<p>현재 온도 화씨:  "+observ.temp_f+"</p>"; 
  		 weather_s +="<p>현재 온도 섭씨:  "+observ.temp_c+"</p>"; 
  		 weather_s +="<p>상대 습도 :  "+observ.relative_humidity+"</p>"; 
- 		 weather_s +="<p>바람 정보 전체 :  "+observ.wind_string+"</p>"; 
- 		 weather_s +="<p>풍향 :  "+observ.wind_dir+"</p>"; 
- 		 weather_s +="<p>풍속 (mph):  "+observ.wind_mph+"</p>"; 
- 		 weather_s +="<p>풍속 (kph):  "+observ.wind_kph+"</p>"; 
+ 		 //weather_s +="<p>바람 정보 전체 :  "+observ.wind_string+"</p>"; 
+ 		 //weather_s +="<p>풍향 :  "+observ.wind_dir+"</p>"; 
+ 		 //weather_s +="<p>풍속 (mph):  "+observ.wind_mph+"</p>"; 
+ 		 //weather_s +="<p>풍속 (kph):  "+observ.wind_kph+"</p>"; 
  		 weather_s +="<p>자외선 양:  "+observ.UV+"</p>"; 
  		 weather_s +="<p>아이콘 : "+observ.icon+"</p>"; 
  		 weather_s +="<p>아이콘 그림 :  "+"<img src='"+observ.icon_url+"'/></p>"; 
@@ -45,19 +89,20 @@
 
 <div data-role="page"> 
   	<div data-role="content">	 
- 		<p><h1>서울의 현재 날씨</h1></p> 
- 		<div id="locationinfo"> 
- 			<h2>위치정보</h2> 
- 		</div> 
- 		<div id="observinfo"> 
- 			<h2>관측지 정보</h2> 
- 		</div> 
+ 		<p><h2>서울의 현재 날씨</h2></p> 
+ 		<!-- <div id="locationinfo"> 
+      <h2>위치정보</h2> 
+    </div> -->
+ 		<!--<div id="observinfo"> 
+      <h2>관측지 정보</h2> 
+    </div>-->
  		<div id="weatherinfo"> 
  			<h2>날씨 정보</h2> 
  		</div> 
  	</div><!-- /content --> 
 </div>
 <br>
-<button type="button" class="btn-default"><a href="/weather/seoul">Seoul</a></button>
-<button type="button" class="btn-default"><a href="/weather/busan">Busan</a></button>
-<button type="button" class="btn-default"><a href="/weather/daegu">Deagu</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/seoul">Seoul</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/busan">Busan</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/daegu">Deagu</a></button>
+</div>

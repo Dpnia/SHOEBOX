@@ -1,16 +1,54 @@
-<h1>Smart Function</h1>
+<br>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_kids.jpg" alt="...">
+      <div class="carousel-caption">
+        <h1>Smart Function</h1>
+        <h3>smart shoes care solution will provide Drying/Deodorization/Sterilization</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://d8wtay8lm19fy.cloudfront.net/skin/frontend/enterprise/puma/images/prouduct/listbanner_men.jpg" alt="...">
+      <div class="carousel-caption">
+        <h1>Smart Function</h1>
+        <h3>smart shoes care solution will provide Drying/Deodorization/Sterilization</h3>
+      </div>    
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+ <div class="jumbotron">
  <%=form_tag '/smart/change', method: 'post' do %>
- MY Shoebox IPaddress : <%= current_user.ipaddress %><br>
- <input type="text" name="ipaddress" placeholder="000.000.000.000">
- <input type="submit" value="Submit">
+ <h2>Please type your Smart Shoebox IP address below</h2> <%= current_user.ipaddress %><br>
+ <input type="text" class="btn btn-default" name="ipaddress" placeholder="000.000.000.000">
+ <input type="submit" class="btn btn-default" value="Submit">
  <% end %>
  <br>
- <button id="10" class="led">건조기능 ON/OFF</button>
- <button id="11" class="led">향균기능 ON/OFF</button> <!-- button for pin 11 -->
- <button id="12" class="led">적외선살균 ON/OFF</button> <!-- button for pin 12 -->
- <button id="13" class="led">보온기능 ON/OFF</button> <!-- button for pin 13 -->
-  
+ <button id="10" class="btn btn-default" class="led">Drying Function ON/OFF</button><br><br>
+ <button id="11" class="btn btn-default" class="led">Deodorization Function ON/OFF</button><br><br> <!-- button for pin 11 -->
+ <button id="12" class="btn btn-default" class="led">Sterilization Function ON/OFF</button><br><br> <!-- button for pin 12 -->
+ <button id="13" class="btn btn-default" class="led">Function ON/OFF</button><br><br> <!-- button for pin 13 -->
+ 
  <script>
   $(document).ready(function(){
    $(".led").click(function(){
@@ -20,5 +58,5 @@
    });
   });
  </script>
-
+ </div>
 

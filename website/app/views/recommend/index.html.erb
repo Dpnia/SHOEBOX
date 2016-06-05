@@ -54,6 +54,10 @@ We will choose the perfect shoes that matches your activity today!
 We will choose the perfect shoes that matches the weather today!
 <br>
 <br>
+<button type="button" class="btn btn-default"><a href="/weather/seoul">Seoul</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/busan">Busan</a></button>
+<button type="button" class="btn btn-default"><a href="/weather/daegu">Deagu</a></button>
+<br>
 <script> 
   jQuery(document).ready(function($) { 
     $.ajax({ 
@@ -77,8 +81,8 @@ We will choose the perfect shoes that matches the weather today!
      // observ_s += "<p>관측지 위도(longitude) : "+observ.display_location.longitude+"</p>"; 
      // observ_s += "<p>관측지 해발고도(elevation) : "+observ.display_location.elevation+"</p>"; 
      $("#observinfo").append(observ_s); 
-    // 날씨정보 
-     var weather_s = "<p>Update info:  "+observ.observation_time+"</p>"; 
+// 날씨정보 
+     var weather_s = "<p>Latest update:  "+observ.observation_time+"</p>"; 
      weather_s +="<p>Weather :  "+observ.weather+"</p>"; 
     // weather_s +="<p>현재 온도 화씨(섭씨):  "+observ.temperature_string+"</p>"; 
     // weather_s +="<p>현재 온도 화씨:  "+observ.temp_f+"</p>"; 
@@ -100,7 +104,7 @@ We will choose the perfect shoes that matches the weather today!
 
 <div data-role="page"> 
     <div data-role="content">  
-    <p><h2>서울의 현재 날씨</h2></p> 
+    <p><h2>Seoul</h2></p> 
     <!-- <div id="locationinfo"> 
       <h2>위치정보</h2> 
     </div> -->
@@ -108,8 +112,10 @@ We will choose the perfect shoes that matches the weather today!
       <h2>관측지 정보</h2> 
     </div>-->
     <div id="weatherinfo"> 
-      <h3>날씨 정보</h3> 
+      <h3>How is the weather?</h3> 
     </div> 
   </div><!-- /content --> 
+</div>
+
 </div>
   <input type="submit" value="Select" class="btn btn-default">

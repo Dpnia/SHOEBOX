@@ -1,4 +1,5 @@
 #include <SoftwareSerial.h>
+#include <stdlib.h>
 #include "DHT.h"
 
 #define DEBUG true 
@@ -8,10 +9,21 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 SoftwareSerial esp8266(2,3); // wifi 2,3 핀 사용!
+int FSR_value;
+int sensorPin = A2;
+int using_time=10; 
+
+String apiKey = "5GYVWZQH0VFZRAT6";
+int exit_flag = 0;
+char SoftSerial_read;
+int ms_old, ms_new;
 
 void setup() {
   Serial.begin(9600);
   esp8266.begin(9600); 
+
+  pinMode(10,OUTPUT);
+  digitalWrite(10,LOW);
   
   pinMode(11, OUTPUT);
   digitalWrite(11, LOW);
@@ -25,42 +37,149 @@ void setup() {
   sendData("AT+RST\r\n",2000,DEBUG); 
   sendData("AT+CIOBAUD?\r\n",2000,DEBUG); 
   sendData("AT+CWMODE=3\r\n",1000,DEBUG); 
- // sendData("AT+CWLAP\r\n",3000,DEBUG);
+  //sendData("AT+CWLAP\r\n",3000,DEBUG);
    
   sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",3000,DEBUG); // join the access point
   sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address - 192.168.43.194
   
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); 
   
-  sendData("AT+CIPSTART=4,\"TCP\",\"184.106.153.149\",80\r\n",1000,DEBUG);
-  
-  sendData("AT+CIPSEND=4,43\r\n",1000,DEBUG);
-
-  sendData("GET /update?key=5GYVWZQH0VFZRAT6&field1=t\r\n",1000,DEBUG);
-  
-  sendData("GET /update?key=5GYVWZQH0VFZRAT6&field2=22\r\n",1000,DEBUG);
-  
   sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80*
 
-  dht.begin();
 
+  dht.begin();
+ int counter = 0;
 }
  
 void loop() {
- delay(2000);
- float h = dht.readHumidity(); // 습도값 읽기
+  
+ float humi = dht.readHumidity(); // 습도값 읽기
 
- float t = dht.readTemperature(); // 온도값 읽기
+ float temp = dht.readTemperature(); // 온도값 읽기
 
   Serial.print("Humidity : ");
-  Serial.print(h);
+  Serial.print(humi);
   Serial.println();
   Serial.print("Temperature : ");
-  Serial.print(t);
+  Serial.print(temp);
   Serial.println();
 
-  //sendData("GET /update?key=5GYVWZQH0VFZRAT6&field1=t\r\n",1000,DEBUG);
-  //sendData("GET /update?key=5GYVWZQH0VFZRAT6&field2=0\r\n",1000,DEBUG);
+ FSR_value = analogRead(sensorPin);
+ Serial.print("Sensor : ");
+ Serial.println(FSR_value);
+ 
+ if(FSR_value > 10){
+ digitalWrite(10, HIGH);
+ }
+ else{
+  digitalWrite(10,LOW);
+  using_time = using_time + 1;
+ }
+ Serial.println(using_time);
+
+  char buf[16];
+  String strTemp = dtostrf(temp, 4, 1, buf);
+  String strTemp2 = dtostrf(using_time, 4, 1, buf);
+  String strTemp3 = dtostrf(humi, 4, 1, buf);
+
+    String cmd = "AT+CIPSTART=\"TCP\",\"";
+  cmd += "184.106.153.149"; // api.thingspeak.com
+  cmd += "\",80";
+  esp8266.println(cmd);
+
+  exit_flag = 0;
+  ms_old = millis();
+  do {
+    ms_new = millis();
+    if (esp8266.available())
+    {
+      SoftSerial_read = esp8266.read();
+      Serial.write(SoftSerial_read);
+      if (SoftSerial_read == 'd')
+      {
+        exit_flag = 1;
+      }
+    }
+    if ((ms_new - ms_old) > 1000)
+    {
+      exit_flag = 1;
+      Serial.println("\n\rtimeout@AT+CIPSTART");
+    }
+  } while (exit_flag == 0);
+  exit_flag = 0;
+
+  // prepare GET string
+  String getStr = "GET /update?api_key=";
+  getStr += apiKey;
+  getStr += "&field1=";
+  getStr += String(strTemp);
+  getStr += "&field2=";
+  getStr += String(strTemp2);
+  getStr += "&field3=";
+  getStr += String(strTemp3);
+  getStr += "\r\n\r\n";
+
+  // send data length
+  cmd = "AT+CIPSEND=";
+  cmd += String(getStr.length());
+  esp8266.println(cmd);
+  //Serial.println(cmd);
+
+  exit_flag = 0;
+  ms_old = millis();
+  do {
+    ms_new = millis();
+    if (esp8266.available())
+    {
+      SoftSerial_read = esp8266.read();
+      Serial.write(SoftSerial_read);
+      if (SoftSerial_read == '>' )
+      {
+        exit_flag = 1;
+        esp8266.print(getStr);
+      }
+    }
+    if ((ms_new - ms_old) > 1000)
+    {
+      exit_flag = 1;
+      Serial.println("\n\rtimeout@AT+CIPSEND");
+    }
+  } while (exit_flag == 0);
+  exit_flag = 0;
+
+  ms_old = millis();
+  do {
+    ms_new = millis();
+    if (esp8266.available())
+    {
+      SoftSerial_read = esp8266.read();
+      Serial.write(SoftSerial_read);
+    }
+    if ((ms_new - ms_old) > 3000)
+    {
+      exit_flag = 2;
+      Serial.println("\n\rtimeout@final_send");
+    }
+  } while (exit_flag == 0);
+  exit_flag = 0;
+
+  // thingspeak needs 15 sec delay between updates
+  //Serial.println("\n\rwait for 15 second");
+  //Serial.println("------------------------------------");
+
+  int counter=0;
+  ms_old = millis();
+  do {
+    ms_new = millis();
+    if ( (ms_new - ms_old) > 1000) //important use 'greater than'
+    {
+      ms_old = millis();
+      counter++;
+     // Serial.print(counter);
+     // Serial.print(" ");      
+    }
+  } while ( counter<20  ); // 1분마다한번씩 정보전송!
+  //Serial.println("->");*/
   
 
 

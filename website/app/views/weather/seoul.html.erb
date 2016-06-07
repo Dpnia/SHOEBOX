@@ -40,9 +40,6 @@
 <div class="jumbotron">
 <h2>Which city are you staying?</h2>
 <br>
-<button type="button" class="btn btn-default"><a href="/weather/seoul">Seoul</a></button>
-<button type="button" class="btn btn-default"><a href="/weather/busan">Busan</a></button>
-<button type="button" class="btn btn-default"><a href="/weather/daegu">Deagu</a></button>
 <script> 
  	jQuery(document).ready(function($) { 
  	  $.ajax({ 
@@ -102,7 +99,7 @@
   </div><!-- /content --> 
 </div>
 <br>
-<button type="button" class="btn btn-default"><a href="/weather/seoul">Seoul</a></button>
-<button type="button" class="btn btn-default"><a href="/weather/busan">Busan</a></button>
-<button type="button" class="btn btn-default"><a href="/weather/daegu">Deagu</a></button>
+<button type="button" class="btn btn-default"><%= link_to 'Seoul', weather_seoul_path %></button>
+<button type="button" class="btn btn-default"><%= link_to 'Busan', weather_busan_path %></button>
+<button type="button" class="btn btn-default"><%= link_to 'Deagu', weather_daegu_path %></button>
 </div>

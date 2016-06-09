@@ -3,7 +3,7 @@
 #include "DHT.h"
 
 #define DEBUG true 
-#define DHTPIN 4 // 7번핀을 통해 온습도 전달!
+#define DHTPIN 4 // 4번핀을 통해 온습도 전달!
 #define DHTTYPE DHT11
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -37,18 +37,38 @@ void setup() {
   sendData("AT+RST\r\n",2000,DEBUG); 
   sendData("AT+CIOBAUD?\r\n",2000,DEBUG); 
   sendData("AT+CWMODE=3\r\n",1000,DEBUG); 
-  //sendData("AT+CWLAP\r\n",3000,DEBUG);
+ // sendData("AT+CWLAP\r\n",3000,DEBUG);
    
   sendData("AT+CWJAP=\"AndroidHotspot5051\",\"rbgur123!@#\"\r\n",3000,DEBUG); // join the access point
   sendData("AT+CIFSR\r\n",1000,DEBUG); // get ip address - 192.168.43.194
   
   sendData("AT+CIPMUX=1\r\n",1000,DEBUG); 
   
-  sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); // turn on server on port 80*
-
+     
+  
 
   dht.begin();
  int counter = 0;
+  esp8266.println("AT+RST");
+
+  exit_flag = 0;
+  ms_old = millis();
+  do {
+    ms_new = millis();
+    if (esp8266.available())
+    {
+      SoftSerial_read = esp8266.read();
+      Serial.write(SoftSerial_read);
+    }
+    if ( (ms_new - ms_old) > 3000 )
+    {
+      exit_flag = 1;
+      Serial.println("\n\rtimeout@reset");
+      Serial.println("====================================");
+    }
+  } while (exit_flag == 0);
+  exit_flag = 0;
+
 }
  
 void loop() {
@@ -180,35 +200,11 @@ void loop() {
     }
   } while ( counter<20  ); // 1분마다한번씩 정보전송!
   //Serial.println("->");*/
-  
 
-
-  
-  if(esp8266.available()) { // check if the esp is sending a message
-    if(esp8266.find("+IPD,")) {
-      delay(1000); // wait for the serial buffer to fill up (read all the serial data)
-      // get the connection id so that we can then disconnect
-      int connectionId = esp8266.read()-48; // subtract 48 because the read() function returns 
-                                           // the ASCII decimal value and 0 (the first decimal number) starts at 48
-      esp8266.find("pin="); // advance cursor to "pin="
-      int pinNumber = (esp8266.read()-48)*10; // get first number i.e. if the pin 13 then the 1st number is 1, then multiply to get 10
-      pinNumber += (esp8266.read()-48); // get second number, i.e. if the pin number is 13 then the 2nd number is 3, then add to the first number
-      digitalWrite(pinNumber, !digitalRead(pinNumber)); // toggle pin    
-
-     
-      // make close command
-      String closeCommand = "AT+CIPCLOSE="; 
-      closeCommand+=connectionId; // append connection id
-      closeCommand+="\r\n";
-      sendData(closeCommand,1000,DEBUG); // close connection
-       }
-  }
-
+ 
 
 }
- 
- 
-String sendData(String command, const int timeout, boolean debug) {
+ String sendData(String command, const int timeout, boolean debug) {
     String response = "";
     esp8266.print(command); // send the read character to the esp8266
     long int time = millis();
@@ -226,8 +222,3 @@ String sendData(String command, const int timeout, boolean debug) {
     } 
     return response;
 }
-
-
-
-
-

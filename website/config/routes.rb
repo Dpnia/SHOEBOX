@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get 'weather/daegu'
 
   get 'recommend/index'
-  get 'recommend/result'
+  post 'recommend/result'
   post 'smart/change'
 
   devise_for :users

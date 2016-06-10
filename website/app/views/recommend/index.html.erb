@@ -124,4 +124,17 @@ We will choose the perfect shoes that matches the weather today!
 <br><br>
 <input type="submit" value="Select" class="btn btn-default">
 </div>
+
+<script>
   
+    $(document).ready(function() {
+      
+      $.getJSON('https://thingspeak.com/channels/120593/field/1.json?result=1', function(data) {
+        $.each(data.feeds, function(i, feed) {
+            var x = feed.field1;
+            $("pre").text("온도 : "+x);    
+        });
+      });
+    });
+</script>
+<pre></pre>

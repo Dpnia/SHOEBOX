@@ -14,7 +14,7 @@ class CreateShoes < ActiveRecord::Migration
 
       t.integer :usagetime, default: 0, null: false
       t.integer :preference
-      t.integer :frequency, default: 0, null: false
+      t.integer :recommendindex, default: 0, null: false
 
       t.boolean :jogging
       t.boolean :casual

@@ -11,8 +11,7 @@ module MyboxHelper
     		predictedlife: 2000,
     		weight: 320,
     		preference: 80, 
-            frequency: 13,
-
+           
             jogging: true,
             casual: true,
             sports: true,
@@ -37,8 +36,7 @@ module MyboxHelper
     		predictedlife: 500,
     		weight: 430,
     		preference: 60, 
-            frequency: 8,
-
+           
             jogging: false,
             casual: true,
             sports: false,
@@ -62,7 +60,6 @@ module MyboxHelper
             warmth: 25,
             weight: 370,
             preference: 60,
-            frequency: 3,
             
             jogging: true,
             casual: false,
@@ -87,8 +84,7 @@ module MyboxHelper
             predictedlife: 1500,
             weight: 650,
             preference: 60, 
-            frequency: 11,
-
+           
             jogging: false,
             casual: true,
             sports: false,
@@ -112,7 +108,6 @@ module MyboxHelper
             predictedlife: 1000,
             weight: 530,
             preference: 60, 
-            frequency:20,
             
             jogging: false,
             casual: false,
@@ -137,8 +132,7 @@ module MyboxHelper
             predictedlife: 720,
             weight: 230,
             preference: 60,
-            frequency:17,
-
+           
             jogging: false,
             casual: true,
             sports: false,
@@ -162,8 +156,7 @@ module MyboxHelper
             predictedlife: 850,
             weight: 380,
             preference: 60, 
-            frequency: 10,
-
+           
             jogging: false,
             casual: true,
             sports: false,
@@ -187,8 +180,7 @@ module MyboxHelper
             predictedlife: 550,
             weight: 350,
             preference: 60,
-            frequency: 8,
-
+           
             jogging: false,
             casual: true,
             sports: false,
@@ -212,8 +204,7 @@ module MyboxHelper
             predictedlife: 820,
             weight: 450,
             preference: 60,
-            frequency:1,
-
+           
             jogging: false,
             casual: false,
             sports: false,
@@ -237,8 +228,7 @@ module MyboxHelper
             predictedlife: 1000,
             weight: 600,
             preference: 60, 
-            frequency: 3,
-
+           
             jogging: false,
             casual: true,
             sports: false,
@@ -262,7 +252,6 @@ module MyboxHelper
             predictedlife: 680,
             weight: 750,
             preference: 60, 
-            frequency: 1,
             
             jogging: false,
             casual: false,
@@ -288,8 +277,7 @@ module MyboxHelper
             predictedlife: 250,
             weight: 130,
             preference: 60,
-            frequency: 3,
-
+           
             jogging: false,
             casual: false,
             sports: false,
@@ -313,8 +301,7 @@ module MyboxHelper
             predictedlife: 200,
             weight: 170,
             preference: 60,
-            frequency:2,
-
+           
             jogging: false,
             casual: true,
             sports: false,

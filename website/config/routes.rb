@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'weather/seoul'
   get 'weather/busan'
   get 'weather/daegu'
-
+  post 'weather/change'
   get 'recommend/index'
   post 'recommend/result'
   post 'smart/change'

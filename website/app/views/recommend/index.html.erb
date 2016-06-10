@@ -44,10 +44,12 @@ We will choose the perfect shoes that matches your activity today!
 
 <p id="temp"></p>
 <p id="humi"></p>
+<p id="weather"></p>
 <br>
 <%=form_tag '/recommend/result', method: 'post' do %>
   <input type="hidden" id="temp1" name="temp1">
   <input type="hidden" id="humi1" name="humi1">
+  <input type="hidden" id="weather1" name="weather">
   <select name="choice" class="btn-default">
     <option value="selected">Choose your activity</option>
     <option value="jogging">Jogging</option>
@@ -82,6 +84,50 @@ We will choose the perfect shoes that matches your activity today!
       });
     });
 </script>
+<script> 
+  jQuery(document).ready(function($) { 
+    $.ajax({ 
+      // 결과를 한글로 받을 수 있다. 
+    url : "http://api.wunderground.com/api/8cbb9e815dacf101/geolookup/conditions/lang:EN/q/Korea/<%= current_user.city %>.json", 
+    dataType : "jsonp", 
+    success : function(parsed_json) { 
+       // location 
+       var location = parsed_json.location; 
+       //var location_s = "<p>국가명(country_name):  "+location.country_name+"</p>"; 
+       //location_s+= "<p>도시명(city_name):  "+location.city+"</p>"; 
+       //location_s+= "<p>경도(lat):  "+location.lat+"</p>"; 
+       //location_s+= "<p>위도(lon):  "+location.lon+"</p>"; 
+     //$("#locationinfo").append(location_s); 
+       // 관측지에 대한 정보 
+       var observ = parsed_json.current_observation; 
+       //var observ_s = "<p>관측지 주소 전체 : "+observ.display_location.full+"</p>"; 
+       //observ_s += "<p>관측지 주소 국가 : "+observ.display_location.state_name+"</p>"; 
+       //observ_s += "<p>관측지 주소 도시 : "+observ.display_location.city+"</p>"; 
+       // observ_s += "<p>관측지 경도(latitude) : "+observ.display_location.latitude+"</p>"; 
+     // observ_s += "<p>관측지 위도(longitude) : "+observ.display_location.longitude+"</p>"; 
+     // observ_s += "<p>관측지 해발고도(elevation) : "+observ.display_location.elevation+"</p>"; 
+     //$("#observinfo").append(observ_s); 
+    // 날씨정보 
+    // var weather_s = "<p>Latest update:  "+observ.observation_time+"</p>"; 
+    // weather_s +="<p>Weather :  "+observ.weather+"</p>"; 
+    // weather_s +="<p>현재 온도 화씨(섭씨):  "+observ.temperature_string+"</p>"; 
+    // weather_s +="<p>현재 온도 화씨:  "+observ.temp_f+"</p>"; 
+    // weather_s +="<p>Temperature:  "+observ.temp_c+"</p>"; 
+     //weather_s +="<p>상대 습도 :  "+observ.relative_humidity+"</p>"; 
+     //weather_s +="<p>바람 정보 전체 :  "+observ.wind_string+"</p>"; 
+     //weather_s +="<p>풍향 :  "+observ.wind_dir+"</p>"; 
+     //weather_s +="<p>풍속 (mph):  "+observ.wind_mph+"</p>"; 
+     //weather_s +="<p>풍속 (kph):  "+observ.wind_kph+"</p>"; 
+     //weather_s +="<p>자외선 양:  "+observ.UV+"</p>"; 
+     //weather_s +="<p>아이콘 : "+observ.icon+"</p>"; 
+     //weather_s +="<p>icon :  "+"<img src='"+observ.icon_url+"'/></p>"; 
+     //$("#weatherinfo").append(weather_s); 
+     $("#weather").text("현재 날씨 : "+observ.weather);
+     $("#weather1").val(observ.weather);
+    } 
+    }); 
+  });
+  </script>
 
 
 <br><br>

@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20160525053708) do
     t.integer  "warmth"
     t.integer  "usagetime",        default: 0, null: false
     t.integer  "preference"
-    t.integer  "frequency",        default: 0, null: false
+    t.integer  "recommendindex",   default: 0, null: false
     t.boolean  "jogging"
     t.boolean  "casual"
     t.boolean  "sports"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20160525053708) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "ipaddress"
+    t.string   "city"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end

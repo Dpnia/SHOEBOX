@@ -41,6 +41,10 @@
 <h2>What is your main activity today?</h2>
 We will choose the perfect shoes that matches your activity today!
 <br><br>
+
+<p id="temp"></p>
+<p id="humi"></p>
+<br>
   <select name="choice" class="btn-default">
     <option value="selected">Choose your activity</option>
     <option value="sports">sports</option>
@@ -121,20 +125,23 @@ We will choose the perfect shoes that matches the weather today!
   </div> 
 </div>
 -->
-<br><br>
-<input type="submit" value="Select" class="btn btn-default">
-</div>
-
 <script>
   
     $(document).ready(function() {
       
-      $.getJSON('https://thingspeak.com/channels/120593/field/1.json?result=1', function(data) {
+      $.getJSON('https://thingspeak.com/channels/120593/feeds.json?result=1', function(data) {
         $.each(data.feeds, function(i, feed) {
-            var x = feed.field1;
-            $("pre").text("온도 : "+x);    
+            
+            $("#temp").text("현재 신발장 온도 : "+feed.field1+" ℃");
+            $("#humi").text("현재 신발장 습도 : "+feed.field2+" %");    
         });
       });
     });
 </script>
-<pre></pre>
+
+
+<br><br>
+<input type="submit" value="Select" class="btn btn-default">
+
+</div>
+

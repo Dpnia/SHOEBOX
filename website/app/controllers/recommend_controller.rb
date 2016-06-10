@@ -37,6 +37,9 @@ class RecommendController < ApplicationController
   	  	s.recommendindex += 30	
   	  end
 
+
+    
+
       if @temperature > 30 && s.warmth <= 40
        	s.recommendindex += 20
 	  elsif 20 < @temperature && 30 >= @temperature && s.warmth <= 50
@@ -76,7 +79,33 @@ class RecommendController < ApplicationController
                  s.recommendindex += 20
       elsif 90 < s.preference &&  100 >=s.preference 
                  s.recommendindex +=25
-      end           
+      end  
+
+      if @choice == "jogging" &&  60< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "casual" && 20< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "sports" && 70< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "trip" &&  40< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "storll" &&  5< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "official" &&  10< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "date" &&  30< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "business" && 20< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "soccer" &&  70< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "basketball" &&  70< s.activity 
+        s.recommendindex += 5
+      elsif @choice == "house" &&  0< s.activity && s.activity <=10
+        s.recommendindex += 5 
+      end
+
+
      s.save
     end
   end

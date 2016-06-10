@@ -4,28 +4,28 @@ class RecommendController < ApplicationController
   end
  
   def result
-  	@shoe = Shoe.all
-  	@temperature = params[:temp1]
-    @huminity = params[:humi1]
-  	@shoe.each do |s|
+  	
+  	@temperature = params[:temp1].to_i
+    @huminity = params[:humi1].to_i
+    @weather = params[:weather]
+    @purpose = params[:choice]
+  	current_user.shoes.each do |s|
   	  s.recommendindex = 0
-  	  if s["params[:choice]"] == true
-    	s.recommendindex += 20
-      end
-      if @temperature > 30 && s.warmth < 40
+  	  
+      if @temperature > 30 && s.warmth <= 40
        	s.recommendindex += 20
     
-	  elsif 20 < @temperature < 30 && s.warmth < 50
+	  elsif 20 < @temperature && 30 >= @temperature && s.warmth <= 50
 	    s.recommendindex += 20
 
-	  elsif 10< @temperature < 20 && s.warmth < 60
+	  elsif 10 < @temperature && 20 >= @temperature && s.warmth <= 60
 	    s.recommendindex += 20
-	  elsif @temperature < 10 && s.warmth > 60
+	  elsif @temperature <= 10 && s.warmth > 60
 	    s.recommendindex += 20
-	  elsif @temperature < 0 && s.warmth >80
+	  elsif @temperature <= 0 && s.warmth >= 80
         s.recommendindex +=20
       end
+    s.save
     end
-    @shoe.save
   end
 end

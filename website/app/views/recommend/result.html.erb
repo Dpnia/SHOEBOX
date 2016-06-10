@@ -1,1 +1,13 @@
-<%= @temperature %>
+<% current_user.shoes.each do |s| %>
+  <div class="jumbotron">
+  <h3><%= s.shoename %></h3>
+  <%= image_tag("8", height: '150', width: '250') %>
+  	<input type="hidden" name = "id" value="<%= s.id %>"><br>
+	Type : <%= s.shoetype %><br>
+	Color : <%= s.color %><br>
+	<h3>Recommend index : </h3>
+  <br>
+	
+  </div>
+  
+<% end %>

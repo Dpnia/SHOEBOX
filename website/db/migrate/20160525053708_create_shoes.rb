@@ -4,8 +4,8 @@ class CreateShoes < ActiveRecord::Migration
 	    t.string :shoename
 
       t.string :shoetype
-      t.string :purpose
       t.string :color
+      t.integer :activity
       t.integer :watersensitivity
       t.integer :odorsensitivity
       t.integer :predictedlife

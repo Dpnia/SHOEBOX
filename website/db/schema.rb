@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 20160525053708) do
   create_table "shoes", force: :cascade do |t|
     t.string   "shoename"
     t.string   "shoetype"
-    t.string   "purpose"
     t.string   "color"
+    t.integer  "activity"
     t.integer  "watersensitivity"
     t.integer  "odorsensitivity"
     t.integer  "predictedlife"

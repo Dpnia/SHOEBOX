@@ -45,6 +45,7 @@ We will choose the perfect shoes that matches your activity today!
 <p id="temp"></p>
 <p id="humi"></p>
 <br>
+<%=form_tag '/recommend/result', method: 'post' do %>
   <select name="choice" class="btn-default">
     <option value="selected">Choose your activity</option>
     <option value="sports">sports</option>
@@ -53,6 +54,7 @@ We will choose the perfect shoes that matches your activity today!
     <option value="school">school</option>
     <option value="supermarket">supermarket</option>
   </select>
+  <%= end %>
   <br>
 
   <!--

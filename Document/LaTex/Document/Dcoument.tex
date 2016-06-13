@@ -993,8 +993,10 @@ Directory & File names & Module names in use\\ \hline
 \\
 - Setup( ) : This is the work done only at the first time when the Arduino starts to activate. 
 (For example, setting up the rate or the wifi module.)
-\\- Loop( ) : This is the ongoing work of Arduino, while the Smart Shoebox is on.
-\\- Library : The open source provided to help developing Arduino.
+\\
+- Loop( ) : This is the ongoing work of Arduino, while the Smart Shoebox is on.
+\\
+- Library : The open source provided to help developing Arduino.
 \subsubsection{Where it is taken from} It is taken from the library list of Arduino official homepage. Arduino Playground is a wiki where all the users of Arduino can contribute and benefit from their collective research.
 
 (http://playground.arduino.cc/Main/LibraryList)
@@ -1023,7 +1025,7 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 
 % 6. use cases
 \section{Use Cases}
-\subsection{Use case 1 : Setup} This case is for the users using the Smart Shoebox for the first time.   
+\subsection{Use case 1 : Setup} This case is for the users using the Smart Shoebox for the first time.  If it is the first time for the user to use Smart Shoebox, you have to sign up for the website. If you are already registered, you can login with your id and password.
 %image15
 \begin{figure}[h]
 \begin{center}
@@ -1031,8 +1033,29 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
     \caption{Use case 1} \label{fig:label}
 \end{center}
 \end{figure}
+%image
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.3]{capture1}
+     \caption{Sign up page}\label{fig:label}
+\end{center}
+\end{figure}
+%image
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.3]{capture2}
+     \caption{Log in page}\label{fig:label}
+\end{center}
+\end{figure}
+%image
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.25]{capture3}
+     \caption{After logging in}\label{fig:label}
+\end{center}
+\end{figure}
 
-\subsection{Use case 2 : Users request for a Smart function} This case is taking care of the needs of the user to use the smart function of the Smart Shoebox. (Optimization, Drying, Sterilization, Deodorization)
+\subsection{Use case 2 : Users request for a Smart function} This case is taking care of the needs of the user to use the smart function of the Smart Shoebox. (Optimization, Drying, Sterilization, Deodorization) After the use case one, the user is in the website. You can click on the Smart function tab on the top. In the page of Smart function, you have to type in the IP address of the Smart Shoebox. After typing in the IP addresses, all the user has to do is click the function which the user needs. You can use the functions as long as you want and click the button again to turn it off.
 %image16
 \begin{figure}[h]
 \begin{center}
@@ -1040,7 +1063,14 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
     \caption{Use case 2} \label{fig:label}
 \end{center}
 \end{figure}
-\subsection{Use case 3 : Users request for the weather forecast} This case is taking care of the needs of the user to see the weather.
+%image
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.25]{capture4}
+    \caption{Smart function page} \label{fig:label}
+\end{center}
+\end{figure}
+\subsection{Use case 3 : Users request for the weather forecast} This case is taking care of the needs of the user to see the weather. After the use case one, the user is in the website. You can click on the Weather tab on the top. In the page of Weather, the user can choose the city, which he or she is interested in. There are few cities of South Korea provided.
 %image17
 \begin{figure}[h]
 \begin{center}
@@ -1048,8 +1078,15 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
     \caption{Use case 3} \label{fig:label}
 \end{center}
 \end{figure}
+%image
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[scale=0.25]{capture5}
+    \caption{Weather page} \label{fig:label}
+\end{center}
+\end{figure}
 
-\subsection{Use case 4 : Users request for Recommendation} This case covers the needs of the user to receive a recommendation of the shoes.
+\subsection{Use case 4 : Users request for Recommendation} This case covers the needs of the user to receive a recommendation of the shoes. After the use case one, the user is in the website. You can click on the Recommendation tab on the top. In the page of Recommendation, the user can choose the main activity and the city, which he or she is staying or panning to go. After selecting these two, the user submits. Based on the two information, the website provides recommendation points for each shoes.
 %image18
 \begin{figure}[h]
 \begin{center}
@@ -1057,16 +1094,20 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
     \caption{Use case 4} \label{fig:label}
 \end{center}
 \end{figure}
-
-\subsection{Use case 5 : Users request for detail information about the shoes} This case covers the needs of the user to see the detail information of the shoes contained in the Smart Shoebox.
+\subsection{Use case 5 : Adding the shoes to the Smart Shoebox} This case is to explain the process for the user adding the shoes to the Smart Shoebox. After the use case one, the user is in the website. You can click on the My shoebox tab on the top. In the page of My shoebox, the user can add the items the user possess. 
+\subsection{Use case 6 : Users request for detail information about the shoes} This case covers the needs of the user to see the detail information of the shoes contained in the Smart Shoebox. After the use case one, the user is in the website.  After the use case one, the user is in the website. You can click on the My shoebox tab on the top. In the page of My shoebox, the user can choose the shoes he or she is interested in. If the user click the detail button each attached to the added item, the user can see all the detailed additional information.
 %image19
 \begin{figure}[h]
 \begin{center}
     \includegraphics[scale=0.6]{usecase5}
-    \caption{Use case 5} \label{fig:label}
+    \caption{Use case 6} \label{fig:label}
 \end{center}
 \end{figure}
 
+% 7. installation guide
+%\section{Installation guide}
+% 8. Discussion
+%\section{Discussion}
 
 
 

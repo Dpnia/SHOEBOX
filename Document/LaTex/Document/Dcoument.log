@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.23)  30 MAY 2016 04:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.23)  13 JUN 2016 09:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,6 +252,18 @@ LaTeX Warning: Label `fig:label' multiply defined.
 
 
 LaTeX Warning: Label `tab:template' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
 
 
 LaTeX Warning: Label `fig:label' multiply defined.
@@ -928,35 +940,82 @@ File: usecase1.png Graphic file (type png)
 Package pdftex.def Info: usecase1.png used on input line 1032.
 (pdftex.def)             Requested size: 206.77199pt x 234.37505pt.
 
-<usecase2.png, id=93, 832.10875pt x 704.6325pt>
-File: usecase2.png Graphic file (type png)
- <use usecase2.png>
-Package pdftex.def Info: usecase2.png used on input line 1041.
-(pdftex.def)             Requested size: 249.63455pt x 211.39139pt.
+<capture1.png, id=93, 747.79375pt x 485.815pt>
+File: capture1.png Graphic file (type png)
+ <use capture1.png>
+Package pdftex.def Info: capture1.png used on input line 1039.
+(pdftex.def)             Requested size: 224.33984pt x 145.74562pt.
+
+<capture2.png, id=94, 747.79375pt x 459.7175pt>
+File: capture2.png Graphic file (type png)
+ <use capture2.png>
+Package pdftex.def Info: capture2.png used on input line 1046.
+(pdftex.def)             Requested size: 224.33984pt x 137.9163pt.
+
+<capture3.png, id=95, 993.7125pt x 553.06625pt>
+File: capture3.png Graphic file (type png)
+ <use capture3.png>
+Package pdftex.def Info: capture3.png used on input line 1053.
+(pdftex.def)             Requested size: 248.4275pt x 138.26622pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<usecase3.png, id=94, 222.8325pt x 350.30875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<usecase2.png, id=96, 832.10875pt x 704.6325pt>
+File: usecase2.png Graphic file (type png)
+ <use usecase2.png>
+Package pdftex.def Info: usecase2.png used on input line 1062.
+(pdftex.def)             Requested size: 249.63455pt x 211.39139pt.
+
+<capture4.png, id=97, 976.64874pt x 656.4525pt>
+File: capture4.png Graphic file (type png)
+ <use capture4.png>
+Package pdftex.def Info: capture4.png used on input line 1069.
+(pdftex.def)             Requested size: 244.16159pt x 164.11272pt.
+ [10 <./module2.png> <./usecase1.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<usecase3.png, id=103, 222.8325pt x 350.30875pt>
 File: usecase3.png Graphic file (type png)
  <use usecase3.png>
-Package pdftex.def Info: usecase3.png used on input line 1049.
+Package pdftex.def Info: usecase3.png used on input line 1077.
 (pdftex.def)             Requested size: 133.70053pt x 210.18686pt.
- [10 <./module2.png> <./usecase1.png>] <usecase4.png, id=100, 251.94125pt x 524
-.96124pt>
-File: usecase4.png Graphic file (type png)
 
-<use usecase4.png>
-Package pdftex.def Info: usecase4.png used on input line 1058.
+<capture5.png, id=104, 1002.74625pt x 676.5275pt>
+File: capture5.png Graphic file (type png)
+ <use capture5.png>
+Package pdftex.def Info: capture5.png used on input line 1084.
+(pdftex.def)             Requested size: 250.68594pt x 169.13145pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<usecase4.png, id=105, 251.94125pt x 524.96124pt>
+File: usecase4.png Graphic file (type png)
+ <use usecase4.png>
+Package pdftex.def Info: usecase4.png used on input line 1093.
 (pdftex.def)             Requested size: 151.16591pt x 314.97917pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<usecase5.png, id=101, 274.02374pt x 486.81876pt>
+<usecase5.png, id=106, 274.02374pt x 486.81876pt>
 File: usecase5.png Graphic file (type png)
  <use usecase5.png>
-Package pdftex.def Info: usecase5.png used on input line 1067.
+Package pdftex.def Info: usecase5.png used on input line 1102.
 (pdftex.def)             Requested size: 164.41551pt x 292.0935pt.
 
 
@@ -973,19 +1032,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[11 <./usecase2.png> <./usecase3.png> <./usecase4.png>] [12
+[11 <./capture1.png> <./capture2.png> <./capture3.png> <./usecase2.png>]
+[12 <./capture4.png> <./usecase3.png> <./capture5.png> <./usecase4.png>]
+[13
 
- <./usecase5.png>]
-(./Dcoument.aux)
+ <./usecase5.png>] (./Dcoument.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2539 strings out of 493027
- 42134 string characters out of 6134069
+ 2564 strings out of 493027
+ 42529 string characters out of 6134069
  110719 words of memory out of 5000000
- 6040 multiletter control sequences out of 15000+600000
+ 6060 multiletter control sequences out of 15000+600000
  36554 words of font info for 70 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  37i,10n,23p,801b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -994,10 +1054,10 @@ exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on Dcoument.pdf (12 pages, 2077409 bytes).
+Output written on Dcoument.pdf (13 pages, 7479209 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

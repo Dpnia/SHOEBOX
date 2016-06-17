@@ -9,12 +9,12 @@
 	Color : <%= @shoe.color %><br>
 	Watersensitivity : <%= @shoe.watersensitivity %>%<br>
 	Odorsensitivity : <%= @shoe.odorsensitivity %>%<br>
-	Predictedlife : <%= @shoe.predictedlife %> days<br>
+	Predictedlife : <%= @shoe.predictedlife %> hours<br>
 	Weight : <%= @shoe.weight %>g<br>
+	Detail : <%= @shoe.warmth %><br>
 	Preference : <%= @shoe.preference %>%<br>
 	UsageTime : <%= @shoe.usagetime %> days<br>
 	Usable Time : <%= @shoe.predictedlife - @shoe.usagetime %> days<br>
-	Frequnecy : <%= @shoe.frequency %>%<br>
 	<br>
 	<button class="btn btn-default" type="submit"><%= link_to 'My Shoebox', mybox_information_path %></button>
 

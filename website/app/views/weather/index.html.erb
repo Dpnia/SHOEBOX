@@ -40,14 +40,23 @@
 
 <br>
 <div class="jumbotron">
+
+<%=form_tag '/weather/change', method: 'post' do %>
 <h2>Which city are you staying?</h2>
 <br>
-
+ <select name="city" class="btn-default">
+   <option value"" selected>Plsease select</option>
+   <option value="seoul">Seoul</option>
+   <option value="buasn">Busan</option>
+   <option value="daegu">Daegu</option>
+ </select>
+ <input type="submit" class="btn btn-default" value="Submit">
+ <% end %>
 <script> 
   jQuery(document).ready(function($) { 
     $.ajax({ 
       // 결과를 한글로 받을 수 있다. 
-    url : "http://api.wunderground.com/api/8cbb9e815dacf101/geolookup/conditions/lang:EN/q/Korea/Seoul.json", 
+    url : "http://api.wunderground.com/api/8cbb9e815dacf101/geolookup/conditions/lang:EN/q/Korea/<%= current_user.city %>.json", 
     dataType : "jsonp", 
     success : function(parsed_json) { 
        // location 
@@ -89,7 +98,7 @@
 
 <div data-role="page"> 
     <div data-role="content">  
-    <p><h2>Seoul</h2></p> 
+    <p><h2>Korea <%= current_user.city %></h2></p> 
     <!-- <div id="locationinfo"> 
       <h2>위치정보</h2> 
     </div> -->

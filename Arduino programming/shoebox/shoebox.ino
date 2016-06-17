@@ -12,9 +12,10 @@ SoftwareSerial esp8266(2,3); // wifi 2,3 핀 사용!
 int FSR_value;
 int sensorPin = A2;
 int using_time=10; 
+int using_shoe=0;
 
 String apiKey = "5GYVWZQH0VFZRAT6";
-int exit_flag = 0;
+int exit_flag = 0;  
 char SoftSerial_read;
 int ms_old, ms_new;
 
@@ -88,19 +89,25 @@ void loop() {
  Serial.print("Sensor : ");
  Serial.println(FSR_value);
  
- if(FSR_value > 10){
+ if(FSR_value > 0){
  digitalWrite(10, HIGH);
+ using_shoe = 20;
  }
  else{
   digitalWrite(10,LOW);
   using_time = using_time + 1;
+  using_shoe = 10;
  }
  Serial.println(using_time);
 
+ Serial.println(using_shoe);
+
+ 
   char buf[16];
   String strTemp = dtostrf(temp, 4, 1, buf);
   String strTemp2 = dtostrf(using_time, 4, 1, buf);
   String strTemp3 = dtostrf(humi, 4, 1, buf);
+  String strTemp4 = dtostrf(using_shoe, 4, 1, buf);
 
     String cmd = "AT+CIPSTART=\"TCP\",\"";
   cmd += "184.106.153.149"; // api.thingspeak.com
@@ -137,6 +144,8 @@ void loop() {
   getStr += String(strTemp2);
   getStr += "&field3=";
   getStr += String(strTemp3);
+  getStr += "&field4=";
+  getStr += String(strTemp4);
   getStr += "\r\n\r\n";
 
   // send data length
@@ -198,7 +207,7 @@ void loop() {
      // Serial.print(counter);
      // Serial.print(" ");      
     }
-  } while ( counter<20  ); // 1분마다한번씩 정보전송!
+  } while ( counter<5); // 1분마다한번씩 정보전송!
   //Serial.println("->");*/
 
  

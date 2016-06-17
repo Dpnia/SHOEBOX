@@ -301,7 +301,7 @@
 % Basically, \url{my_url_here}.
 
 
-
+ \usepackage{here}
 
 % *** Do not adjust lengths that control margins, column widths, etc. ***
 % *** Do not use packages that alter fonts (such as pslatex).         ***
@@ -370,7 +370,7 @@ Seoul, South Korea}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-This document is about the realization of automatic remote control for shoesthrough IoT. We will make smart shoes cabinet that provides this kind of features with other different kind of functions.
+This document is about the realization of automatic remote control for shoesthrough IoT. We will make smart shoes cabinet that provides this kind of features with other different kind of functions. Smart function to manage the shoes to be neat and pleasant to wear, recommendation function to recommend proper shoes for the user, analyzing the shoes information to classify are the main three things we want to realize.
 \\
 \end{abstract}
 
@@ -406,10 +406,10 @@ shoebox; shoes care; shoes rack; IoT;
 {|m{1.7cm}|m{1.7cm}|p{.47\linewidth}|}\hline
 
 Role & Name & Task and description etc\\ \hline
-User & Kwon Gyuhyeok & Suggest the actual features for the Smart Shoebox users can feel comfortable and interesting to use\\ \hline
-Customer & Shin Minki & Suggest the actual features for the Smart Shoebox customers can feel comfortable and interesting to use\\ \hline
-Software developer & Kim Junghyun & Focusing on the Technical aspects of the Smart Shoebox while developing \\ \hline
-Development manager & Ko Byunghee & Consider the service side of the Smart Shoebox while developing the system\\ \hline
+User & Kwon Gyuhyeok & Suggest the actual features for the Smart Shoebox users can feel comfortable and interesting to use and let the developer know what they want and what they need.\\ \hline
+Customer & Shin Minki & Suggest the actual features for the Smart Shoebox customers can feel comfortable and interesting to use. The feedback from both user and customer will be considered developing the Smart Shoebox.\\ \hline
+Software developer & Kim Junghyun & Focusing on the Technical aspects of the Smart Shoebox while developing to satisfiy the user and customer's need.\\ \hline
+Development manager & Ko Byunghee & Consider the service side of the Smart Shoebox while developing the system to satisfiy the user and customer's need.\\ \hline
 
 \end{tabular}
 \\
@@ -427,7 +427,9 @@ Many people experience difficulty managing their own shoes in a decent and pleas
 
 What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear. To realize the concepts of taking care of our shoes, we will develop a shoebox which manages shoes condition by controlling humidity and temperature automatically and periodically. 
 
-We are going to use Arduino to support with humidity and temperature recognition by receiving inputs through switches or sensors. Internet of Things (IoT) is also on the base of the idea. The ability to control things (especially shoes in this case) through internet is the main concept we are trying to realize. We are looking forward to create an integrated service tool such as situation awareness, automatic computing, self-growing. \\
+We are going to use Arduino to support with humidity and temperature recognition by receiving inputs through switches or sensors. Internet of Things (IoT) is also on the base of the idea. The ability to control things (especially shoes in this case) through internet is the main concept we are trying to realize. We are looking forward to create an integrated service tool such as situation awareness, automatic computing, self-growing. 
+
+The website will be designed and developed through html, ruby on rails and bootstrap. As the importance of user interface is becoming a big issue, we will try to make the interface more consumerized so that the user can easily use the Smart Shoebox.\\
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
@@ -526,7 +528,7 @@ With embedded system, the user can interact with the smart shoe care software an
 \subsubsection{Platform used for developing}package
  We will use both Windows and MAC OS . Since Windows is the most popular OS used worldwide and MAC OS is the second most popular OS leaving out all the other versions of Windows. We thought MAC OS X will become more popular. We also thought using other OS besides windows will mean a lot for us to use another environment to develop a software.
  %image1
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.45]{marketshare}
     \caption{Market share reports (January, 2016 to March, 2016)} \label{fig:label}
@@ -537,7 +539,7 @@ With embedded system, the user can interact with the smart shoe care software an
 We are using Arduino, SQLite, Ruby and HTML. We are trying to provide a web service with arduino acting inside the Smart Shoebox. The frontend will be using html and css, while the backend will be using ruby and ruby on rails as a application framework. We thought of using amazon EC2 but if we think of the server as a localhost, we might be using only ruby and ruby on rails for the server with SQLite.
 
 %TABLE2
-\begin{table}[h]
+\begin{table}[H]
 \renewcommand{\arrayrulewidth}{1pt}
 \renewcommand{\arraystretch}{2.5}
 \begin{tabular}
@@ -561,11 +563,11 @@ HTML5 and CSS3(client side) & We have decided the user interface environment as 
 \subsubsection{Cost estimation (Software / Hardware)}
 TABLE III and TABLE IV
 %TABLE3
-\begin{table}[h]
+\begin{table}[H]
 \renewcommand{\arrayrulewidth}{1pt}
 \renewcommand{\arraystretch}{2}
 \begin{tabular}
-{|p{4cm}|p{.5\linewidth}|}\hline
+{|p{3.5cm}|p{.5\linewidth}|}\hline
 
 Device & Price (won)\\ \hline
 Arduino uno R3 & 7,500\\ \hline
@@ -596,7 +598,7 @@ TOTAL & 49,800 \\ \hline
 \renewcommand{\arrayrulewidth}{1pt}
 \renewcommand{\arraystretch}{2}
 \begin{tabular}
-{|p{4cm}|p{.5\linewidth}|}\hline
+{|p{3.5cm}|p{.5\linewidth}|}\hline
 
 Software&Task Description\\ \hline
 Source Tree(v1.8.3)&Version control \\ \hline
@@ -624,7 +626,7 @@ We have researched to find out if there is any existing software or algorithm in
 \subsubsection{Temperature Humidity Control system}
 As anyone can think of the air conditioner or greenhouse there were already a lot of systems and devices doing the actual part of our project to control the temperature and humidity for the given environment. (For our home, or for growing plants in the optimized temperature and humidity, and so on.) Even there were a lot of information about making the Arduino actually work as we planned to.
  %image2
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=1.2]{temperature_control}
     \caption{Advance Temperature Control (http://infusionva.com/)} \label{fig:label}
@@ -632,7 +634,7 @@ As anyone can think of the air conditioner or greenhouse there were already a lo
 \end{figure}
 
 %image3
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.4]{arduino}
     \caption{Airconditioner automatic control through Arduino} \label{fig:label}
@@ -646,7 +648,7 @@ There is an extensive class of Web applications that involve predicting user res
  The goal of a recommendation system is to predict the blanks in the utility matrix. 
 This recommendation system was in common with our project in the point that we will provide a recommendation information for the shoes with the weather APT and color of the shoes matching with the user?s clothes.
 %image4
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.5]{utilitymatrix}
     \caption{utilitymatrix} \label{fig:label}
@@ -656,7 +658,7 @@ This recommendation system was in common with our project in the point that we w
 \subsubsection{Classification Algorithm in datamining}
 Basic Principle (Inductive Learning Hypothesis): Any hypothesis found to approximate the target function well over a sufficiently large set of training examples will also approximate the target function well over other unobserved examples.
 %image5
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.5]{decisiontree_learning}
     \caption{decisiontree learning} \label{fig:label}
@@ -665,33 +667,74 @@ Basic Principle (Inductive Learning Hypothesis): Any hypothesis found to approxi
 
 This algorithm was in common with our project in the point that we will classify the shoes. 
 \\
+\subsubsection{Wifi technology}
+The IOT typically employ some kind of embedded technology that allows them to sense conditions such as pressure, humidity, temperature, motion, number of people in an area, etc. And then a technology allows them to connect to other things or the cloud so that they can send the information as well as be programmed. The choice of technology is usually dictated by the physical characteristics of the environment, such as the presence of wood, concrete, metal etc., the density of sensors, desired range, and data rates. Among these technologies, we choice the Wi-Fi as the most successful tool.
 
+Even though there are many ways to communicate wireless, we have decided to use wifi as the communication tool because we also use the website in the base.
+
+Also as we continued the research there were many advantages using the wifi.The most important part was the low cost of wifi. In the semiconductor world, most chips have roughly the same production cost, given some variability in die size and process technology, and with costs falling with increasing volume. While Wi-Fi chips have historically been priced higher than those based on the technologies more often associated with M2M and IoT, manufacturing costs are not necessarily greater. We expect, then, that Wi-Fi chips used in IoT applications and produced in very large numbers will in fact be very cost effective and comparable in price to any other suitable wireless components. And the greater functionality of Wi-Fi (security, power management, robust and mature firmware and drivers, etc.) adds significant value to that cost calculation.
+
+Also the low power gave us the reason to use wifi. IoT applications will seldom require 802.11n and 802.11ac levels of throughput, but lower-cost and more power-friendly solutions based on these (single-stream, for example) will typically be applied and implemented using modern low-power semiconductor process technologies.  Of course, not all IoT applications require battery power, but those that do will see no disadvantage from going the Wi-Fi route as Wi-Fi?s long history of power-saving capabilities applies quite nicely to IoT.
+%image5
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.5]{wifi}
+    \caption{IoT wifi technology} \label{fig:label}
+\end{center}
+\end{figure}
+\subsubsection{IOT example : Temperature Monitoring} Importance of monitoring temperature in industries is quite important as it affects the environment and the process of business e.g. food industry, process industry or any high tech industry such as data centers. Temperature is one of the important parameters which is monitored and controlled to ensure quality output. Most of the high tech industries will have high end climate control systems to monitor and manage temperature, however all organizations cannot afford the luxury of high end systems. Apart from small scale industry, temperature monitoring is important to people with remote cabins, warehouses, or any other location where access to location is difficult. With advancement in software technology and electronics it has become technically feasible to make pocket size high speed and high memory devices. The system is based on the Raspberry Pi which is cost effective and core OS is soft real time OS based on Linux. With Linux as OS, variety of features can be offered such as security, license free usage and community support. The frequency with which data is scanned is customizable and currently programmed to scan every 1 Hr (can be scaled). The data is stored in local MySQL database with updates sent to cloud. The Raspberry Pi also acts as a Server which can be accessed to see logged data. The data in cloud  also represents data graphically and can be downloaded in CSV format. One of the biggest benefits of using Raspberry Pi is the sensor network expansion. The sensors can be added can be configured and further extended with legacy RJ45 cable to and from Sensor Network. Capability to store data from other sensors such as light sensor, humidity, wind sensor, etc. gives flexibility to the system to customize and accommodate quite a lot of wants.
+
+In this IOT example(Temperature Monitoring) we decided to use the ThingSpeak for getting information from Arduino sensor and compatible programming with Raspberry Pi. 
+\\
+\subsubsection{Selfstarter and Refinery CMS : Ruby on rails web application}
+
+Among funding platforms galore, Self-starter helps you host your own crowdfunding site for your project. Donations are easily made via Amazon Payments, or you can choose your preferred provider. Simple and easy, driven by Ruby on Rails.
+Creating a website and managing content is much easier with Refinery CMS. It's a simple modular and extendable content management system. Released in 2009, it's currently undergoing improvements by the community in 10 different languages
+
+From these two open sources, we studied and try to follow the ruby on rails framework for our website. We were really surprised to find a lot of open sources that we can easily find and learn.
+
+
+\subsubsection{Ruby on rails}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.5]{ruby}
+    \label{fig:label}
+\end{center}
+\end{figure}
+Ruby on Rails, or simply Rails, is a web application framework written in Ruby under the MIT License. Rails is a model?view?controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, and HTML, CSS and JavaScript for display and user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern.
+\subsubsection{Database Management System}
+
+A database is an organized collection of data. It is the collection of schemas, tables, queries, reports, views and other objects. The data are typically organized to model aspects of reality in a way that supports processes requiring information, such as modelling the availability of rooms in hotels in a way that supports finding a hotel with vacancies.
+
+A database management system (DBMS) is a computer software application that interacts with the user, other applications, and the database itself to capture and analyze data. A general-purpose DBMS is designed to allow the definition, creation, querying, update, and administration of databases. Well-known DBMSs include MySQL, PostgreSQL, Microsoft SQL Server, Oracle, Sybase, SAP HANA, and IBM DB2. A database is not generally portable across different DBMSs, but different DBMS can interoperate by using standards such as SQL and ODBC or JDBC to allow a single application to work with more than one DBMS. Database management systems are often classified according to the database model that they support; the most popular database systems since the 1980s have all supported the relational model as represented by the SQL language.
+
+We have decided to use the database to store information about the users and the shoes inside the Smart Shoebox. With the stored information we can realize the feature of managing all the shoes the user possess.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.55]{database}
+    \caption{Example for database in ruby on rails}\label{fig:label}
+    This is the open source we have researched to study the database inside ruby on rails.
+\end{center}
+\end{figure}
 \subsection{Task Distribution}
 We have decided to distribute the project in big parts to make each participants to be responsible for the assigned parts. Still every person has to know how the project is going on in a big picture while being responsible for the assigned part.
 %TABLE5
-\begin{table}[h]
+\begin{table}[H]
 \renewcommand{\arrayrulewidth}{1pt}
 \renewcommand{\arraystretch}{2.5}
 \begin{tabular}
 {|p{4cm}|p{4cm}|}\hline
 Name & Responsible Part\\ \hline
-Kwon GyuHyeok&Arduino\\ \hline
-Shin MinKi&MySQL\\ \hline
-Kim JungHyun&Wireless fidelity control\\ \hline
-Ko ByungHee&Ruby on rails\\ \hline
+Kwon GyuHyeok&Arduino programming\\ \hline
+Shin MinKi&SQLite, database schema\\ \hline
+Kim JungHyun&Ruby on rails, Wireless fidelity control\\ \hline
+Ko ByungHee&Ruby on rails, Bootstrap\\ \hline
 \end{tabular}
 \\
 \\
 \caption{Task Distribution}
 \label{tab:template}
 \end{table}
-\\
-\\
-\\
-\\
-\\
-\\
-\\
 
 % 4. specification
 \section{Specification}
@@ -701,7 +744,7 @@ The specification is mostly in pseudocode and additionally graphs and charts wil
 \subsubsection{Temperature/Humidity control through ultraviolet lamp (automatic)}
 The arduino sensor receives temperature and humidity as inputs and truns on fan and ultraviolet lamp when temperature drops below 15 Celsius degree or humidity is higher than 
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.48]{optimization1}
     \label{fig:label}
@@ -710,7 +753,7 @@ The arduino sensor receives temperature and humidity as inputs and truns on fan 
 \subsubsection{Drying feature (on demand)}
 In case the user?s shoes get wet by rain or other liquids the user can request for drying function. The function will turn on fan on maximum rate and intensity of lamp will be middle.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.6]{optimization2}
     \label{fig:label}
@@ -719,7 +762,7 @@ In case the user?s shoes get wet by rain or other liquids the user can request f
 \subsubsection{Sterilization function (on demand)}
 In case the user feels the need for sterilization, user can request for this function. The function will turn on fan on middle rate and intensity of lamp will be maximum.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.6]{optimization3}
     \label{fig:label}
@@ -728,7 +771,7 @@ In case the user feels the need for sterilization, user can request for this fun
 \subsubsection{Deodorization function (on demand)}
 In case the user feels the need for deodorization, user can request for this function, which triggers a deodorant to shoot out. The Arduino will trigger the deodorant.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.6]{optimization4}
     \label{fig:label}
@@ -737,7 +780,7 @@ In case the user feels the need for deodorization, user can request for this fun
 \subsubsection{Deodorization function (automatic)}
 This function will provide the Smart Shoebox to trigger the deodorant to shoot out in one hour interval. 
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.6]{optimization5}
     \label{fig:label}
@@ -746,14 +789,12 @@ This function will provide the Smart Shoebox to trigger the deodorant to shoot o
 \subsubsection{Intensity control feature}
 The user can choose the intensity level of fan and lamp. Intensity is calculated as number between 1 to 3, which means maximum, middle, minimum.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.6]{optimization6}
     \label{fig:label}
 \end{center}
 \end{figure}
-\\
-
 \subsection{Management function}
 This management function is mostly about modeling and categorizing the shoes. Through the serial number scanning, captured image, 3D scanning and user input, the information about the user and shoes are managed in the database. 
 \subsubsection{Shoe categorization function (bar-code scanning)}
@@ -765,14 +806,14 @@ This management function is mostly about modeling and categorizing the shoes. Th
 The big arrow pointing to the database will be one of the ways of receiving the information of the shoes by the user. Like we mentioned at above part the ways will be the serial number scanning, analyzing the captured image, 3D scanning and analyzing user input.
 
 %image6
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.28]{management1}
     \caption{Shoe information into the database} \label{fig:label}
 \end{center}
 \end{figure}
 %image7
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.24]{management2}
     \caption{Example of the shoes modeling } \label{fig:label}
@@ -788,7 +829,7 @@ The modeling of each shoe into a number of category and setting the proper care 
 \subsubsection{Absence of shoes analysis (Base information)}
 We have decided to analyze the absence of shoes by weight sensor and use it as a base information for other analysis functions. The absence timer will be on and count the time of the shoes absence.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.6]{analysis1}
     \label{fig:label}
@@ -798,7 +839,7 @@ We have decided to analyze the absence of shoes by weight sensor and use it as a
 Durability is set to decrease by the time the shoe has been put on increases. We have decided the average shoes usage time as 12 hours a day and the durability changes while the absence time increases. Less than 2 weeks is considered to be a new one. Between 2 weeks and 4 weeks is considered to be not bad. 
 Between 4 weeks and 8 weeks is considered to be washed. Between 8 weeks and 16 weeks is considered to be careful. More than 16 weeks the shoes is considered to be replaced.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.58]{analysis2}
     \label{fig:label}
@@ -807,7 +848,7 @@ Between 4 weeks and 8 weeks is considered to be washed. Between 8 weeks and 16 w
 \subsubsection{Life prediction analysis}
 Based on the information of absence time, we provide the expected  life of the shoes. We subtract the absence time from the original life time.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.5]{analysis3}
     \label{fig:label}
@@ -817,7 +858,7 @@ Based on the information of absence time, we provide the expected  life of the s
 \subsubsection{Preference analysis (general)}
 Based on the information of absence time for a number of users, we provide the preference information of the shoes in general aspect. Since we all store the information about the shoes of the user in the database this is possible in both personal and general aspect. Using this Big data, the user can know which shoes are popular nowadays.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.54]{analysis4}
     \label{fig:label}
@@ -826,7 +867,7 @@ Based on the information of absence time for a number of users, we provide the p
 \subsubsection{Frequency analysis}
 Based on the information of absence time, we provide the frequency information for the shoes in percentage. We devide the used days by the whole day since the user started to use the Smart Shoebox.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.56]{analysis5}
     \label{fig:label}
@@ -838,23 +879,23 @@ Based on the information of absence time, we provide the frequency information f
 \subsection{Recommendation function}
 Smart Shoes cabinet will provide recommendation information with percentages based on different kind of aspects. Of course the final choice is up to the user. The main recommendation standard is the weather. So we have decided to place a screen for the weather.
 %image8
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.4]{UI1}
    \caption{Weather on the web screen}\label{fig:label}
 \end{center}
 \end{figure}
 %image9
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.32]{UI2}
+    \includegraphics[scale=0.29]{UI2}
    \caption{Recommendation on the web screen}\label{fig:label}
 \end{center}
 \end{figure}
 \subsubsection{Recommendation based on weather forecast }
 With weather API, the proper type of shoes is recommended. We decided to classify weather in three cases. ('Sunny' and 'Cloudy' and 'Rainy or Snowy') We will restrict the recommendation choices by the weather becomes bad. The word proper (the proper shoes for the weather) will be represented in the shoes modeled information in the database.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.4]{recommendation1}
     \label{fig:label}
@@ -863,7 +904,7 @@ With weather API, the proper type of shoes is recommended. We decided to classif
 \subsubsection{ Recommendation based on the use of shoes}
 Recommending the proper shoes type which matches with the user?s activity. The word proper (the proper shoes for the activity of the user) will be represented in the shoes modeled information in the database.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.5]{recommendation2}
     \label{fig:label}
@@ -872,7 +913,7 @@ Recommending the proper shoes type which matches with the user?s activity. The w
 \subsubsection{Recommendation based on the color of shoes}
 Recommending the proper shoes color which balances with the users clothing color. The word proper (the proper shoes for the clothes of the user) will be represented in the shoes modeled information in the database.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.56]{recommendation3}
     \label{fig:label}
@@ -883,7 +924,7 @@ Recommending the proper shoes color which balances with the users clothing color
 Showing the recommendation rate by different colors. For example, if the shoes are recommended, a specific color will appear on the shoe rack or on the screen the user is looking at. 
 Showing the recommendation rate by percentage. If the shoes are recommended strongly, the percentage will appear on the shoe rack or on the screen the user is looking at. 
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.5]{recommendation4}
     \label{fig:label}
@@ -897,7 +938,7 @@ Showing the recommendation rate by percentage. If the shoes are recommended stro
 With the increased weight, notification is given for contamination. The weight to be sensed is defined to be 20g.
 After the recognition of contamination, the information is notified to the user through messages on the screen.
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.6]{notification1}
     \label{fig:label}
@@ -911,14 +952,14 @@ After the recognition of contamination, the information is notified to the user 
 To realize this function we will provide a user interface through mainly web and additionally mobile and a screen for the Smart Shoebox. The already mentioned functions before will be on the UI so that the user can interact with the system. The temperature and humidity will be provided on the screen the user will be seeing. Optimaization function, management function, analysis function, recommendation function, notification function will be on the main screen for users to be able to use. 
 
 %image10
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.5]{UI4}
    \caption{Main page for Smart Shoebox}\label{fig:label}
 \end{center}
 \end{figure}
 %image11
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.5]{UI5}
    \caption{Shoes status for Smart Shoebox}\label{fig:label}
@@ -929,11 +970,8 @@ To realize this function we will provide a user interface through mainly web and
 % 5. Architecture Design and Implementation
 \section{Architecture Design and Implementation}
 \subsection{Overall architecture} We have three modules consisting of the Smart shoebox. First part is the Arduino module, which receives the request of the user by jQuery and reacts. It also provides temperature, humidity, pressure information to the web server, which is provided by the sensor of the Arduino. The second and third part is a set of web service. One is the front end module(HTML/CSS) and the other is the back end module(SQLite). The front end is mainly reacting with the client(user) and back end is mainly reacting with the server. The user can add a new item and sign up to the Smart Shoebox service. The server will provide the detail information of the registered item and recommend. As you can see in Fig. 12 all modules interact with each other. 
-\\
-\\
-\\
 %image12
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.32]{overallarchitecture}
    \caption{Overall system architecture}\label{fig:label}
@@ -941,19 +979,26 @@ To realize this function we will provide a user interface through mainly web and
 \end{figure}
 \subsection{Directory organization}
 We have three big folders, which follows the overall system architecture. One is the arduino and another is website folder for the ruby on rails and the last one is a folder for the LaTex documentaion.
-\\
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.65]{directory1}
+   \caption{Directory organization}\label{fig:label}
+   This is the directory organization using UML. There are three big parts including Arduino, Website and Document.
+\end{center}
+\end{figure}
+
 %TABLE6
 
-\begin{table}[h]
+\begin{table}[H]
 \renewcommand{\arrayrulewidth}{1pt}
 \renewcommand{\arraystretch}{2}
 \begin{tabular}
-{|m{3.3cm}|m{2.5cm}|m{2.5cm}|}\hline
+{|m{3cm}|m{2.2cm}|m{2.2cm}|}\hline
 
-Directory & File names & Module names in use\\ \hline
+Directory & File names & Module name\\ \hline
 /project/arduino/library & dht11.cpp, dht11.h & arduino\\ \hline
 /project/arduino/shoebox & shoebox.ino & arduino\\ \hline
-/project/website/app/controller & application-controller.rb, home-controller.rb, mybox-controller.rb, smart-controller.rb & rails model\\ \hline
+website/app/controller & application-controller.rb, home-controller.rb, mybox-controller.rb, smart-controller.rb & rails model\\ \hline
 /project/website/app/helper & application-helper.rb, home-helper.rb, mybox-helper.rb, smart-helper.rb & rails helper\\ \hline
 /project/website/app/models & shoe.rb, user.rb & rails model\\ \hline
 /project/website/app/views & ... & rails view\\ \hline
@@ -980,10 +1025,16 @@ Directory & File names & Module names in use\\ \hline
 
 \subsection{Module1:Arduino}
 %image13
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.33]{module1}
+    \includegraphics[scale=0.35]{module1}
     \caption{Module1 : Arduino} \label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.7]{directory2}
+   \caption{Arduino : Directory organization}\label{fig:label}
 \end{center}
 \end{figure}
 \subsubsection{Purpose} First, we are trying to receive information about the temperature, humidity, and pressure by each related sensors. The pressure sensor is for the recognition of the shoes. Second, we are trying to perform the smart functions the user will be requesting. Third, we are trying to interact with the Smart Shoebox with wifi module of Arduino.
@@ -993,9 +1044,19 @@ Directory & File names & Module names in use\\ \hline
 \\
 - Setup( ) : This is the work done only at the first time when the Arduino starts to activate. 
 (For example, setting up the rate or the wifi module.)
-\\
-- Loop( ) : This is the ongoing work of Arduino, while the Smart Shoebox is on.
-\\
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.44]{setup}
+  \label{fig:label}
+\end{center}
+\end{figure}
+- Loop( ) : This is the ongoing work of Arduino, while the Smart Shoebox is on. It is repeatedli reading the temperature and humidity from the sensor.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.55]{loop}
+  \label{fig:label}
+\end{center}
+\end{figure}
 - Library : The open source provided to help developing Arduino.
 \subsubsection{Where it is taken from} It is taken from the library list of Arduino official homepage. Arduino Playground is a wiki where all the users of Arduino can contribute and benefit from their collective research.
 
@@ -1004,13 +1065,42 @@ Directory & File names & Module names in use\\ \hline
 
 \subsection{Module2:Ruby on Rails}
 %image14
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.33]{module2}
+    \includegraphics[scale=0.38]{module2}
     \caption{Module2 : Ruby on Rails} \label{fig:label}
 \end{center}
 \end{figure}
-
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.58]{rubyonrails}
+  \caption{Ruby on Rails : Directory organization}\label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.65]{app}
+  \caption{Ruby on Rails : app : Directory organization}\label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.55]{db}
+  \caption{Ruby on Rails : db : Directory organization}\label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.52]{schemashoes}
+  \caption{Modeling Shoes in database}\label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.48]{schemausers}
+  \caption{Modeling Users in database}\label{fig:label}
+\end{center}
+\end{figure}
 \subsubsection{Purpose} The purpose of using the Ruby on Rails is to provide a easily accessed user interaction environment through web service. IoT will be realized through the web service, since it will let the user to take care of their shoes anytime, anywhere. So we have decided to use the Ruby on Rails application framework.
 \subsubsection{Functionality} There are several functionalities for the Ruby on Rails module. First user is able to check the status of the Smart Shoebox. The status contains the meaning of temperature and humidity. Second, the users are able to check the weather outside so that he or she could choose the proper shoes. Third with the weather information and the shoes information saved in the database recommendation function will be realized. Fourth, using the wifi, it will control the Smart Shoebox remotely. Last but not least, with Ruby on rails, the user information will be saved and managed in the database.
 \subsubsection{Location of Source Code}/project/shoebox/website
@@ -1022,33 +1112,38 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
  
 (http://railsinstaller.org/en)
 \subsubsection{How and Why we use it} Based on the Ruby programming language and MVC model we make a web service for the users of the Smart Shoebox. It is possible to developing a web service from scratch, but it is not a good idea to do so, when it is so important and emphasized to use an open sources. Application framework for the Ruby language is already provided and we have decided to build on top of it.
-
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.42]{mvc}
+    \caption{MVC} \label{fig:label}
+\end{center}
+\end{figure}
 % 6. use cases
 \section{Use Cases}
 \subsection{Use case 1 : Setup} This case is for the users using the Smart Shoebox for the first time.  If it is the first time for the user to use Smart Shoebox, you have to sign up for the website. If you are already registered, you can login with your id and password.
 %image15
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.5]{usecase1}
-    \caption{Use case 1} \label{fig:label}
+    \includegraphics[scale=0.7]{usecase1}
+    \caption{Use case 1 : Setup} \label{fig:label}
 \end{center}
 \end{figure}
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.3]{capture1}
      \caption{Sign up page}\label{fig:label}
 \end{center}
 \end{figure}
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.3]{capture2}
      \caption{Log in page}\label{fig:label}
 \end{center}
 \end{figure}
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.25]{capture3}
      \caption{After logging in}\label{fig:label}
@@ -1057,14 +1152,14 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 
 \subsection{Use case 2 : Users request for a Smart function} This case is taking care of the needs of the user to use the smart function of the Smart Shoebox. (Optimization, Drying, Sterilization, Deodorization) After the use case one, the user is in the website. You can click on the Smart function tab on the top. In the page of Smart function, you have to type in the IP address of the Smart Shoebox. After typing in the IP addresses, all the user has to do is click the function which the user needs. You can use the functions as long as you want and click the button again to turn it off.
 %image16
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.3]{usecase2}
-    \caption{Use case 2} \label{fig:label}
+    \caption{Use case 2 : Users request for a Smart function} \label{fig:label}
 \end{center}
 \end{figure}
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.25]{capture4}
     \caption{Smart function page} \label{fig:label}
@@ -1072,14 +1167,14 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 \end{figure}
 \subsection{Use case 3 : Users request for the weather forecast} This case is taking care of the needs of the user to see the weather. After the use case one, the user is in the website. You can click on the Weather tab on the top. In the page of Weather, the user can choose the city, which he or she is interested in. There are few cities of South Korea provided.
 %image17
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.6]{usecase3}
-    \caption{Use case 3} \label{fig:label}
+    \includegraphics[scale=0.8]{usecase3}
+    \caption{Use case 3 : Users request for the weather forecast} \label{fig:label}
 \end{center}
 \end{figure}
 %image
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.25]{capture5}
     \caption{Weather page} \label{fig:label}
@@ -1088,26 +1183,124 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 
 \subsection{Use case 4 : Users request for Recommendation} This case covers the needs of the user to receive a recommendation of the shoes. After the use case one, the user is in the website. You can click on the Recommendation tab on the top. In the page of Recommendation, the user can choose the main activity and the city, which he or she is staying or panning to go. After selecting these two, the user submits. Based on the two information, the website provides recommendation points for each shoes.
 %image18
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.6]{usecase4}
-    \caption{Use case 4} \label{fig:label}
+    \includegraphics[scale=0.8]{usecase4}
+    \caption{Use case 4 : Users request for Recommendation} \label{fig:label}
+\end{center}
+\end{figure}
+%image
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.25]{capture6}
+    \caption{Recommendation page} \label{fig:label}
 \end{center}
 \end{figure}
 \subsection{Use case 5 : Adding the shoes to the Smart Shoebox} This case is to explain the process for the user adding the shoes to the Smart Shoebox. After the use case one, the user is in the website. You can click on the My shoebox tab on the top. In the page of My shoebox, the user can add the items the user possess. 
-\subsection{Use case 6 : Users request for detail information about the shoes} This case covers the needs of the user to see the detail information of the shoes contained in the Smart Shoebox. After the use case one, the user is in the website.  After the use case one, the user is in the website. You can click on the My shoebox tab on the top. In the page of My shoebox, the user can choose the shoes he or she is interested in. If the user click the detail button each attached to the added item, the user can see all the detailed additional information.
-%image19
-\begin{figure}[h]
+%image
+\begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.6]{usecase5}
-    \caption{Use case 6} \label{fig:label}
+    \includegraphics[scale=0.26]{capture7}
+    \caption{My Shoebox page} \label{fig:label}
 \end{center}
 \end{figure}
-
+%image
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.26]{capture8}
+    \caption{Adding a new item to Smart Shoebox} \label{fig:label}
+\end{center}
+\end{figure}
+\subsection{Use case 6 : Users request for detail information about the shoes} This case covers the needs of the user to see the detail information of the shoes contained in the Smart Shoebox. After the use case one, the user is in the website.  After the use case one, the user is in the website. You can click on the My shoebox tab on the top. In the page of My shoebox, the user can choose the shoes he or she is interested in. If the user click the detail button each attached to the added item, the user can see all the detailed additional information.
+%image19
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.8]{usecase5}
+    \caption{Use case 6 : Users request for detail information about the shoes} \label{fig:label}
+\end{center}
+\end{figure}
 % 7. installation guide
-%\section{Installation guide}
+\section{Installation guide}
+\subsection{Introduction}
+This is the Step-by-Step Guide to software installation and maintenance. Actually, Smart Shoebox is activated through the website. Because of this feature of IoT, it seems to be simple and easy for the installation. But still there are several steps to follow to install the Smart Shoebox software.
+\subsection{Installation procedure}
+\subsubsection{Step1: Arduino Setting and Smart Shoebox Setting}
+First we have to set the data for the used wifi and password inside the Arduino code. As you can See in Fig. 28.  (AndroidHotspot5051 and rbgur123) this part is setting the environment for the Smart Shoeboxes wifi.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.47]{step1}
+    \caption{Step1:Arduino Setting and Smart Shoebox Setting} \label{fig:label}
+\end{center}
+\end{figure}
+\subsubsection{Step2: Website Sign-up}
+After the Arduino part is handled we have the Smart Shoebox in hand. Now we can communicate through website. We have to go into the website and sign up. As you can see in Fig. 29. you can easily sign up by typing email address and password.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.65]{step2}
+    \caption{Step2: Website Sign-up} \label{fig:label}
+\end{center}
+\end{figure}
+\subsubsection{Step3: Login}
+After we sign up for the Smart Shoebox website, we have to login to the website. Type in the email address and password. We will be in the main page of the website.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.7]{step3}
+    \caption{Step3: Login} \label{fig:label}
+\end{center}
+\end{figure}
+\subsubsection{Step4: Setting the IP address in website}
+After we login for the Smart Shoebox website, we have to set the IP address in the website. Click the Smart function tab and there is a blank where we can type in the IP address of the Smart Shoebox.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.35]{step4}
+    \caption{Step4: Setting the IP address in website} \label{fig:label}
+\end{center}
+\end{figure}
+\subsubsection{Step5: Thing Speak sign up}
+Thing Speak is the website, help us receive the temperature and humidity of the Smart Shoebox in realtime. We need to sign up for this website also.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.35]{step5}
+    \caption{Step5: Thing Speak sign up} \label{fig:label}
+\end{center}
+\end{figure}
+\subsubsection{Step6: Extracting the API key}
+After signing up for the Thing Speak, we have to extract the API key to let the website and Smart Shoebox to communicate. This step will allow the Arduino sensor information to reach Thing Speak, and Thing Speak will send the information to the Smart Shoebox website.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.4]{step6}
+    \caption{Step6: Extracting the API key} \label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.4]{step61}
+    \caption{Step6: Extracting the API key} \label{fig:label}
+\end{center}
+\end{figure}
+\subsubsection{Step7: Inserting the API key into the Website}
+After letting the communication between Smart Shoebox and Thing Speak and website all in one, we have use the API and channel to show the real time information of the Smart Shoebox. The user can easily see the temperature and humidity changing in the Smart function page.
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.45]{step7}
+    \caption{Step7: Extracting the API key and showing the realtime graph} \label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.45]{usingtime}
+    \caption{Step7: Extracting the API key and showing the realtime graph} \label{fig:label}
+\end{center}
+\end{figure}
 % 8. Discussion
-%\section{Discussion}
+\section{Discussion}
+%Write one or more paragraph(s) to describe any difficulty and experience you had. No less than 300 words. (e.g., communication difficulties in team, any non-technical difficulties, things to improve, and etc.)
+First of all, experiencing a team project was a biggest and helpful thing for all of the team mates. Before this Software Engineering course, we were all not used to communicating and cooperating for one goal, to make a working software. 3 months of process, thinking up of an interesting theme, thinking up for requirements, specifications and so on, was really helpful for all the team mates to become a better software engineer. The most difficult part was communicating with each other. There were a lot of cases when we were thinking of different features, while we thought we were thinking the exact same thing. We had to keep talk and show our thoughts to each other to manage and cooperate.
+
+ Also learning a new programming language like Ruby, Bootstrap, Arduino was so hard and we spent a lot of time to understand the basics on the background. We all thought that making a software was something we can easily do with only the concepts we learn in other courses, but it was not such a thing. We need to search and look up for more specific and up to date information all the time. Now as we know how to struggle to look for what we need, we might be able to learn and do something progressed than what we have done right now for the project.
+ 
+ 
+
 
 
 

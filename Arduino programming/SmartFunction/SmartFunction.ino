@@ -47,7 +47,7 @@ void loop() {
       digitalWrite(pinNumber, !digitalRead(pinNumber)); // toggle pin    
 
      
-      // make close command
+      // make close command. ,
       String closeCommand = "AT+CIPCLOSE="; 
       closeCommand+=connectionId; // append connection id
       closeCommand+="\r\n";

@@ -44,10 +44,9 @@
  <input type="submit" class="btn btn-default" value="Submit">
  <% end %>
  <br>
- <button id="10" class="led">Drying Function ON/OFF</button><br><br> <!-- 병휘형 여기 class 바꾸면 안먹혀요 ㅜㅜ-->
- <button id="11" class="led">Deodorization Function ON/OFF</button><br><br> <!-- button for pin 11 -->
- <button id="12" class="led">Sterilization Function ON/OFF</button><br><br> <!-- button for pin 12 -->
- <button id="13" class="led">Auto Function ON/OFF</button><br><br> <!-- button for pin 13 -->
+ <button id="11" class="led">Deodorization Function ON/OFF</button><br><br> <!-- 병휘형 여기 class 바꾸면 안먹혀요 ㅜㅜ-->
+ <button id="12" class="led">Sterilization Function ON/OFF</button><br><br> <!-- button for pin 11 -->
+ <button id="13" class="led">Drying Function ON/OFF</button><br> <!-- button for pin 12 -->
  
  <script>
   $(document).ready(function(){
@@ -66,15 +65,17 @@
 <br>
 <h2>Temperature</h2>
 <div class="window-content">
-    <iframe width="450" height="250" src="https://thingspeak.com/channels/120593/charts/1?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
+    <iframe width="450" height="250" src="https://thingspeak.com/channels/<%= current_user.apikey %>/charts/1?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
 </div>
+<!--
 <h2>Humidity</h2>
 <div class="window-content">
     <iframe width="450" height="250" src="https://thingspeak.com/channels/120593/charts/2?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
 </div>
-<h2>UsingTime(minute)</h2>
+-->
+<h2>Humidity</h2>
 <div class="window-content">
-    <iframe width="450" height="250" src="https://thingspeak.com/channels/120593/charts/3?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
+    <iframe width="450" height="250" src="https://thingspeak.com/channels/<%= current_user.apikey %>/charts/3?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
 </div>
 </div>
 

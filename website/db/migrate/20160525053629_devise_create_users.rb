@@ -22,6 +22,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       ##We need IP address to connect to Arduino
       t.string   :ipaddress
       t.string   :city
+      t.string   :apikey
 
       ## Confirmable
       # t.string   :confirmation_token

@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'recommend/index'
   post 'recommend/result'
   post 'smart/change'
+  post 'home/change'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

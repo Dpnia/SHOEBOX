@@ -27,6 +27,7 @@
          <p class="lead"> Shoes care solution utilizing IoT concept</p>
          <p>What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear.</p>
          <p><a class="btn btn-lg btn-success" href="https://github.com/Dpnia/SHOEBOX" role="button">Subscribe us on GitHub</a></p>
+         
       </div>    
     </div>
 
@@ -49,6 +50,11 @@
         <p class="lead"> Shoes care solution utilizing IoT concept</p>
         <p class="lead">What if someone or something could take care of my shoes periodically and automatically. If the shoes could be managed regularly with the aspects of humidity, temperature, and sterilization, it will save money and also provide a pleasant day with a cozy footwear.</p><br>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <%=form_tag '/home/change', method: 'post' do %>
+          <h2>Please type your Smart Shoebox Serial Nubmer below</h2> <%= current_user.apikey %><br>
+          <input type="text" class="btn btn-default" name="apikey" placeholder="Serial Number 120593">
+          <input type="submit" class="btn btn-default" value="Submit">
+        <% end %>
 
 </div>
 <br>

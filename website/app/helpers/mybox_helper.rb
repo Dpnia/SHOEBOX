@@ -3,7 +3,9 @@ module MyboxHelper
     if params[:choice] == "Suede WalkingShoes"
     	Shoe.create(user_id: current_user.id,
     		shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Suede WalkingShoes",
+            
     		color: params[:color],
     		watersensitivity: 40,
     		odorsensitivity: 50,
@@ -28,7 +30,9 @@ module MyboxHelper
     elsif params[:choice] == "Artificial Leather Highhill"
     	Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
     		shoetype: "Artificial Leather Highhill",
+        
     		color: params[:color],
     		watersensitivity: 90,
     		odorsensitivity: 30,
@@ -52,7 +56,9 @@ module MyboxHelper
     elsif params[:choice] == "Artificial Casual Jogging Shoes"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Artificial Casual Jogging Shoes",
+           
             color: params[:color],
             watersensitivity: 70,
             odorsensitivity: 55,
@@ -76,7 +82,9 @@ module MyboxHelper
     elsif params[:choice] == "Leather Walker"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Leather Walker",
+           
             color: params[:color],
             watersensitivity: 80,
             odorsensitivity: 20,
@@ -100,7 +108,9 @@ module MyboxHelper
     elsif params[:choice] == "Leather Business Shoes"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Leather Business Shoes",
+        
             color: params[:color],
             watersensitivity: 75,
             odorsensitivity: 25,
@@ -124,7 +134,9 @@ module MyboxHelper
     elsif params[:choice] == "Converse Casual"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Converse Casual",
+     
             color: params[:color],
             watersensitivity: 30,
             odorsensitivity: 15,
@@ -148,7 +160,9 @@ module MyboxHelper
     elsif params[:choice] == "Suede Casual"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Suede Casual",
+            usagetime: params[:t1],
             color: params[:color],
             watersensitivity: 35,
             odorsensitivity: 25,
@@ -172,7 +186,9 @@ module MyboxHelper
     elsif params[:choice] == "Suede Business"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Suede Business",
+       
             color: params[:color],
             watersensitivity: 35,
             odorsensitivity: 25,
@@ -196,7 +212,9 @@ module MyboxHelper
     elsif params[:choice] == "Soccer Shoe"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Soccer Shoe",
+    
             color: params[:color],
             watersensitivity: 90,
             odorsensitivity: 10,
@@ -220,7 +238,9 @@ module MyboxHelper
     elsif params[:choice] == "Rain boots"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "rain boots",
+         
             color: params[:color],
             watersensitivity: 100,
             odorsensitivity: 10,
@@ -244,7 +264,9 @@ module MyboxHelper
     elsif params[:choice] == "Basketball Shoes"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Basketball shoes",
+      
             color: params[:color],
             watersensitivity: 50,
             odorsensitivity: 80,
@@ -269,7 +291,9 @@ module MyboxHelper
     elsif params[:choice] == "Suede Slippers"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Suede Slippers",
+         
             color: params[:color],
             watersensitivity: 10,
             odorsensitivity: 10,
@@ -293,7 +317,9 @@ module MyboxHelper
     elsif params[:choice] == "Leather Silppers"
         Shoe.create(user_id: current_user.id,
             shoename: params[:shoename],
+            boxnumber: params[:box],
             shoetype: "Leather Slippers",
+
             color: params[:color],
             watersensitivity: 15,
             odorsensitivity: 15,

@@ -5,17 +5,34 @@
 	<h3><%= @shoe.shoename %></h3>
 	<%= image_tag("8", height: '150', width: '250') %>
 	<br>
+	Box : <%= @shoe.boxnumber %><br>
 	Type : <%= @shoe.shoetype %><br>
 	Color : <%= @shoe.color %><br>
 	Watersensitivity : <%= @shoe.watersensitivity %>%<br>
 	Odorsensitivity : <%= @shoe.odorsensitivity %>%<br>
 	Predictedlife : <%= @shoe.predictedlife %> hours<br>
 	Weight : <%= @shoe.weight %>g<br>
-	Detail : <%= @shoe.warmth %><br>
 	Preference : <%= @shoe.preference %>%<br>
-	UsageTime : <%= @shoe.usagetime %> days<br>
-	Usable Time : <%= @shoe.predictedlife - @shoe.usagetime %> days<br>
+	<l id="a"></l><br>
+	<l id="b"></l><br>
+	Added Time : <%= @shoe.created_at %><br>
 	<br>
 	<button class="btn btn-default" type="submit"><%= link_to 'My Shoebox', mybox_information_path %></button>
+
+	<script>
+  
+    $(document).ready(function() {
+      
+      $.getJSON('https://thingspeak.com/channels/<%= current_user.apikey %>/feeds.json?result=1', function(data) {
+        $.each(data.feeds, function(i, feed) {
+            if (<%= @shoe.boxnumber %>==1){
+            var x = parseInt(feed.field2);
+            $("#a").text("UsageTime : "+x+" min");
+            $("#b").text("Usable Time : "+parseInt((<%= @shoe.predictedlife %>-(x/60)))+" hours");
+            }                
+        });
+      });  
+    });  
+	</script>
 
 </div>

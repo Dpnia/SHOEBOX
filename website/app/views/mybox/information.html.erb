@@ -39,35 +39,47 @@
 <br>
 <% current_user.shoes.each do |s| %>
   <div class="jumbotron">
-  <h3><%= s.shoename %></h3>
+  <h3><%= s.boxnumber %>. <%= s.shoename %></h3>
+  <h3 id="uu"></h3>
   <%= image_tag("8", height: '150', width: '250') %>
   <%=form_tag '/mybox/destroy', method: 'get' do %>
 	<input type="hidden" name = "id" value="<%= s.id %>">
 	Type : <%= s.shoetype %><br>
 	Color : <%= s.color %><br>
+  UsageTime : <b id="t<%= s.boxnumber %>"></b><br>
   <br>
-	<button class="btn btn-default" type="submit"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
+  <script>
+  
+    $(document).ready(function() {
+      
+      $.getJSON('https://thingspeak.com/channels/<%= current_user.apikey %>/feeds.json?result=1', function(data) {
+        $.each(data.feeds, function(i, feed) {
+            if (<%= s.boxnumber %>==1){
+            var x = parseInt(feed.field2);
+            $("#t<%= s.boxnumber %>").text(x+"min");
+              var y = feed.field4;
+              if (y==10) {
+              $("#uu").text("Using Now: Not in box");    
+              }
+              else{
+              $("#uu").text("In Box No.<%= s.boxnumber %>");
+              }
+            }
+
+            
+        });
+      });  
+    });
+    
+  
+</script>
+
+
+	<button class="btn btn-default" type="button"><a href="/mybox/detail?id=<%=s.id%>">Detail</a></button>
 	<input type="submit" class="btn btn-default" value="Delete" onclick="confirm('Delete?');"></div>
   <% end %>
 <% end %>
 
 <button class="btn btn-default" type="submit"><h4><%= link_to 'Add Item', mybox_new_path %></h4> </button>
 <br><br>
-<!--추가
-<div class="jumbotron">
-<h2>Check out the Smart Shoebox's Optimized environment</h2>
-<br>
-<h2>Temperature</h2>
-<div class="window-content">
-    <iframe width="450" height="250" src="https://thingspeak.com/channels/120593/charts/1?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
-</div>
-<h2>Humidity</h2>
-<div class="window-content">
-    <iframe width="450" height="250" src="https://thingspeak.com/channels/120593/charts/2?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
-</div>
-<h2>UsingTime(minute)</h2>
-<div class="window-content">
-    <iframe width="450" height="250" src="https://thingspeak.com/channels/120593/charts/3?bgcolor=%23ffffff&amp;color=%23d62020&amp;dynamic=true&amp;results=10&amp;type=line"></iframe>
-</div>
-</div>
--->
+

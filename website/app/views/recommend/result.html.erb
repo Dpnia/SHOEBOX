@@ -39,7 +39,7 @@
 <br>
 <% current_user.shoes.each do |s| %>
   <div class="jumbotron">
-  <h3><%= s.shoename %></h3>
+  <h3><%= s.boxnumber %>. <%= s.shoename %></h3>
   <%= image_tag("8", height: '150', width: '250') %>
   	<br>
   	Type : <%= s.shoetype %><br>

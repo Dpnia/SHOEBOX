@@ -72,12 +72,12 @@ We will choose the perfect shoes that matches your activity today!
   
     $(document).ready(function() {
       
-      $.getJSON('https://thingspeak.com/channels/120593/feeds.json?result=1', function(data) {
+      $.getJSON('https://thingspeak.com/channels/<%= current_user.apikey %>/feeds.json?result=1', function(data) {
         $.each(data.feeds, function(i, feed) {
             var x = feed.field1;
-            var y = feed.field2;
-            $("#temp").text("현재 신발장 온도 : "+x+" ℃");
-            $("#humi").text("현재 신발장 습도 : "+y+" %");
+            var y = feed.field3;
+            $("#temp").text("Current Temperature in Shoebox : "+x+" ℃");
+            $("#humi").text("Current Huminity in Shoebox : "+y+" %");
             $("#temp1").val(x);
             $("#humi1").val(y);    
         });
@@ -122,7 +122,7 @@ We will choose the perfect shoes that matches your activity today!
      //weather_s +="<p>아이콘 : "+observ.icon+"</p>"; 
      //weather_s +="<p>icon :  "+"<img src='"+observ.icon_url+"'/></p>"; 
      //$("#weatherinfo").append(weather_s); 
-     $("#weather").text("현재 날씨 : "+observ.weather);
+     $("#weather").text("Current Weather : "+observ.weather);
      $("#weather1").val(observ.weather);
     } 
     }); 

@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20160525053708) do
 
   create_table "shoes", force: :cascade do |t|
     t.string   "shoename"
+    t.string   "boxnumber"
     t.string   "shoetype"
     t.string   "color"
     t.integer  "activity"
@@ -55,6 +56,7 @@ ActiveRecord::Schema.define(version: 20160525053708) do
     t.string   "last_sign_in_ip"
     t.string   "ipaddress"
     t.string   "city"
+    t.string   "apikey"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end

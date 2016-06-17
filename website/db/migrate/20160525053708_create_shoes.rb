@@ -3,6 +3,8 @@ class CreateShoes < ActiveRecord::Migration
     create_table :shoes do |t|
 	    t.string :shoename
 
+      t.string :boxnumber
+
       t.string :shoetype
       t.string :color
       t.integer :activity

@@ -563,7 +563,7 @@ HTML5 and CSS3(client side) & We have decided the user interface environment as 
 \subsubsection{Cost estimation (Software / Hardware)}
 TABLE III and TABLE IV
 %TABLE3
-\begin{table}[h]
+\begin{table}[H]
 \renewcommand{\arrayrulewidth}{1pt}
 \renewcommand{\arraystretch}{2}
 \begin{tabular}
@@ -697,7 +697,7 @@ From these two open sources, we studied and try to follow the ruby on rails fram
 \subsubsection{Ruby on rails}
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.35]{ruby}
+    \includegraphics[scale=0.5]{ruby}
     \label{fig:label}
 \end{center}
 \end{figure}
@@ -1079,7 +1079,7 @@ website/app/controller & application-controller.rb, home-controller.rb, mybox-co
 \end{figure}
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.58]{app}
+    \includegraphics[scale=0.65]{app}
   \caption{Ruby on Rails : app : Directory organization}\label{fig:label}
 \end{center}
 \end{figure}
@@ -1091,7 +1091,7 @@ website/app/controller & application-controller.rb, home-controller.rb, mybox-co
 \end{figure}
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.48]{schemashoes}
+    \includegraphics[scale=0.52]{schemashoes}
   \caption{Modeling Shoes in database}\label{fig:label}
 \end{center}
 \end{figure}
@@ -1112,14 +1112,19 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
  
 (http://railsinstaller.org/en)
 \subsubsection{How and Why we use it} Based on the Ruby programming language and MVC model we make a web service for the users of the Smart Shoebox. It is possible to developing a web service from scratch, but it is not a good idea to do so, when it is so important and emphasized to use an open sources. Application framework for the Ruby language is already provided and we have decided to build on top of it.
-\\
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.42]{mvc}
+    \caption{MVC} \label{fig:label}
+\end{center}
+\end{figure}
 % 6. use cases
 \section{Use Cases}
 \subsection{Use case 1 : Setup} This case is for the users using the Smart Shoebox for the first time.  If it is the first time for the user to use Smart Shoebox, you have to sign up for the website. If you are already registered, you can login with your id and password.
 %image15
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.5]{usecase1}
+    \includegraphics[scale=0.7]{usecase1}
     \caption{Use case 1 : Setup} \label{fig:label}
 \end{center}
 \end{figure}
@@ -1164,7 +1169,7 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 %image17
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.6]{usecase3}
+    \includegraphics[scale=0.8]{usecase3}
     \caption{Use case 3 : Users request for the weather forecast} \label{fig:label}
 \end{center}
 \end{figure}
@@ -1180,7 +1185,7 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 %image18
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.6]{usecase4}
+    \includegraphics[scale=0.8]{usecase4}
     \caption{Use case 4 : Users request for Recommendation} \label{fig:label}
 \end{center}
 \end{figure}
@@ -1195,14 +1200,14 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 %image
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.25]{capture7}
+    \includegraphics[scale=0.26]{capture7}
     \caption{My Shoebox page} \label{fig:label}
 \end{center}
 \end{figure}
 %image
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.25]{capture8}
+    \includegraphics[scale=0.26]{capture8}
     \caption{Adding a new item to Smart Shoebox} \label{fig:label}
 \end{center}
 \end{figure}
@@ -1210,7 +1215,7 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 %image19
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.6]{usecase5}
+    \includegraphics[scale=0.8]{usecase5}
     \caption{Use case 6 : Users request for detail information about the shoes} \label{fig:label}
 \end{center}
 \end{figure}
@@ -1231,7 +1236,7 @@ First we have to set the data for the used wifi and password inside the Arduino 
 After the Arduino part is handled we have the Smart Shoebox in hand. Now we can communicate through website. We have to go into the website and sign up. As you can see in Fig. 29. you can easily sign up by typing email address and password.
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.55]{step2}
+    \includegraphics[scale=0.65]{step2}
     \caption{Step2: Website Sign-up} \label{fig:label}
 \end{center}
 \end{figure}
@@ -1239,7 +1244,7 @@ After the Arduino part is handled we have the Smart Shoebox in hand. Now we can 
 After we sign up for the Smart Shoebox website, we have to login to the website. Type in the email address and password. We will be in the main page of the website.
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[scale=0.55]{step3}
+    \includegraphics[scale=0.7]{step3}
     \caption{Step3: Login} \label{fig:label}
 \end{center}
 \end{figure}
@@ -1267,12 +1272,24 @@ After signing up for the Thing Speak, we have to extract the API key to let the 
     \caption{Step6: Extracting the API key} \label{fig:label}
 \end{center}
 \end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.4]{step61}
+    \caption{Step6: Extracting the API key} \label{fig:label}
+\end{center}
+\end{figure}
 \subsubsection{Step7: Inserting the API key into the Website}
 After letting the communication between Smart Shoebox and Thing Speak and website all in one, we have use the API and channel to show the real time information of the Smart Shoebox. The user can easily see the temperature and humidity changing in the Smart function page.
 \begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.45]{step7}
-    \caption{Step6: Extracting the API key} \label{fig:label}
+    \caption{Step7: Extracting the API key and showing the realtime graph} \label{fig:label}
+\end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.45]{usingtime}
+    \caption{Step7: Extracting the API key and showing the realtime graph} \label{fig:label}
 \end{center}
 \end{figure}
 % 8. Discussion

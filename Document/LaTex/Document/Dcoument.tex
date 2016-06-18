@@ -682,14 +682,20 @@ Also the low power gave us the reason to use wifi. IoT applications will seldom 
     \caption{IoT wifi technology} \label{fig:label}
 \end{center}
 \end{figure}
-\subsubsection{IOT example : Temperature Monitoring} Importance of monitoring temperature in industries is quite important as it affects the environment and the process of business e.g. food industry, process industry or any high tech industry such as data centers. Temperature is one of the important parameters which is monitored and controlled to ensure quality output. Most of the high tech industries will have high end climate control systems to monitor and manage temperature, however all organizations cannot afford the luxury of high end systems. Apart from small scale industry, temperature monitoring is important to people with remote cabins, warehouses, or any other location where access to location is difficult. With advancement in software technology and electronics it has become technically feasible to make pocket size high speed and high memory devices. The system is based on the Raspberry Pi which is cost effective and core OS is soft real time OS based on Linux. With Linux as OS, variety of features can be offered such as security, license free usage and community support. The frequency with which data is scanned is customizable and currently programmed to scan every 1 Hr (can be scaled). The data is stored in local MySQL database with updates sent to cloud. The Raspberry Pi also acts as a Server which can be accessed to see logged data. The data in cloud  also represents data graphically and can be downloaded in CSV format. One of the biggest benefits of using Raspberry Pi is the sensor network expansion. The sensors can be added can be configured and further extended with legacy RJ45 cable to and from Sensor Network. Capability to store data from other sensors such as light sensor, humidity, wind sensor, etc. gives flexibility to the system to customize and accommodate quite a lot of wants.
+\subsubsection{IOT example : Temperature Monitoring}
+ Importance of monitoring temperature in industries is quite important as it affects the environment and the process of business e.g. food industry, process industry or any high tech industry such as data centers. Temperature is one of the important parameters which is monitored and controlled to ensure quality output. Most of the high tech industries will have high end climate control systems to monitor and manage temperature, however all organizations cannot afford the luxury of high end systems. Apart from small scale industry, temperature monitoring is important to people with remote cabins, warehouses, or any other location where access to location is difficult.
+ 
+With advancement in software technology and electronics it has become technically feasible to make pocket size high speed and high memory devices. The system is based on the Raspberry Pi which is cost effective and core OS is soft real time OS based on Linux. With Linux as OS, variety of features can be offered such as security, license free usage and community support. The frequency with which data is scanned is customizable and currently programmed to scan every 1 Hr (can be scaled). The data is stored in local MySQL database with updates sent to cloud. The Raspberry Pi also acts as a Server which can be accessed to see logged data. The data in cloud  also represents data graphically and can be downloaded in CSV format.
+ 
+One of the biggest benefits of using Raspberry Pi is the sensor network expansion. The sensors can be added can be configured and further extended with legacy RJ45 cable to and from Sensor Network. Capability to store data from other sensors such as light sensor, humidity, wind sensor, etc. gives flexibility to the system to customize and accommodate quite a lot of wants.
 
 In this IOT example(Temperature Monitoring) we decided to use the ThingSpeak for getting information from Arduino sensor and compatible programming with Raspberry Pi. 
 \\
 \subsubsection{Selfstarter and Refinery CMS : Ruby on rails web application}
 
 Among funding platforms galore, Self-starter helps you host your own crowdfunding site for your project. Donations are easily made via Amazon Payments, or you can choose your preferred provider. Simple and easy, driven by Ruby on Rails.
-Creating a website and managing content is much easier with Refinery CMS. It's a simple modular and extendable content management system. Released in 2009, it's currently undergoing improvements by the community in 10 different languages
+
+Creating a website and managing content is much easier with Refinery CMS. It's a simple modular and extendable content management system. Released in 2009, it's currently undergoing improvements by the community in 10 different languages
 
 From these two open sources, we studied and try to follow the ruby on rails framework for our website. We were really surprised to find a lot of open sources that we can easily find and learn.
 
@@ -743,58 +749,19 @@ The specification is mostly in pseudocode and additionally graphs and charts wil
 \subsubsection{Temperature/Humidity control through electric fan (automatic)}
 \subsubsection{Temperature/Humidity control through ultraviolet lamp (automatic)}
 The arduino sensor receives temperature and humidity as inputs and truns on fan and ultraviolet lamp when temperature drops below 15 Celsius degree or humidity is higher than 
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.48]{optimization1}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{Drying feature (on demand)}
 In case the user?s shoes get wet by rain or other liquids the user can request for drying function. The function will turn on fan on maximum rate and intensity of lamp will be middle.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.6]{optimization2}
-    \label{fig:label}
-\end{center}
-\end{figure}
 \subsubsection{Sterilization function (on demand)}
 In case the user feels the need for sterilization, user can request for this function. The function will turn on fan on middle rate and intensity of lamp will be maximum.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.6]{optimization3}
-    \label{fig:label}
-\end{center}
-\end{figure}
 \subsubsection{Deodorization function (on demand)}
 In case the user feels the need for deodorization, user can request for this function, which triggers a deodorant to shoot out. The Arduino will trigger the deodorant.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.6]{optimization4}
-    \label{fig:label}
-\end{center}
-\end{figure}
 \subsubsection{Deodorization function (automatic)}
 This function will provide the Smart Shoebox to trigger the deodorant to shoot out in one hour interval. 
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.6]{optimization5}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{Intensity control feature}
 The user can choose the intensity level of fan and lamp. Intensity is calculated as number between 1 to 3, which means maximum, middle, minimum.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.6]{optimization6}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsection{Management function}
 This management function is mostly about modeling and categorizing the shoes. Through the serial number scanning, captured image, 3D scanning and user input, the information about the user and shoes are managed in the database. 
 \subsubsection{Shoe categorization function (bar-code scanning)}
@@ -828,51 +795,20 @@ The modeling of each shoe into a number of category and setting the proper care 
 \subsection{Analysis function}
 \subsubsection{Absence of shoes analysis (Base information)}
 We have decided to analyze the absence of shoes by weight sensor and use it as a base information for other analysis functions. The absence timer will be on and count the time of the shoes absence.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.6]{analysis1}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{Durability analysis}
 Durability is set to decrease by the time the shoe has been put on increases. We have decided the average shoes usage time as 12 hours a day and the durability changes while the absence time increases. Less than 2 weeks is considered to be a new one. Between 2 weeks and 4 weeks is considered to be not bad. 
 Between 4 weeks and 8 weeks is considered to be washed. Between 8 weeks and 16 weeks is considered to be careful. More than 16 weeks the shoes is considered to be replaced.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.58]{analysis2}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{Life prediction analysis}
 Based on the information of absence time, we provide the expected  life of the shoes. We subtract the absence time from the original life time.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.5]{analysis3}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{Preference analysis (personal)}
 \subsubsection{Preference analysis (general)}
 Based on the information of absence time for a number of users, we provide the preference information of the shoes in general aspect. Since we all store the information about the shoes of the user in the database this is possible in both personal and general aspect. Using this Big data, the user can know which shoes are popular nowadays.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.54]{analysis4}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{Frequency analysis}
 Based on the information of absence time, we provide the frequency information for the shoes in percentage. We devide the used days by the whole day since the user started to use the Smart Shoebox.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.56]{analysis5}
-    \label{fig:label}
-\end{center}
-\end{figure}
 
 
 
@@ -894,42 +830,18 @@ Smart Shoes cabinet will provide recommendation information with percentages bas
 \end{figure}
 \subsubsection{Recommendation based on weather forecast }
 With weather API, the proper type of shoes is recommended. We decided to classify weather in three cases. ('Sunny' and 'Cloudy' and 'Rainy or Snowy') We will restrict the recommendation choices by the weather becomes bad. The word proper (the proper shoes for the weather) will be represented in the shoes modeled information in the database.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.4]{recommendation1}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{ Recommendation based on the use of shoes}
 Recommending the proper shoes type which matches with the user?s activity. The word proper (the proper shoes for the activity of the user) will be represented in the shoes modeled information in the database.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.5]{recommendation2}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{Recommendation based on the color of shoes}
 Recommending the proper shoes color which balances with the users clothing color. The word proper (the proper shoes for the clothes of the user) will be represented in the shoes modeled information in the database.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.56]{recommendation3}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 \subsubsection{ Notice of recommendation rate by color}
 \subsubsection{Notice of recommendation rate by percentage}
 Showing the recommendation rate by different colors. For example, if the shoes are recommended, a specific color will appear on the shoe rack or on the screen the user is looking at. 
 Showing the recommendation rate by percentage. If the shoes are recommended strongly, the percentage will appear on the shoe rack or on the screen the user is looking at. 
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.5]{recommendation4}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 
 
 \subsection{Notification function}
@@ -937,13 +849,7 @@ Showing the recommendation rate by percentage. If the shoes are recommended stro
 \subsubsection{Notification for contamination by message}
 With the increased weight, notification is given for contamination. The weight to be sensed is defined to be 20g.
 After the recognition of contamination, the information is notified to the user through messages on the screen.
-%image
-\begin{figure}[H]
-\begin{center}
-    \includegraphics[scale=0.6]{notification1}
-    \label{fig:label}
-\end{center}
-\end{figure}
+
 
 \subsection{Networking / Remote control function (UI)}
 \subsubsection{Control function through web programming (main)}

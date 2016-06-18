@@ -1,0 +1,1410 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.23)  18 JUN 2016 22:32
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Document2.tex
+(./Document2.tex
+LaTeX2e <2016/03/31>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count94
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen128
+\extrarowheight=\dimen129
+\NC@list=\toks16
+\extratabsurround=\skip44
+\backup@length=\skip45
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/here/here.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks17
+\float@box=\box28
+\@float@everytoks=\toks18
+\@floatcapt=\box29
+) (./Document2.aux
+
+LaTeX Warning: Label `tab:template' multiply defined.
+
+
+LaTeX Warning: Label `tab:template' multiply defined.
+
+
+LaTeX Warning: Label `tab:template' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `tab:template' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `tab:template' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+)
+\openout1 = `Document2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 317.
+LaTeX Font Info:    ... okay on input line 317.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 317.
+LaTeX Font Info:    ... okay on input line 317.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 317.
+LaTeX Font Info:    ... okay on input line 317.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 317.
+LaTeX Font Info:    ... okay on input line 317.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 317.
+LaTeX Font Info:    ... okay on input line 317.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 317.
+LaTeX Font Info:    ... okay on input line 317.
+
+-- Lines per column: 56 (exact).
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen130
+\scratchbox=\box30
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen131
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks20
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 405.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 405.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 405.
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+[]|\OT1/ptm/m/n/8 Kwon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+[]|\OT1/ptm/m/n/8 Software
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--418
+[]|\OT1/ptm/m/n/8 Development
+ []
+
+
+Overfull \hbox (3.17947pt too wide) in paragraph at lines 405--425
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--425
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--425
+
+ []
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
+
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 460--461
+ \OT1/ptm/m/it/10 1) Tem-per-a-ture/Humidity con-trol through elec-tric fan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
+
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 487--488
+ \OT1/ptm/m/it/10 4) Shoe cat-e-go-riza-tion func-tion (3D scan-ning): [][] \OT
+1/ptm/m/n/10 Shoe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
+
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 489--492
+ \OT1/ptm/m/it/10 5) Set-ting the proper man-age-ment tool: [][] \OT1/ptm/m/n/1
+0 Af-ter Shoe
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 489--492
+\OT1/ptm/m/n/10 proper set-ting for each cat-e-gory) The proper set-ting is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--492
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
+ \OT1/ptm/m/it/10 4) Pref-er-ence anal-y-sis (per-sonal): [][] \OT1/ptm/m/n/10 
+Based on the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+[]\OT1/ptm/m/n/10 Smart Shoes cab-i-net will pro-vide rec-om-men-da-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
+
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 517--518
+ \OT1/ptm/m/it/10 2)  Rec-om-men-da-tion based on the use of shoes: [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
+
+ []
+
+[2]
+Underfull \hbox (badness 3118) in paragraph at lines 519--520
+ \OT1/ptm/m/it/10 3) Rec-om-men-da-tion based on the color of shoes: [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 529--530
+ \OT1/ptm/m/it/10 1) Recog-ni-tion of con-tam-i-na-tion by sen-sor: [][] \OT1/p
+tm/m/n/10 With the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
+
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 535--536
+[]\OT1/ptm/m/n/10 Without the func-tion for in-ter-net con-trol, it be-comes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--593
+
+ []
+
+<marketshare.png, id=13, 567.11874pt x 329.23pt>
+File: marketshare.png Graphic file (type png)
+ <use marketshare.png>
+Package pdftex.def Info: marketshare.png used on input line 607.
+(pdftex.def)             Requested size: 255.20107pt x 148.15211pt.
+
+Overfull \hbox (3.20107pt too wide) in paragraph at lines 607--608
+ [] 
+ []
+
+[3]
+Overfull \hbox (0.58464pt too wide) in paragraph at lines 619--632
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--632
+
+ []
+
+
+Overfull \hbox (0.58464pt too wide) in paragraph at lines 643--666
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--666
+
+ []
+
+
+Underfull \vbox (badness 5622) has occurred while \output is active []
+
+
+Overfull \hbox (0.58464pt too wide) in paragraph at lines 674--692
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--692
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./marketshare.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 698--700
+
+ []
+
+<temperature_control.jpg, id=22, 198.7425pt x 83.5923pt>
+File: temperature_control.jpg Graphic file (type jpg)
+
+<use temperature_control.jpg>
+Package pdftex.def Info: temperature_control.jpg used on input line 705.
+(pdftex.def)             Requested size: 238.48979pt x 100.31023pt.
+ <arduino.png, id=23, 476.982pt x 472.967pt>
+File: arduino.png Graphic file (type png)
+
+<use arduino.png>
+Package pdftex.def Info: arduino.png used on input line 713.
+(pdftex.def)             Requested size: 190.78941pt x 189.18344pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<utilitymatrix.png, id=24, 414.54875pt x 121.45375pt>
+File: utilitymatrix.png Graphic file (type png)
+ <use utilitymatrix.png>
+Package pdftex.def Info: utilitymatrix.png used on input line 727.
+(pdftex.def)             Requested size: 207.27386pt x 60.72672pt.
+
+<decisiontree_learning.png, id=25, 489.83pt x 297.11pt>
+File: decisiontree_learning.png Graphic file (type png)
+
+<use decisiontree_learning.png>
+Package pdftex.def Info: decisiontree_learning.png used on input line 737.
+(pdftex.def)             Requested size: 244.9144pt x 148.55463pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./temperature_control.jpg> <./arduino.png> <./utilitymatrix.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 742--744
+
+ []
+
+<wifi.png, id=31, 425.9112pt x 285.2256pt>
+File: wifi.png Graphic file (type png)
+ <use wifi.png>
+Package pdftex.def Info: wifi.png used on input line 755.
+(pdftex.def)             Requested size: 212.95506pt x 142.61244pt.
+
+Underfull \vbox (badness 1014) has occurred while \output is active []
+
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¿ in font ptmr7t!
+Missing character: There is no ½ in font ptmr7t!
+
+<iot.png, id=32, 453.3738pt x 291.489pt>
+File: iot.png Graphic file (type png)
+ <use iot.png>
+Package pdftex.def Info: iot.png used on input line 769.
+(pdftex.def)             Requested size: 226.68634pt x 145.74414pt.
+
+Underfull \vbox (badness 6332) has occurred while \output is active []
+
+ [6 <./decisiontree_learning.png> <./wifi.png>]
+<ruby.png, id=38, 291.0875pt x 376.40625pt>
+File: ruby.png Graphic file (type png)
+ <use ruby.png>
+Package pdftex.def Info: ruby.png used on input line 785.
+(pdftex.def)             Requested size: 145.54338pt x 188.20265pt.
+
+<dbms.png, id=39, 435.5472pt x 319.4334pt>
+File: dbms.png Graphic file (type png)
+ <use dbms.png>
+Package pdftex.def Info: dbms.png used on input line 799.
+(pdftex.def)             Requested size: 239.55168pt x 175.6889pt.
+
+<database.png, id=40, 425.9112pt x 502.0356pt>
+File: database.png Graphic file (type png)
+ <use database.png>
+Package pdftex.def Info: database.png used on input line 805.
+(pdftex.def)             Requested size: 234.25188pt x 276.12044pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./iot.png> <./ruby.png> <./dbms.png>]
+<arduinohp.png, id=48, 263.5446pt x 313.6518pt>
+File: arduinohp.png Graphic file (type png)
+ <use arduinohp.png>
+Package pdftex.def Info: arduinohp.png used on input line 814.
+(pdftex.def)             Requested size: 184.47995pt x 219.55475pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<st.png, id=49, 381.5856pt x 316.0608pt>
+File: st.png Graphic file (type png)
+ <use st.png>
+Package pdftex.def Info: st.png used on input line 834.
+(pdftex.def)             Requested size: 228.95311pt x 189.63794pt.
+
+<git.png, id=50, 402.303pt x 251.9814pt>
+File: git.png Graphic file (type png)
+ <use git.png>
+Package pdftex.def Info: git.png used on input line 848.
+(pdftex.def)             Requested size: 201.151pt x 125.99039pt.
+ [8 <./database.png> <./arduinohp.png> <./st.png>] <sourcetree.png, id=57, 420.
+6114pt x 330.5148pt>
+File: sourcetree.png Graphic file (type png)
+
+<use sourcetree.png>
+Package pdftex.def Info: sourcetree.png used on input line 857.
+(pdftex.def)             Requested size: 210.30519pt x 165.25699pt.
+
+Overfull \hbox (2.62204pt too wide) in paragraph at lines 868--878
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--878
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--878
+
+ []
+
+<management1.png, id=58, 901.11656pt x 506.6428pt>
+File: management1.png Graphic file (type png)
+ <use management1.png>
+Package pdftex.def Info: management1.png used on input line 918.
+(pdftex.def)             Requested size: 252.31091pt x 141.85901pt.
+
+<management2.png, id=59, 994.46532pt x 517.18219pt>
+File: management2.png Graphic file (type png)
+ <use management2.png>
+Package pdftex.def Info: management2.png used on input line 925.
+(pdftex.def)             Requested size: 238.67654pt x 124.12625pt.
+
+[9 <./git.png> <./sourcetree.png>] <UI1.png, id=65, 632.3625pt x 469.755pt>
+File: UI1.png Graphic file (type png)
+
+<use UI1.png>
+Package pdftex.def Info: UI1.png used on input line 961.
+(pdftex.def)             Requested size: 252.94052pt x 187.89867pt.
+
+Overfull \hbox (0.94052pt too wide) in paragraph at lines 961--962
+ [] 
+ []
+
+<UI2.png, id=66, 827.09pt x 556.0775pt>
+File: UI2.png Graphic file (type png)
+ <use UI2.png>
+Package pdftex.def Info: UI2.png used on input line 968.
+(pdftex.def)             Requested size: 239.84995pt x 161.25835pt.
+ [10 <./management1.png> <./management2.png> <./UI1.png> <./UI2.png>]
+<UI4.png, id=72, 473.77pt x 331.2375pt>
+File: UI4.png Graphic file (type png)
+ <use UI4.png>
+Package pdftex.def Info: UI4.png used on input line 1003.
+(pdftex.def)             Requested size: 236.88441pt x 165.61833pt.
+
+<UI5.png, id=73, 475.7775pt x 331.2375pt>
+File: UI5.png Graphic file (type png)
+ <use UI5.png>
+Package pdftex.def Info: UI5.png used on input line 1010.
+(pdftex.def)             Requested size: 237.88815pt x 165.61833pt.
+
+Underfull \vbox (badness 4713) has occurred while \output is active []
+
+
+<overallarchitecture.png, id=74, 761.84625pt x 439.6425pt>
+File: overallarchitecture.png Graphic file (type png)
+
+<use overallarchitecture.png>
+Package pdftex.def Info: overallarchitecture.png used on input line 1022.
+(pdftex.def)             Requested size: 243.79578pt x 140.68846pt.
+
+Underfull \vbox (badness 6001) has occurred while \output is active []
+
+ [11 <./UI4.png> <./UI5.png>] <directory1.png, id=80, 393.47pt x 435.6275pt>
+File: directory1.png Graphic file (type png)
+
+<use directory1.png>
+Package pdftex.def Info: directory1.png used on input line 1030.
+(pdftex.def)             Requested size: 255.75246pt x 283.15451pt.
+
+Overfull \hbox (3.75246pt too wide) in paragraph at lines 1030--1031
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
+[]|\OT1/ptm/m/n/8 application-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
+\OT1/ptm/m/n/8 controller.rb,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
+\OT1/ptm/m/n/8 home-controller.rb,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
+\OT1/ptm/m/n/8 mybox-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
+\OT1/ptm/m/n/8 controller.rb,
+ []
+
+
+Overfull \hbox (1.73657pt too wide) in paragraph at lines 1048--1048
+[]|\OT1/ptm/m/n/8 /project/website/app/helper| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+[]|\OT1/ptm/m/n/8 application-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+\OT1/ptm/m/n/8 helper.rb, home-
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 1048--1048
+\OT1/ptm/m/n/8 helper.rb, mybox-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+\OT1/ptm/m/n/8 helper.rb, smart-
+ []
+
+
+Overfull \hbox (4.85649pt too wide) in paragraph at lines 1049--1049
+[]|\OT1/ptm/m/n/8 /project/website/app/models| 
+ []
+
+
+Overfull \hbox (1.84329pt too wide) in paragraph at lines 1052--1052
+[]|\OT1/ptm/m/n/8 application.html.erb| 
+ []
+
+
+Overfull \hbox (6.06732pt too wide) in paragraph at lines 1053--1053
+[]|\OT1/ptm/m/n/8 information.html.erb,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1053
+\OT1/ptm/m/n/8 de-tail.html.erb,
+ []
+
+
+Overfull \hbox (2.63246pt too wide) in paragraph at lines 1058--1058
+[]|\OT1/ptm/m/n/8 /project/website/db/migrate| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+[]|\OT1/ptm/m/n/8 20160525053629-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\OT1/ptm/m/n/8 devise-create-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\OT1/ptm/m/n/8 users.rb,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\OT1/ptm/m/n/8 20160525053708-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]|\OT1/ptm/m/n/8 404.html,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1062
+[]|\OT1/ptm/m/n/8 document.tex,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1062
+\OT1/ptm/m/n/8 doc-u-ment.aux,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1062
+\OT1/ptm/m/n/8 doc-u-ment.log,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1068
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1068
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<module1.png, id=81, 739.76375pt x 452.69125pt>
+File: module1.png Graphic file (type png)
+ <use module1.png>
+Package pdftex.def Info: module1.png used on input line 1076.
+(pdftex.def)             Requested size: 258.92119pt x 158.4443pt.
+
+Overfull \hbox (6.92119pt too wide) in paragraph at lines 1076--1077
+ [] 
+ []
+
+<directory2.png, id=82, 335.2525pt x 249.93375pt>
+File: directory2.png Graphic file (type png)
+ <use directory2.png>
+Package pdftex.def Info: directory2.png used on input line 1082.
+(pdftex.def)             Requested size: 234.67514pt x 174.95242pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./overallarchitecture.png> <./directory1.png>]
+<setup.png, id=88, 546.04pt x 442.65375pt>
+File: setup.png Graphic file (type png)
+ <use setup.png>
+Package pdftex.def Info: setup.png used on input line 1095.
+(pdftex.def)             Requested size: 240.25833pt x 194.76823pt.
+
+<loop.png, id=89, 381.425pt x 553.06625pt>
+File: loop.png Graphic file (type png)
+ <use loop.png>
+Package pdftex.def Info: loop.png used on input line 1102.
+(pdftex.def)             Requested size: 209.7844pt x 304.18738pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
+
+ []
+
+[13 <./module1.png> <./directory2.png> <./setup.png> <./loop.png>]
+<module2.png, id=98, 642.4pt x 513.92pt>
+File: module2.png Graphic file (type png)
+ <use module2.png>
+Package pdftex.def Info: module2.png used on input line 1116.
+(pdftex.def)             Requested size: 244.11453pt x 195.29163pt.
+
+<rubyonrails.png, id=99, 337.26pt x 364.36125pt>
+File: rubyonrails.png Graphic file (type png)
+ <use rubyonrails.png>
+Package pdftex.def Info: rubyonrails.png used on input line 1122.
+(pdftex.def)             Requested size: 195.61093pt x 211.32967pt.
+
+<app.png, id=100, 330.23375pt x 553.06625pt>
+File: app.png Graphic file (type png)
+ <use app.png>
+Package pdftex.def Info: app.png used on input line 1128.
+(pdftex.def)             Requested size: 214.64938pt x 359.4888pt.
+
+<db.png, id=101, 435.6275pt x 379.4175pt>
+File: db.png Graphic file (type png)
+ <use db.png>
+Package pdftex.def Info: db.png used on input line 1134.
+(pdftex.def)             Requested size: 239.59586pt x 208.68027pt.
+
+Underfull \vbox (badness 6316) has occurred while \output is active []
+
+
+<schemashoes.png, id=102, 431.6125pt x 466.74374pt>
+File: schemashoes.png Graphic file (type png)
+ <use schemashoes.png>
+Package pdftex.def Info: schemashoes.png used on input line 1140.
+(pdftex.def)             Requested size: 224.43979pt x 242.70815pt.
+
+<schemausers.png, id=103, 483.8075pt x 243.91125pt>
+File: schemausers.png Graphic file (type png)
+ <use schemausers.png>
+Package pdftex.def Info: schemausers.png used on input line 1146.
+(pdftex.def)             Requested size: 232.22496pt x 117.07607pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <./module2.png> <./rubyonrails.png> <./app.png> <./db.png>]
+<mvc.png, id=111, 631.35875pt x 650.43pt>
+File: mvc.png Graphic file (type png)
+ <use mvc.png>
+Package pdftex.def Info: mvc.png used on input line 1163.
+(pdftex.def)             Requested size: 265.16887pt x 273.17873pt.
+
+Overfull \hbox (13.16887pt too wide) in paragraph at lines 1163--1164
+ [] 
+ []
+
+<usecase1.png, id=112, 413.545pt x 468.75125pt>
+File: usecase1.png Graphic file (type png)
+ <use usecase1.png>
+Package pdftex.def Info: usecase1.png used on input line 1173.
+(pdftex.def)             Requested size: 289.4795pt x 328.12363pt.
+
+Overfull \hbox (37.4795pt too wide) in paragraph at lines 1173--1174
+ [] 
+ []
+
+[15 <./schemashoes.png> <./schemausers.png> <./mvc.png>]
+<capture1.png, id=118, 747.79375pt x 485.815pt>
+File: capture1.png Graphic file (type png)
+ <use capture1.png>
+Package pdftex.def Info: capture1.png used on input line 1180.
+(pdftex.def)             Requested size: 224.33984pt x 145.74562pt.
+
+<capture2.png, id=119, 747.79375pt x 459.7175pt>
+File: capture2.png Graphic file (type png)
+ <use capture2.png>
+Package pdftex.def Info: capture2.png used on input line 1187.
+(pdftex.def)             Requested size: 224.33984pt x 137.9163pt.
+
+<capture3.png, id=120, 993.7125pt x 553.06625pt>
+File: capture3.png Graphic file (type png)
+ <use capture3.png>
+Package pdftex.def Info: capture3.png used on input line 1194.
+(pdftex.def)             Requested size: 248.4275pt x 138.26622pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<jh0.png, id=121, 584.93532pt x 99.37125pt>
+File: jh0.png Graphic file (type png)
+ <use jh0.png>
+Package pdftex.def Info: jh0.png used on input line 1201.
+(pdftex.def)             Requested size: 233.96997pt x 39.74779pt.
+
+<usecase2.png, id=122, 832.10875pt x 704.6325pt>
+File: usecase2.png Graphic file (type png)
+ <use usecase2.png>
+Package pdftex.def Info: usecase2.png used on input line 1210.
+(pdftex.def)             Requested size: 249.63455pt x 211.39139pt.
+ [16 <./usecase1.png> <./capture1.png> <./capture2.png> <./capture3.png> <./jh0
+.png>]
+<capture4.png, id=130, 976.64874pt x 656.4525pt>
+File: capture4.png Graphic file (type png)
+ <use capture4.png>
+Package pdftex.def Info: capture4.png used on input line 1217.
+(pdftex.def)             Requested size: 244.16159pt x 164.11272pt.
+
+<usecase3.png, id=131, 222.8325pt x 350.30875pt>
+File: usecase3.png Graphic file (type png)
+ <use usecase3.png>
+Package pdftex.def Info: usecase3.png used on input line 1226.
+(pdftex.def)             Requested size: 200.5474pt x 315.27496pt.
+
+<capture5.png, id=132, 1002.74625pt x 676.5275pt>
+File: capture5.png Graphic file (type png)
+ <use capture5.png>
+Package pdftex.def Info: capture5.png used on input line 1233.
+(pdftex.def)             Requested size: 250.68594pt x 169.13145pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<usecase4.png, id=133, 251.94125pt x 524.96124pt>
+File: usecase4.png Graphic file (type png)
+ <use usecase4.png>
+Package pdftex.def Info: usecase4.png used on input line 1242.
+(pdftex.def)             Requested size: 201.55327pt x 419.96956pt.
+ [17 <./usecase2.png> <./capture4.png> <./usecase3.png> <./capture5.png>]
+<capture6.png, id=141, 967.615pt x 558.085pt>
+File: capture6.png Graphic file (type png)
+ <use capture6.png>
+Package pdftex.def Info: capture6.png used on input line 1249.
+(pdftex.def)             Requested size: 241.90315pt x 139.5209pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<capture7.png, id=142, 973.6375pt x 498.86375pt>
+File: capture7.png Graphic file (type png)
+ <use capture7.png>
+Package pdftex.def Info: capture7.png used on input line 1257.
+(pdftex.def)             Requested size: 253.13977pt x 129.7015pt.
+
+Overfull \hbox (1.13977pt too wide) in paragraph at lines 1257--1258
+ [] 
+ []
+
+<capture8.png, id=143, 958.58125pt x 356.33125pt>
+File: capture8.png Graphic file (type png)
+ <use capture8.png>
+Package pdftex.def Info: capture8.png used on input line 1264.
+(pdftex.def)             Requested size: 249.22525pt x 92.64394pt.
+
+<usecase5.png, id=144, 274.02374pt x 486.81876pt>
+File: usecase5.png Graphic file (type png)
+ <use usecase5.png>
+Package pdftex.def Info: usecase5.png used on input line 1272.
+(pdftex.def)             Requested size: 219.21928pt x 389.45554pt.
+
+Underfull \vbox (badness 1286) has occurred while \output is active []
+
+ [18 <./usecase4.png> <./capture6.png> <./capture7.png> <./capture8.png>]
+<step1.png, id=152, 546.04pt x 410.53375pt>
+File: step1.png Graphic file (type png)
+ <use step1.png>
+Package pdftex.def Info: step1.png used on input line 1285.
+(pdftex.def)             Requested size: 256.63882pt x 192.95088pt.
+
+Overfull \hbox (4.63882pt too wide) in paragraph at lines 1285--1286
+ [] 
+ []
+
+File: jh0.png Graphic file (type png)
+<use jh0.png>
+Package pdftex.def Info: jh0.png used on input line 1292.
+(pdftex.def)             Requested size: 233.96997pt x 39.74779pt.
+ <step2.png, id=153, 323.2075pt x 421.575pt>
+File: step2.png Graphic file (type png)
+ <use step2.png>
+Package pdftex.def Info: step2.png used on input line 1300.
+(pdftex.def)             Requested size: 210.08238pt x 274.0205pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./usecase5.png> <./step1.png>] <step3.png, id=160, 286.06876pt x 404.5112
+5pt>
+File: step3.png Graphic file (type png)
+
+<use step3.png>
+Package pdftex.def Info: step3.png used on input line 1308.
+(pdftex.def)             Requested size: 200.24675pt x 283.15593pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<step4.png, id=161, 658.46pt x 385.44pt>
+File: step4.png Graphic file (type png)
+ <use step4.png>
+Package pdftex.def Info: step4.png used on input line 1316.
+(pdftex.def)             Requested size: 230.46445pt x 134.90602pt.
+
+<step5.png, id=162, 779.91376pt x 443.6575pt>
+File: step5.png Graphic file (type png)
+ <use step5.png>
+Package pdftex.def Info: step5.png used on input line 1324.
+(pdftex.def)             Requested size: 272.9739pt x 155.28244pt.
+
+Overfull \hbox (20.9739pt too wide) in paragraph at lines 1324--1325
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./step2.png> <./step3.png> <./step4.png>]
+<step6.png, id=169, 583.17876pt x 534.99875pt>
+File: step6.png Graphic file (type png)
+ <use step6.png>
+Package pdftex.def Info: step6.png used on input line 1332.
+(pdftex.def)             Requested size: 233.26736pt x 213.9957pt.
+
+<step61.png, id=170, 573.14125pt x 604.2575pt>
+File: step61.png Graphic file (type png)
+ <use step61.png>
+Package pdftex.def Info: step61.png used on input line 1338.
+(pdftex.def)             Requested size: 229.25243pt x 241.69872pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<step7.png, id=171, 493.845pt x 638.385pt>
+File: step7.png Graphic file (type png)
+ <use step7.png>
+Package pdftex.def Info: step7.png used on input line 1346.
+(pdftex.def)             Requested size: 222.22818pt x 287.27058pt.
+
+<usingtime.png, id=172, 481.8pt x 331.2375pt>
+File: usingtime.png Graphic file (type png)
+ <use usingtime.png>
+Package pdftex.def Info: usingtime.png used on input line 1352.
+(pdftex.def)             Requested size: 216.80798pt x 149.05548pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./step5.png> <./step6.png> <./step61.png>]
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[22 <./step7.png> <./usingtime.png>] (./Document2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2711 strings out of 493027
+ 44164 string characters out of 6134069
+ 111098 words of memory out of 5000000
+ 6185 multiletter control sequences out of 15000+600000
+ 36554 words of font info for 70 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 37i,10n,23p,1232b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on Document2.pdf (22 pages, 11588742 bytes).
+PDF statistics:
+ 200 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+

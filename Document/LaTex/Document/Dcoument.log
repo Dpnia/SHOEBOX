@@ -1,13 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.23)  17 JUN 2016 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.18)  18 JUN 2016 16:54
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
- %&-line parsing enabled.
-**Dcoument.tex
-(./Dcoument.tex
-LaTeX2e <2016/03/31>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+**./Dcoument.tex
+(Dcoument.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ieeetran\IEE
+Etran.cls"
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -20,7 +19,9 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pt
+m.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -114,31 +115,40 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEPARstartletwidth=\dimen125
 \c@IEEEbiography=\count93
 \@IEEEtranrubishbin=\box27
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
+phicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\key
+val.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
+phics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\tri
+g.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\gra
+phics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\p
+dftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
+nfwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\l
+txcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count94
@@ -146,7 +156,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.
+sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen128
 \extrarowheight=\dimen129
@@ -154,15 +165,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip44
 \backup@length=\skip45
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/here/here.sty)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count95
-\float@exts=\toks17
-\float@box=\box28
-\@float@everytoks=\toks18
-\@floatcapt=\box29
-) (./Dcoument.aux
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\here
+.sty") (Dcoument.aux
 
 LaTeX Warning: Label `tab:template' multiply defined.
 
@@ -270,6 +274,21 @@ LaTeX Warning: Label `fig:label' multiply defined.
 
 
 LaTeX Warning: Label `tab:template' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
+
+
+LaTeX Warning: Label `fig:label' multiply defined.
 
 
 LaTeX Warning: Label `fig:label' multiply defined.
@@ -384,66 +403,22 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 317.
 LaTeX Font Info:    ... okay on input line 317.
 
 -- Lines per column: 56 (exact).
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+
+("C:\Users\KimJunghyun\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-
+pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count96
+\scratchcounter=\count95
 \scratchdimen=\dimen130
-\scratchbox=\box30
-\nofMPsegments=\count97
-\nofMParguments=\count98
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count99
+\scratchbox=\box28
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count98
 \MPscratchDim=\dimen131
-\MPnumerator=\count100
-\makeMPintoPDFobject=\count101
-\everyMPtoPDFconversion=\toks20
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks18
 )
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 405.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -485,7 +460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 432--435
 
  []
 
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{C:/Users/KimJunghyun/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -529,7 +504,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
  []
 
-<marketshare.png, id=10, 567.11874pt x 329.23pt>
+[2] <marketshare.png, id=12, 567.11874pt x 329.23pt>
 File: marketshare.png Graphic file (type png)
  <use marketshare.png>
 Package pdftex.def Info: marketshare.png used on input line 533.
@@ -539,7 +514,19 @@ Overfull \hbox (3.20107pt too wide) in paragraph at lines 533--534
  [] 
  []
 
-[2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 545.
+
+Underfull \hbox (badness 3098) in paragraph at lines 552--552
+\OT1/ptm/m/n/10 an-other course. Though we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
+[]|\OT1/ptm/m/n/10 HTML5 and
+ []
+
+
 Overfull \hbox (0.58464pt too wide) in paragraph at lines 545--558
 [][] 
  []
@@ -556,6 +543,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 545--558
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--576
+[]|\OT1/ptm/m/n/10 Temperature Hu-mid-ity
+ []
 
 
 Overfull \hbox (0.58464pt too wide) in paragraph at lines 569--592
@@ -591,30 +583,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 600--618
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 624--626
 
  []
 
-<temperature_control.jpg, id=19, 198.7425pt x 83.5923pt>
+<temperature_control.jpg, id=18, 198.7425pt x 83.5923pt>
 File: temperature_control.jpg Graphic file (type jpg)
 
 <use temperature_control.jpg>
 Package pdftex.def Info: temperature_control.jpg used on input line 631.
 (pdftex.def)             Requested size: 238.48979pt x 100.31023pt.
- <arduino.png, id=20, 476.982pt x 472.967pt>
+ <arduino.png, id=19, 476.982pt x 472.967pt>
 File: arduino.png Graphic file (type png)
 
 <use arduino.png>
 Package pdftex.def Info: arduino.png used on input line 639.
 (pdftex.def)             Requested size: 190.78941pt x 189.18344pt.
- <utilitymatrix.png, id=21, 414.54875pt x 121.45375pt>
+ [4 <./temperature_control.jpg> <./arduino.png>]
+<utilitymatrix.png, id=24, 414.54875pt x 121.45375pt>
 File: utilitymatrix.png Graphic file (type png)
-
-<use utilitymatrix.png>
+ <use utilitymatrix.png>
 Package pdftex.def Info: utilitymatrix.png used on input line 653.
 (pdftex.def)             Requested size: 207.27386pt x 60.72672pt.
- [4 <./temperature_control.jpg> <./arduino.png>]
-<decisiontree_learning.png, id=26, 489.83pt x 297.11pt>
+
+<decisiontree_learning.png, id=25, 489.83pt x 297.11pt>
 File: decisiontree_learning.png Graphic file (type png)
 
 <use decisiontree_learning.png>
@@ -625,33 +620,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 668--670
 
  []
 
-<wifi.png, id=27, 425.9112pt x 285.2256pt>
+<wifi.png, id=26, 425.9112pt x 285.2256pt>
 File: wifi.png Graphic file (type png)
  <use wifi.png>
 Package pdftex.def Info: wifi.png used on input line 681.
 (pdftex.def)             Requested size: 212.95506pt x 142.61244pt.
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¿ in font ptmr7t!
+Missing character: There is no ½ in font ptmr7t!
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¿ in font ptmr7t!
+Missing character: There is no ½ in font ptmr7t!
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¿ in font ptmr7t!
+Missing character: There is no ½ in font ptmr7t!
  [5 <./utilitymatrix.png> <./decisiontree_learning.png> <./wifi.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 692--694
 
  []
 
-<ruby.png, id=34, 291.0875pt x 376.40625pt>
+<ruby.png, id=33, 291.0875pt x 376.40625pt>
 File: ruby.png Graphic file (type png)
  <use ruby.png>
 Package pdftex.def Info: ruby.png used on input line 706.
 (pdftex.def)             Requested size: 145.54338pt x 188.20265pt.
 
-<database.png, id=35, 425.9112pt x 502.0356pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<database.png, id=34, 425.9112pt x 502.0356pt>
 File: database.png Graphic file (type png)
  <use database.png>
 Package pdftex.def Info: database.png used on input line 720.
 (pdftex.def)             Requested size: 234.25188pt x 276.12044pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [6 <./ruby.png>]
 Overfull \hbox (2.62204pt too wide) in paragraph at lines 731--741
 [][] 
@@ -667,92 +668,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 731--741
 
  []
 
-<optimization1.png, id=40, 518.93875pt x 429.605pt>
+<optimization1.png, id=39, 518.93875pt x 429.605pt>
 File: optimization1.png Graphic file (type png)
  <use optimization1.png>
 Package pdftex.def Info: optimization1.png used on input line 755.
 (pdftex.def)             Requested size: 249.08777pt x 206.20805pt.
 
-<optimization2.png, id=41, 386.44376pt x 188.705pt>
+<optimization2.png, id=40, 386.44376pt x 188.705pt>
 File: optimization2.png Graphic file (type png)
  <use optimization2.png>
 Package pdftex.def Info: optimization2.png used on input line 764.
 (pdftex.def)             Requested size: 231.86804pt x 113.22386pt.
 
-<optimization3.png, id=42, 390.45876pt x 193.72375pt>
+<optimization3.png, id=41, 390.45876pt x 193.72375pt>
 File: optimization3.png Graphic file (type png)
  <use optimization3.png>
 Package pdftex.def Info: optimization3.png used on input line 773.
 (pdftex.def)             Requested size: 234.27705pt x 116.23514pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./database.png> <./optimization1.png> <./optimization2.png>]
-<optimization4.png, id=50, 383.4325pt x 139.52126pt>
+[7 <./database.png> <./optimization1.png> <./optimization2.png>]
+<optimization4.png, id=49, 383.4325pt x 139.52126pt>
 File: optimization4.png Graphic file (type png)
  <use optimization4.png>
 Package pdftex.def Info: optimization4.png used on input line 782.
 (pdftex.def)             Requested size: 230.06126pt x 83.7134pt.
 
-<optimization5.png, id=51, 378.41376pt x 70.2625pt>
+<optimization5.png, id=50, 378.41376pt x 70.2625pt>
 File: optimization5.png Graphic file (type png)
  <use optimization5.png>
 Package pdftex.def Info: optimization5.png used on input line 791.
 (pdftex.def)             Requested size: 227.05pt x 42.1578pt.
 
-<optimization6.png, id=52, 405.515pt x 177.66376pt>
+<optimization6.png, id=51, 405.515pt x 177.66376pt>
 File: optimization6.png Graphic file (type png)
  <use optimization6.png>
 Package pdftex.def Info: optimization6.png used on input line 800.
 (pdftex.def)             Requested size: 243.31087pt x 106.59906pt.
 
-<management1.png, id=53, 901.11656pt x 506.6428pt>
+<management1.png, id=52, 901.11656pt x 506.6428pt>
 File: management1.png Graphic file (type png)
  <use management1.png>
 Package pdftex.def Info: management1.png used on input line 817.
 (pdftex.def)             Requested size: 252.31091pt x 141.85901pt.
 
-<management2.png, id=54, 994.46532pt x 517.18219pt>
+<management2.png, id=53, 994.46532pt x 517.18219pt>
 File: management2.png Graphic file (type png)
  <use management2.png>
 Package pdftex.def Info: management2.png used on input line 824.
 (pdftex.def)             Requested size: 238.67654pt x 124.12625pt.
 
-<analysis1.png, id=55, 347.2975pt x 130.4875pt>
+<analysis1.png, id=54, 347.2975pt x 130.4875pt>
 File: analysis1.png Graphic file (type png)
  <use analysis1.png>
 Package pdftex.def Info: analysis1.png used on input line 840.
 (pdftex.def)             Requested size: 208.3801pt x 78.29309pt.
  [8 <./optimization3.png> <./optimization4.png> <./optimization5.png> <./optimi
 zation6.png> <./management1.png> <./management2.png>]
-<analysis2.png, id=63, 417.56pt x 235.88126pt>
+<analysis2.png, id=62, 417.56pt x 235.88126pt>
 File: analysis2.png Graphic file (type png)
  <use analysis2.png>
 Package pdftex.def Info: analysis2.png used on input line 850.
 (pdftex.def)             Requested size: 242.18495pt x 136.81122pt.
 
-<analysis3.png, id=64, 462.72874pt x 113.42375pt>
+<analysis3.png, id=63, 462.72874pt x 113.42375pt>
 File: analysis3.png Graphic file (type png)
  <use analysis3.png>
 Package pdftex.def Info: analysis3.png used on input line 859.
 (pdftex.def)             Requested size: 231.3638pt x 56.71173pt.
 
-<analysis4.png, id=65, 427.5975pt x 160.6pt>
+<analysis4.png, id=64, 427.5975pt x 160.6pt>
 File: analysis4.png Graphic file (type png)
  <use analysis4.png>
 Package pdftex.def Info: analysis4.png used on input line 869.
 (pdftex.def)             Requested size: 230.8992pt x 86.7227pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7888) has occurred while \output is active []
 
 
-<analysis5.png, id=66, 380.42125pt x 115.43124pt>
+<analysis5.png, id=65, 380.42125pt x 115.43124pt>
 File: analysis5.png Graphic file (type png)
  <use analysis5.png>
 Package pdftex.def Info: analysis5.png used on input line 878.
 (pdftex.def)             Requested size: 213.03444pt x 64.64105pt.
 
-<UI1.png, id=67, 632.3625pt x 469.755pt>
+<UI1.png, id=66, 632.3625pt x 469.755pt>
 File: UI1.png Graphic file (type png)
  <use UI1.png>
 Package pdftex.def Info: UI1.png used on input line 890.
@@ -762,7 +761,7 @@ Overfull \hbox (0.94052pt too wide) in paragraph at lines 890--891
  [] 
  []
 
-<UI2.png, id=68, 827.09pt x 556.0775pt>
+<UI2.png, id=67, 827.09pt x 556.0775pt>
 File: UI2.png Graphic file (type png)
  <use UI2.png>
 Package pdftex.def Info: UI2.png used on input line 897.
@@ -771,7 +770,7 @@ Package pdftex.def Info: UI2.png used on input line 897.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <./analysis1.png> <./analysis2.png> <./analysis3.png> <./analysis4.png> <./
-analysis5.png> <./UI1.png>] <recommendation1.png, id=78, 631.35875pt x 329.23pt
+analysis5.png> <./UI1.png>] <recommendation1.png, id=77, 631.35875pt x 329.23pt
 >
 File: recommendation1.png Graphic file (type png)
 
@@ -783,55 +782,55 @@ Overfull \hbox (0.53902pt too wide) in paragraph at lines 906--908
  [] 
  []
 
-<recommendation2.png, id=79, 340.27126pt x 161.60374pt>
+<recommendation2.png, id=78, 340.27126pt x 161.60374pt>
 File: recommendation2.png Graphic file (type png)
 
 <use recommendation2.png>
 Package pdftex.def Info: recommendation2.png used on input line 915.
 (pdftex.def)             Requested size: 170.13521pt x 80.80167pt.
 
-<recommendation3.png, id=80, 368.37625pt x 102.3825pt>
+<recommendation3.png, id=79, 368.37625pt x 102.3825pt>
 File: recommendation3.png Graphic file (type png)
 
 <use recommendation3.png>
 Package pdftex.def Info: recommendation3.png used on input line 924.
 (pdftex.def)             Requested size: 206.28928pt x 57.3338pt.
- <recommendation4.png, id=81, 444.66125pt x 224.84pt>
+ <recommendation4.png, id=80, 444.66125pt x 224.84pt>
 File: recommendation4.png Graphic file (type png)
 
 <use recommendation4.png>
 Package pdftex.def Info: recommendation4.png used on input line 935.
 (pdftex.def)             Requested size: 222.33008pt x 112.41972pt.
- <notification1.png, id=82, 386.44376pt x 71.26625pt>
+ <notification1.png, id=81, 386.44376pt x 71.26625pt>
 File: notification1.png Graphic file (type png)
 
 <use notification1.png>
 Package pdftex.def Info: notification1.png used on input line 949.
 (pdftex.def)             Requested size: 231.86804pt x 42.76006pt.
- <UI4.png, id=83, 473.77pt x 331.2375pt>
+ <UI4.png, id=82, 473.77pt x 331.2375pt>
 File: UI4.png Graphic file (type png)
  <use UI4.png>
 Package pdftex.def Info: UI4.png used on input line 963.
 (pdftex.def)             Requested size: 236.88441pt x 165.61833pt.
 
-<UI5.png, id=84, 475.7775pt x 331.2375pt>
+<UI5.png, id=83, 475.7775pt x 331.2375pt>
 File: UI5.png Graphic file (type png)
  <use UI5.png>
 Package pdftex.def Info: UI5.png used on input line 970.
 (pdftex.def)             Requested size: 237.88815pt x 165.61833pt.
  [10 <./UI2.png> <./recommendation1.png> <./recommendation2.png> <./recommendat
 ion3.png> <./recommendation4.png> <./notification1.png>]
-<overallarchitecture.png, id=94, 761.84625pt x 439.6425pt>
+<overallarchitecture.png, id=93, 761.84625pt x 439.6425pt>
 File: overallarchitecture.png Graphic file (type png)
 
 <use overallarchitecture.png>
 Package pdftex.def Info: overallarchitecture.png used on input line 982.
 (pdftex.def)             Requested size: 243.79578pt x 140.68846pt.
 
-Underfull \vbox (badness 6001) has occurred while \output is active []
+Underfull \vbox (badness 4765) has occurred while \output is active []
 
 
-<directory1.png, id=95, 393.47pt x 435.6275pt>
+<directory1.png, id=94, 393.47pt x 435.6275pt>
 File: directory1.png Graphic file (type png)
  <use directory1.png>
 Package pdftex.def Info: directory1.png used on input line 990.
@@ -842,118 +841,198 @@ Overfull \hbox (3.75246pt too wide) in paragraph at lines 990--991
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
-[]|\OT1/ptm/m/n/8 application-
+Overfull \hbox (7.96046pt too wide) in paragraph at lines 1005--1005
+[]|\OT1/ptm/m/n/10 /project/arduino/library| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+[]|\OT1/ptm/m/n/10 dht11.cpp,
+ []
+
+
+Overfull \hbox (14.63066pt too wide) in paragraph at lines 1006--1006
+[]|\OT1/ptm/m/n/10 /project/arduino/shoebox| 
+ []
+
+
+Overfull \hbox (4.07047pt too wide) in paragraph at lines 1007--1007
+[]|\OT1/ptm/m/n/10 website/app/controller| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
-\OT1/ptm/m/n/8 controller.rb,
+[]|\OT1/ptm/m/n/10 application-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
-\OT1/ptm/m/n/8 home-controller.rb,
+\OT1/ptm/m/n/10 controller.rb,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
-\OT1/ptm/m/n/8 mybox-
+\OT1/ptm/m/n/10 home-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
-\OT1/ptm/m/n/8 controller.rb,
+\OT1/ptm/m/n/10 controller.rb,
  []
 
 
-Overfull \hbox (1.73657pt too wide) in paragraph at lines 1008--1008
-[]|\OT1/ptm/m/n/8 /project/website/app/helper| 
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\OT1/ptm/m/n/10 mybox-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\OT1/ptm/m/n/10 controller.rb,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\OT1/ptm/m/n/10 smart-
+ []
+
+
+Overfull \hbox (23.51013pt too wide) in paragraph at lines 1008--1008
+[]|\OT1/ptm/m/n/10 /project/website/app/helper| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
-[]|\OT1/ptm/m/n/8 application-
+[]|\OT1/ptm/m/n/10 application-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
-\OT1/ptm/m/n/8 helper.rb, home-
- []
-
-
-Underfull \hbox (badness 5970) in paragraph at lines 1008--1008
-\OT1/ptm/m/n/8 helper.rb, mybox-
+\OT1/ptm/m/n/10 helper.rb,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
-\OT1/ptm/m/n/8 helper.rb, smart-
+\OT1/ptm/m/n/10 home-
  []
 
 
-Overfull \hbox (4.85649pt too wide) in paragraph at lines 1009--1009
-[]|\OT1/ptm/m/n/8 /project/website/app/models| 
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\OT1/ptm/m/n/10 helper.rb,
  []
 
 
-Overfull \hbox (1.84329pt too wide) in paragraph at lines 1012--1012
-[]|\OT1/ptm/m/n/8 application.html.erb| 
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\OT1/ptm/m/n/10 mybox-
  []
 
 
-Overfull \hbox (6.06732pt too wide) in paragraph at lines 1013--1013
-[]|\OT1/ptm/m/n/8 information.html.erb,
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\OT1/ptm/m/n/10 helper.rb,
+ []
+
+
+Overfull \hbox (27.41002pt too wide) in paragraph at lines 1009--1009
+[]|\OT1/ptm/m/n/10 /project/website/app/models| 
+ []
+
+
+Overfull \hbox (21.6001pt too wide) in paragraph at lines 1010--1010
+[]|\OT1/ptm/m/n/10 /project/website/app/views| 
+ []
+
+
+Overfull \hbox (17.953pt too wide) in paragraph at lines 1012--1012
+[]|\OT1/ptm/m/n/10 application.html.erb| 
+ []
+
+
+Overfull \hbox (23.23303pt too wide) in paragraph at lines 1013--1013
+[]|\OT1/ptm/m/n/10 information.html.erb,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
-\OT1/ptm/m/n/8 de-tail.html.erb,
+\OT1/ptm/m/n/10 de-tail.html.erb,
  []
 
 
-Overfull \hbox (2.63246pt too wide) in paragraph at lines 1018--1018
-[]|\OT1/ptm/m/n/8 /project/website/db/migrate| 
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\OT1/ptm/m/n/10 bundle, rails,
+ []
+
+
+Overfull \hbox (6.30045pt too wide) in paragraph at lines 1016--1016
+[]|\OT1/ptm/m/n/10 /project/website/config| 
+ []
+
+
+Overfull \hbox (13.21323pt too wide) in paragraph at lines 1017--1017
+[]|\OT1/ptm/m/n/10 schema.rb,seeds.rb| 
+ []
+
+
+Overfull \hbox (24.62997pt too wide) in paragraph at lines 1018--1018
+[]|\OT1/ptm/m/n/10 /project/website/db/migrate| 
+ []
+
+
+Overfull \hbox (10.734pt too wide) in paragraph at lines 1018--1018
+[]|\OT1/ptm/m/n/10 20160525053629-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1018--1018
-[]|\OT1/ptm/m/n/8 20160525053629-
+\OT1/ptm/m/n/10 devise-create-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1018--1018
-\OT1/ptm/m/n/8 devise-create-
+\OT1/ptm/m/n/10 users.rb,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1018
-\OT1/ptm/m/n/8 users.rb,
+Overfull \hbox (10.734pt too wide) in paragraph at lines 1018--1018
+\OT1/ptm/m/n/10 20160525053708-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1018
-\OT1/ptm/m/n/8 20160525053708-
+Overfull \hbox (3.94353pt too wide) in paragraph at lines 1020--1020
+[]|\OT1/ptm/m/n/10 development.log| 
+ []
+
+
+Overfull \hbox (6.3003pt too wide) in paragraph at lines 1021--1021
+[]|\OT1/ptm/m/n/10 /project/website/public| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1021--1021
-[]|\OT1/ptm/m/n/8 404.html,
+[]|\OT1/ptm/m/n/10 404.html,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1021
+\OT1/ptm/m/n/10 422.html,
+ []
+
+
+Overfull \hbox (15.4407pt too wide) in paragraph at lines 1022--1022
+[]|\OT1/ptm/m/n/10 /project/document/LaTex| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1022--1022
-[]|\OT1/ptm/m/n/8 document.tex,
+[]|\OT1/ptm/m/n/10 document.tex,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1022--1022
-\OT1/ptm/m/n/8 doc-u-ment.aux,
+\OT1/ptm/m/n/10 doc-u-ment.aux,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1022--1022
-\OT1/ptm/m/n/8 doc-u-ment.log,
+\OT1/ptm/m/n/10 doc-u-ment.log,
  []
 
 
@@ -970,7 +1049,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1001--1028
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./UI4.png> <./UI5.png> <./overallarchitecture.png> <./directory1.png>]
-<module1.png, id=103, 739.76375pt x 452.69125pt>
+Overfull \vbox (181.89914pt too high) has occurred while \output is active []
+
+
+<module1.png, id=102, 739.76375pt x 452.69125pt>
 File: module1.png Graphic file (type png)
  <use module1.png>
 Package pdftex.def Info: module1.png used on input line 1036.
@@ -980,21 +1062,18 @@ Overfull \hbox (6.92119pt too wide) in paragraph at lines 1036--1037
  [] 
  []
 
-<directory2.png, id=104, 335.2525pt x 249.93375pt>
+<directory2.png, id=103, 335.2525pt x 249.93375pt>
 File: directory2.png Graphic file (type png)
  <use directory2.png>
 Package pdftex.def Info: directory2.png used on input line 1042.
 (pdftex.def)             Requested size: 234.67514pt x 174.95242pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<setup.png, id=105, 546.04pt x 442.65375pt>
+<setup.png, id=104, 546.04pt x 442.65375pt>
 File: setup.png Graphic file (type png)
  <use setup.png>
 Package pdftex.def Info: setup.png used on input line 1055.
 (pdftex.def)             Requested size: 240.25833pt x 194.76823pt.
- [12 <./module1.png> <./directory2.png>] <loop.png, id=111, 381.425pt x 553.066
+ [12 <./module1.png> <./directory2.png>] <loop.png, id=110, 381.425pt x 553.066
 25pt>
 File: loop.png Graphic file (type png)
 
@@ -1006,49 +1085,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
 
  []
 
-<module2.png, id=112, 642.4pt x 513.92pt>
+<module2.png, id=111, 642.4pt x 513.92pt>
 File: module2.png Graphic file (type png)
  <use module2.png>
 Package pdftex.def Info: module2.png used on input line 1076.
 (pdftex.def)             Requested size: 244.11453pt x 195.29163pt.
 
-<rubyonrails.png, id=113, 337.26pt x 364.36125pt>
+<rubyonrails.png, id=112, 337.26pt x 364.36125pt>
 File: rubyonrails.png Graphic file (type png)
  <use rubyonrails.png>
 Package pdftex.def Info: rubyonrails.png used on input line 1082.
 (pdftex.def)             Requested size: 195.61093pt x 211.32967pt.
 
-<app.png, id=114, 330.23375pt x 553.06625pt>
+<app.png, id=113, 330.23375pt x 553.06625pt>
 File: app.png Graphic file (type png)
  <use app.png>
 Package pdftex.def Info: app.png used on input line 1088.
 (pdftex.def)             Requested size: 214.64938pt x 359.4888pt.
 
-<db.png, id=115, 435.6275pt x 379.4175pt>
+<db.png, id=114, 435.6275pt x 379.4175pt>
 File: db.png Graphic file (type png)
  <use db.png>
 Package pdftex.def Info: db.png used on input line 1094.
 (pdftex.def)             Requested size: 239.59586pt x 208.68027pt.
 
-Underfull \vbox (badness 6316) has occurred while \output is active []
+Underfull \vbox (badness 6658) has occurred while \output is active []
 
  [13 <./setup.png> <./loop.png> <./module2.png> <./rubyonrails.png>]
-<schemashoes.png, id=124, 431.6125pt x 466.74374pt>
+<schemashoes.png, id=123, 431.6125pt x 466.74374pt>
 File: schemashoes.png Graphic file (type png)
  <use schemashoes.png>
 Package pdftex.def Info: schemashoes.png used on input line 1100.
 (pdftex.def)             Requested size: 224.43979pt x 242.70815pt.
 
-<schemausers.png, id=125, 483.8075pt x 243.91125pt>
+<schemausers.png, id=124, 483.8075pt x 243.91125pt>
 File: schemausers.png Graphic file (type png)
  <use schemausers.png>
 Package pdftex.def Info: schemausers.png used on input line 1106.
 (pdftex.def)             Requested size: 232.22496pt x 117.07607pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7186) has occurred while \output is active []
 
  [14 <./app.png> <./db.png> <./schemashoes.png> <./schemausers.png>]
-<mvc.png, id=133, 631.35875pt x 650.43pt>
+<mvc.png, id=132, 631.35875pt x 650.43pt>
 File: mvc.png Graphic file (type png)
  <use mvc.png>
 Package pdftex.def Info: mvc.png used on input line 1123.
@@ -1058,7 +1137,11 @@ Overfull \hbox (13.16887pt too wide) in paragraph at lines 1123--1124
  [] 
  []
 
-<usecase1.png, id=134, 413.545pt x 468.75125pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<usecase1.png, id=133, 413.545pt x 468.75125pt>
 File: usecase1.png Graphic file (type png)
  <use usecase1.png>
 Package pdftex.def Info: usecase1.png used on input line 1133.
@@ -1068,174 +1151,195 @@ Overfull \hbox (37.4795pt too wide) in paragraph at lines 1133--1134
  [] 
  []
 
-<capture1.png, id=135, 747.79375pt x 485.815pt>
+<capture1.png, id=134, 747.79375pt x 485.815pt>
 File: capture1.png Graphic file (type png)
  <use capture1.png>
 Package pdftex.def Info: capture1.png used on input line 1140.
 (pdftex.def)             Requested size: 224.33984pt x 145.74562pt.
 
-<capture2.png, id=136, 747.79375pt x 459.7175pt>
+<capture2.png, id=135, 747.79375pt x 459.7175pt>
 File: capture2.png Graphic file (type png)
  <use capture2.png>
 Package pdftex.def Info: capture2.png used on input line 1147.
 (pdftex.def)             Requested size: 224.33984pt x 137.9163pt.
 
-<capture3.png, id=137, 993.7125pt x 553.06625pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./mvc.png> <./usecase1.png>] <capture3.png, id=140, 993.7125pt x 553.0662
+5pt>
 File: capture3.png Graphic file (type png)
- <use capture3.png>
+
+<use capture3.png>
 Package pdftex.def Info: capture3.png used on input line 1154.
 (pdftex.def)             Requested size: 248.4275pt x 138.26622pt.
+ <jh0.png, id=141, 584.93532pt x 99.37125pt>
+File: jh0.png Graphic file (type png)
+ <use jh0.png>
+Package pdftex.def Info: jh0.png used on input line 1161.
+(pdftex.def)             Requested size: 204.73042pt x 34.78046pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <./mvc.png> <./usecase1.png> <./capture1.png>]
-<usecase2.png, id=143, 832.10875pt x 704.6325pt>
+<usecase2.png, id=142, 832.10875pt x 704.6325pt>
 File: usecase2.png Graphic file (type png)
  <use usecase2.png>
-Package pdftex.def Info: usecase2.png used on input line 1163.
+Package pdftex.def Info: usecase2.png used on input line 1170.
 (pdftex.def)             Requested size: 249.63455pt x 211.39139pt.
 
-<capture4.png, id=144, 976.64874pt x 656.4525pt>
+<capture4.png, id=143, 976.64874pt x 656.4525pt>
 File: capture4.png Graphic file (type png)
  <use capture4.png>
-Package pdftex.def Info: capture4.png used on input line 1170.
+Package pdftex.def Info: capture4.png used on input line 1177.
 (pdftex.def)             Requested size: 244.16159pt x 164.11272pt.
 
+<jh1.png, id=144, 2877.75125pt x 2899.83376pt>
+File: jh1.png Graphic file (type png)
+ <use jh1.png>
+Package pdftex.def Info: jh1.png used on input line 1184.
+(pdftex.def)             Requested size: 143.89598pt x 145.00018pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [16 <./capture1.png> <./capture2.png> <./capture3.png> <./jh0.png> <./usecase2
+.png>]
+<jh2.png, id=152, 259.97125pt x 194.7275pt>
+File: jh2.png Graphic file (type png)
+ <use jh2.png>
+Package pdftex.def Info: jh2.png used on input line 1191.
+(pdftex.def)             Requested size: 103.98665pt x 77.8896pt.
 
-<usecase3.png, id=145, 222.8325pt x 350.30875pt>
+<jh3.png, id=153, 261.97874pt x 297.11pt>
+File: jh3.png Graphic file (type png)
+ <use jh3.png>
+Package pdftex.def Info: jh3.png used on input line 1198.
+(pdftex.def)             Requested size: 91.69392pt x 103.99005pt.
+
+<usecase3.png, id=154, 222.8325pt x 350.30875pt>
 File: usecase3.png Graphic file (type png)
  <use usecase3.png>
-Package pdftex.def Info: usecase3.png used on input line 1178.
+Package pdftex.def Info: usecase3.png used on input line 1206.
 (pdftex.def)             Requested size: 178.26624pt x 280.24738pt.
 
-<capture5.png, id=146, 1002.74625pt x 676.5275pt>
+<capture5.png, id=155, 1002.74625pt x 676.5275pt>
 File: capture5.png Graphic file (type png)
  <use capture5.png>
-Package pdftex.def Info: capture5.png used on input line 1185.
+Package pdftex.def Info: capture5.png used on input line 1213.
 (pdftex.def)             Requested size: 250.68594pt x 169.13145pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./capture2.png> <./capture3.png> <./usecase2.png> <./capture4.png>]
-<usecase4.png, id=154, 251.94125pt x 524.96124pt>
+ [17 <./capture4.png> <./jh1.png> <./jh2.png> <./jh3.png> <./usecase3.png> <./c
+apture5.png>] <usecase4.png, id=162, 251.94125pt x 524.96124pt>
 File: usecase4.png Graphic file (type png)
  <use usecase4.png>
-Package pdftex.def Info: usecase4.png used on input line 1194.
+Package pdftex.def Info: usecase4.png used on input line 1222.
 (pdftex.def)             Requested size: 201.55327pt x 419.96956pt.
 
-<capture6.png, id=155, 967.615pt x 558.085pt>
+<capture6.png, id=163, 967.615pt x 558.085pt>
 File: capture6.png Graphic file (type png)
  <use capture6.png>
-Package pdftex.def Info: capture6.png used on input line 1201.
+Package pdftex.def Info: capture6.png used on input line 1229.
 (pdftex.def)             Requested size: 241.90315pt x 139.5209pt.
 
-<capture7.png, id=156, 973.6375pt x 498.86375pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<capture7.png, id=164, 973.6375pt x 498.86375pt>
 File: capture7.png Graphic file (type png)
  <use capture7.png>
-Package pdftex.def Info: capture7.png used on input line 1209.
+Package pdftex.def Info: capture7.png used on input line 1237.
 (pdftex.def)             Requested size: 253.13977pt x 129.7015pt.
 
-Overfull \hbox (1.13977pt too wide) in paragraph at lines 1209--1210
+Overfull \hbox (1.13977pt too wide) in paragraph at lines 1237--1238
  [] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./usecase3.png> <./capture5.png> <./usecase4.png> <./capture6.png>]
-<capture8.png, id=164, 958.58125pt x 356.33125pt>
+<capture8.png, id=165, 958.58125pt x 356.33125pt>
 File: capture8.png Graphic file (type png)
  <use capture8.png>
-Package pdftex.def Info: capture8.png used on input line 1216.
+Package pdftex.def Info: capture8.png used on input line 1244.
 (pdftex.def)             Requested size: 249.22525pt x 92.64394pt.
-
-<usecase5.png, id=165, 274.02374pt x 486.81876pt>
+ [18 <./usecase4.png> <./capture6.png> <./capture7.png> <./capture8.png>]
+<usecase5.png, id=173, 274.02374pt x 486.81876pt>
 File: usecase5.png Graphic file (type png)
  <use usecase5.png>
-Package pdftex.def Info: usecase5.png used on input line 1224.
+Package pdftex.def Info: usecase5.png used on input line 1252.
 (pdftex.def)             Requested size: 219.21928pt x 389.45554pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<step1.png, id=166, 546.04pt x 410.53375pt>
+<step1.png, id=174, 546.04pt x 410.53375pt>
 File: step1.png Graphic file (type png)
  <use step1.png>
-Package pdftex.def Info: step1.png used on input line 1237.
+Package pdftex.def Info: step1.png used on input line 1265.
 (pdftex.def)             Requested size: 256.63882pt x 192.95088pt.
 
-Overfull \hbox (4.63882pt too wide) in paragraph at lines 1237--1238
+Overfull \hbox (4.63882pt too wide) in paragraph at lines 1265--1266
  [] 
  []
 
-
-Underfull \vbox (badness 3049) has occurred while \output is active []
-
- [18 <./capture7.png> <./capture8.png> <./usecase5.png>]
-<step2.png, id=173, 323.2075pt x 421.575pt>
+<step2.png, id=175, 323.2075pt x 421.575pt>
 File: step2.png Graphic file (type png)
  <use step2.png>
-Package pdftex.def Info: step2.png used on input line 1245.
+Package pdftex.def Info: step2.png used on input line 1273.
 (pdftex.def)             Requested size: 210.08238pt x 274.0205pt.
 
-<step3.png, id=174, 286.06876pt x 404.51125pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./usecase5.png> <./step1.png>] <step3.png, id=182, 286.06876pt x 404.5112
+5pt>
 File: step3.png Graphic file (type png)
- <use step3.png>
-Package pdftex.def Info: step3.png used on input line 1253.
+
+<use step3.png>
+Package pdftex.def Info: step3.png used on input line 1281.
 (pdftex.def)             Requested size: 200.24675pt x 283.15593pt.
 
-<step4.png, id=175, 658.46pt x 385.44pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<step4.png, id=183, 658.46pt x 385.44pt>
 File: step4.png Graphic file (type png)
  <use step4.png>
-Package pdftex.def Info: step4.png used on input line 1261.
+Package pdftex.def Info: step4.png used on input line 1289.
 (pdftex.def)             Requested size: 230.46445pt x 134.90602pt.
 
-<step5.png, id=176, 779.91376pt x 443.6575pt>
+<step5.png, id=184, 779.91376pt x 443.6575pt>
 File: step5.png Graphic file (type png)
  <use step5.png>
-Package pdftex.def Info: step5.png used on input line 1269.
+Package pdftex.def Info: step5.png used on input line 1297.
 (pdftex.def)             Requested size: 272.9739pt x 155.28244pt.
 
-Overfull \hbox (20.9739pt too wide) in paragraph at lines 1269--1270
+Overfull \hbox (20.9739pt too wide) in paragraph at lines 1297--1298
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./step1.png> <./step2.png> <./step3.png> <./step4.png>]
-<step6.png, id=185, 583.17876pt x 534.99875pt>
+ [20 <./step2.png> <./step3.png> <./step4.png>]
+<step6.png, id=191, 583.17876pt x 534.99875pt>
 File: step6.png Graphic file (type png)
  <use step6.png>
-Package pdftex.def Info: step6.png used on input line 1277.
+Package pdftex.def Info: step6.png used on input line 1305.
 (pdftex.def)             Requested size: 233.26736pt x 213.9957pt.
 
-<step61.png, id=186, 573.14125pt x 604.2575pt>
+<step61.png, id=192, 573.14125pt x 604.2575pt>
 File: step61.png Graphic file (type png)
  <use step61.png>
-Package pdftex.def Info: step61.png used on input line 1283.
+Package pdftex.def Info: step61.png used on input line 1311.
 (pdftex.def)             Requested size: 229.25243pt x 241.69872pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<step7.png, id=187, 493.845pt x 638.385pt>
+<step7.png, id=193, 493.845pt x 638.385pt>
 File: step7.png Graphic file (type png)
  <use step7.png>
-Package pdftex.def Info: step7.png used on input line 1291.
+Package pdftex.def Info: step7.png used on input line 1319.
 (pdftex.def)             Requested size: 222.22818pt x 287.27058pt.
 
-<usingtime.png, id=188, 481.8pt x 331.2375pt>
+<usingtime.png, id=194, 481.8pt x 331.2375pt>
 File: usingtime.png Graphic file (type png)
  <use usingtime.png>
-Package pdftex.def Info: usingtime.png used on input line 1297.
+Package pdftex.def Info: usingtime.png used on input line 1325.
 (pdftex.def)             Requested size: 216.80798pt x 149.05548pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./step5.png> <./step6.png> <./step61.png>]
+ [21 <./step5.png> <./step6.png> <./step61.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1247,28 +1351,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[21 <./step7.png> <./usingtime.png>] (./Dcoument.aux)
+[22 <./step7.png> <./usingtime.png>] (Dcoument.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2756 strings out of 493027
- 45316 string characters out of 6134069
- 114098 words of memory out of 5000000
- 6221 multiletter control sequences out of 15000+600000
- 36554 words of font info for 70 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 37i,10n,23p,865b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on Dcoument.pdf (21 pages, 10096842 bytes).
+ 2358 strings out of 493634
+ 38771 string characters out of 3132791
+ 102718 words of memory out of 3000000
+ 5698 multiletter control sequences out of 15000+200000
+ 36554 words of font info for 70 fonts, out of 3000000 for 9000
+ 1028 hyphenation exceptions out of 8191
+ 27i,10n,19p,1233b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/KimJunghyun/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontn
+ame/8r.enc}<C:/Users/KimJunghyun/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+urw/times/utmb8a.pfb><C:/Users/KimJunghyun/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/urw/times/utmbi8a.pfb><C:/Users/KimJunghyun/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/KimJunghyun/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Dcoument.pdf (22 pages, 10560088 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -682,14 +682,20 @@ Also the low power gave us the reason to use wifi. IoT applications will seldom 
     \caption{IoT wifi technology} \label{fig:label}
 \end{center}
 \end{figure}
-\subsubsection{IOT example : Temperature Monitoring} Importance of monitoring temperature in industries is quite important as it affects the environment and the process of business e.g. food industry, process industry or any high tech industry such as data centers. Temperature is one of the important parameters which is monitored and controlled to ensure quality output. Most of the high tech industries will have high end climate control systems to monitor and manage temperature, however all organizations cannot afford the luxury of high end systems. Apart from small scale industry, temperature monitoring is important to people with remote cabins, warehouses, or any other location where access to location is difficult. With advancement in software technology and electronics it has become technically feasible to make pocket size high speed and high memory devices. The system is based on the Raspberry Pi which is cost effective and core OS is soft real time OS based on Linux. With Linux as OS, variety of features can be offered such as security, license free usage and community support. The frequency with which data is scanned is customizable and currently programmed to scan every 1 Hr (can be scaled). The data is stored in local MySQL database with updates sent to cloud. The Raspberry Pi also acts as a Server which can be accessed to see logged data. The data in cloud  also represents data graphically and can be downloaded in CSV format. One of the biggest benefits of using Raspberry Pi is the sensor network expansion. The sensors can be added can be configured and further extended with legacy RJ45 cable to and from Sensor Network. Capability to store data from other sensors such as light sensor, humidity, wind sensor, etc. gives flexibility to the system to customize and accommodate quite a lot of wants.
+\subsubsection{IOT example : Temperature Monitoring}
+ Importance of monitoring temperature in industries is quite important as it affects the environment and the process of business e.g. food industry, process industry or any high tech industry such as data centers. Temperature is one of the important parameters which is monitored and controlled to ensure quality output. Most of the high tech industries will have high end climate control systems to monitor and manage temperature, however all organizations cannot afford the luxury of high end systems. Apart from small scale industry, temperature monitoring is important to people with remote cabins, warehouses, or any other location where access to location is difficult.
+ï¿½
+With advancement in software technology and electronics it has become technically feasible to make pocket size high speed and high memory devices. The system is based on the Raspberry Pi which is cost effective and core OS is soft real time OS based on Linux. With Linux as OS, variety of features can be offered such as security, license free usage and community support. The frequency with which data is scanned is customizable and currently programmed to scan every 1 Hr (can be scaled). The data is stored in local MySQL database with updates sent to cloud. The Raspberry Pi also acts as a Server which can be accessed to see logged data. The data in cloudï¿½ also represents data graphically and can be downloaded in CSV format.
+ï¿½
+One of the biggest benefits of using Raspberry Pi is the sensor network expansion. The sensors can be added can be configured and further extended with legacy RJ45 cable to and from Sensor Network. Capability to store data from other sensors such as light sensor, humidity, wind sensor, etc. gives flexibility to the system to customize and accommodate quite a lot of wants.
 
 In this IOT example(Temperature Monitoring) we decided to use the ThingSpeak for getting information from Arduino sensor and compatible programming with Raspberry Pi. 
 \\
 \subsubsection{Selfstarter and Refinery CMS : Ruby on rails web application}
 
 Among funding platforms galore, Self-starter helps you host your own crowdfunding site for your project. Donations are easily made via Amazon Payments, or you can choose your preferred provider. Simple and easy, driven by Ruby on Rails.
-Creating a website and managing content is much easier with Refinery CMS. It's a simple modular and extendable content management system. Released in 2009, it's currently undergoing improvements by the community in 10 different languages
+
+Creating a website and managing content is much easier with Refinery CMS. It's a simple modular and extendable content management system. Released in 2009, it's currently undergoing improvements by the community in 10 different languages
 
 From these two open sources, we studied and try to follow the ruby on rails framework for our website. We were really surprised to find a lot of open sources that we can easily find and learn.
 
@@ -1120,7 +1126,7 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 \end{figure}
 % 6. use cases
 \section{Use Cases}
-\subsection{Use case 1 : Setup} This case is for the users using the Smart Shoebox for the first time.  If it is the first time for the user to use Smart Shoebox, you have to sign up for the website. If you are already registered, you can login with your id and password.
+\subsection{Use case 1 : Setup} This case is for the users using the Smart Shoebox for the first time.  If it is the first time for the user to use Smart Shoebox, you have to sign up for the website. If you are already registered, you can login with your id and password. After that, you should type your shoebox serial number that would be provided when you buy our product. Doing like that, your account in web page can connect your shoebox(Arduino) if your shoebox is in same WIFI network.
 %image15
 \begin{figure}[H]
 \begin{center}
@@ -1149,8 +1155,15 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
      \caption{After logging in}\label{fig:label}
 \end{center}
 \end{figure}
+%image
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.35]{jh0}
+     \caption{Input Serial Number in Home tab}\label{fig:label}
+\end{center}
+\end{figure}
 
-\subsection{Use case 2 : Users request for a Smart function} This case is taking care of the needs of the user to use the smart function of the Smart Shoebox. (Optimization, Drying, Sterilization, Deodorization) After the use case one, the user is in the website. You can click on the Smart function tab on the top. In the page of Smart function, you have to type in the IP address of the Smart Shoebox. After typing in the IP addresses, all the user has to do is click the function which the user needs. You can use the functions as long as you want and click the button again to turn it off.
+\subsection{Use case 2 : Users request for a Smart function} This case is taking care of the needs of the user to use the smart function of the Smart Shoebox. (Optimization, Drying, Sterilization, Deodorization) After the use case one, the user is in the website. You can click on the Smart function tab on the top. In the page of Smart function, you have to type in the IP address of the Smart Shoebox. You can configure your inner IP address of the Smart Shoebox by smartphone, laptop, or desktop. After typing in the IP addresses, all the user has to do is click the function which the user needs. You can use the functions as long as you want and click the button again to turn it off. These buttons are toggle type. When you click the Drying function button, the small, but strong fan in the Smart Shoebox will be operated. In doing so, your shoes in smart shoebox will be dried. And when you click the Sterilization button, the infared light in the smart shoebox will turn on. As you already know, an infrared light is a strong tool to destroy germs. And last, if you smell a disgusting odor from your shoes, don't hesitate to click the deodorization button. This makes air-fresheners turn on.
 %image16
 \begin{figure}[H]
 \begin{center}
@@ -1163,6 +1176,27 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 \begin{center}
     \includegraphics[scale=0.25]{capture4}
     \caption{Smart function page} \label{fig:label}
+\end{center}
+\end{figure}
+%image
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.05]{jh1}
+    \caption{Smart function - Drying} \label{fig:label}
+\end{center}
+\end{figure}
+%image
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.4]{jh2}
+    \caption{Smart function - Sterilization} \label{fig:label}
+\end{center}
+\end{figure}
+%image
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.35]{jh3}
+    \caption{Smart function - Deodorization} \label{fig:label}
 \end{center}
 \end{figure}
 \subsection{Use case 3 : Users request for the weather forecast} This case is taking care of the needs of the user to see the weather. After the use case one, the user is in the website. You can click on the Weather tab on the top. In the page of Weather, the user can choose the city, which he or she is interested in. There are few cities of South Korea provided.
@@ -1181,7 +1215,7 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
 \end{center}
 \end{figure}
 
-\subsection{Use case 4 : Users request for Recommendation} This case covers the needs of the user to receive a recommendation of the shoes. After the use case one, the user is in the website. You can click on the Recommendation tab on the top. In the page of Recommendation, the user can choose the main activity and the city, which he or she is staying or panning to go. After selecting these two, the user submits. Based on the two information, the website provides recommendation points for each shoes.
+\subsection{Use case 4 : Users request for Recommendation} This case covers the needs of the user to receive a recommendation of the shoes. After the use case one, the user is in the website. You can click on the Recommendation tab on the top. In the page of Recommendation, the user can choose the main activity and the city, which he or she is staying or panning to go. After selecting these two, the user submits. Based on the two information, the website provides recommendation points for each shoes. Activity lists you can choose are composed of "jogging", "casual", "sports","trip", "storll", "official", "date", "business", "soccer", "basketball", and "house".
 %image18
 \begin{figure}[H]
 \begin{center}
@@ -1196,7 +1230,7 @@ The user accesses the Smart Shoebox's URL and send request. Then the 'Controller
     \caption{Recommendation page} \label{fig:label}
 \end{center}
 \end{figure}
-\subsection{Use case 5 : Adding the shoes to the Smart Shoebox} This case is to explain the process for the user adding the shoes to the Smart Shoebox. After the use case one, the user is in the website. You can click on the My shoebox tab on the top. In the page of My shoebox, the user can add the items the user possess. 
+\subsection{Use case 5 : Adding the shoes to the Smart Shoebox} This case is to explain the process for the user adding the shoes to the Smart Shoebox. After the use case one, the user is in the website. You can click on the My shoebox tab on the top. In the page of My shoebox, the user can add the items the user possess. You can choose your shoetype and color. Shoestype are composed of "Suede WalkingShoes", "Artificial Leather Highhill", "Artificial Casual Jogging Shoes", "Leather Walker", "Leather Business Shoes", "Converse Casual", "Suede Casual", "Suede Business", "Soccer Shoe", "Rain boots", "Basketball Shoes", "Suede Slippers", and "Leather Silppers".
 %image
 \begin{figure}[H]
 \begin{center}
